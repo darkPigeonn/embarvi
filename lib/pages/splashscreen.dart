@@ -52,6 +52,7 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
                 ),
                 TextFormField(
                   decoration: InputDecoration(
+                    fillColor: Colors.white,
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(20),
                     ),

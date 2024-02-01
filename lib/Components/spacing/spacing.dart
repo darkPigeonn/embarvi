@@ -7,3 +7,6 @@ const Spacing1 = SizedBox(
 const Spacing2 = SizedBox(
   height: 50,
 );
+const Spacing3 = SizedBox(
+  height: 20,
+);

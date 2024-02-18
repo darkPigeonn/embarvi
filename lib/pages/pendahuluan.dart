@@ -22,7 +22,6 @@ class _PendahuluanPageState extends State<PendahuluanPage> {
         child: Container(
           color: primaryC,
           width: MediaQuery.of(context).size.width,
-          height: MediaQuery.of(context).size.height,
           padding: EdgeInsets.symmetric(horizontal: 10),
           child: Column(
             children: [
@@ -31,34 +30,41 @@ class _PendahuluanPageState extends State<PendahuluanPage> {
                 title: pendahuluan['title'].toString(),
               ),
               Spacing3,
-              Expanded(
+              Container(
+                height: MediaQuery.of(context).size.height,
+                margin: EdgeInsets.only(bottom: 40),
                 child: ListView.builder(
                     itemCount: content.length,
+                    shrinkWrap: false,
+                    physics: NeverScrollableScrollPhysics(),
                     itemBuilder: (context, index) {
-                      // return RichText(
-                      //   textAlign: TextAlign.justify,
-                      //   text: TextSpan(
-                      //     children: <TextSpan>[
-                      //       TextSpan(
-                      //         text:
-                      //             '\ t', // Tambahkan spasi tambahan di antara karakter tab dan teks
-                      //         style: TextStyle(
-                      //           fontSize:
-                      //               16, // Sesuaikan ukuran teks sesuai kebutuhan
-                      //         ),
-                      //       ),
-                      //       TextSpan(
-                      //         text: content[0].toString(),
-                      //         style: DefaultTextStyle.of(context).style,
-                      //       ),
-                      //     ],
-                      //   ),
-                      // );
+                      return RichText(
+                        textAlign: TextAlign.justify,
+                        text: TextSpan(
+                          style: const TextStyle(height: 1.6),
+                          children: <TextSpan>[
+                            TextSpan(
+                              text:
+                                  '\ t', // Tambahkan spasi tambahan di antara karakter tab dan teks
+                              style: TextStyle(
+                                height: 2,
+                                fontSize:
+                                    16, // Sesuaikan ukuran teks sesuai kebutuhan
+                              ),
+                            ),
+                            TextSpan(
+                              text: content[index]['detail'].toString(),
+                              style: DefaultTextStyle.of(context).style,
+                            ),
+                          ],
+                        ),
+                      );
                       // return Text(content[0].toString(),
                       //     textAlign: TextAlign.justify,
                       //     style: TextStyle(height: 1.8));
                     }),
-              )
+              ),
+
               // Container(
               //   child: Text(pendahuluan['content'].toString()),
               // )

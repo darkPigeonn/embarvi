@@ -16,7 +16,7 @@ class TitlePage extends StatelessWidget {
       decoration: BoxDecoration(
           color: titleCardC, borderRadius: BorderRadius.circular(20)),
       child: Text(
-        title,
+        title.toUpperCase(),
         style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
         textAlign: TextAlign.center,
       ),

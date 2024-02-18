@@ -1,7 +1,14 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:embarvi/Components/header.dart';
 import 'package:embarvi/Components/menu.dart';
 import 'package:embarvi/Components/spacing/spacing.dart';
+import 'package:embarvi/pages/daftarPustaka.dart';
+import 'package:embarvi/pages/formatif.dart';
+import 'package:embarvi/pages/indikator.dart';
+import 'package:embarvi/pages/lkpd.dart';
 import 'package:embarvi/pages/pendahuluan.dart';
+import 'package:embarvi/pages/petaKonsep.dart';
+import 'package:embarvi/pages/petunjuk.dart';
 import 'package:embarvi/utils/colorLib.dart';
 import 'package:embarvi/utils/textStlyLib.dart';
 import 'package:flutter/material.dart';
@@ -46,6 +53,15 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
+  //list gambar
+  List imagesBanner = [
+    'assets/images/img1.png',
+    'assets/images/img2.png',
+    'assets/images/img3.png',
+    'assets/images/img4.png',
+    'assets/images/img5.png',
+    'assets/images/img6.png'
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -64,30 +80,40 @@ class _HomePageState extends State<HomePage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Menu(
+                      label: 'Pendahuluan',
+                      icon: Icons.message,
                       onPressed: () => Navigator.push(
                           context,
                           MaterialPageRoute(
                               builder: (context) => PendahuluanPage())),
                     ),
                     Menu(
+                      label: 'Petunjuk',
+                      icon: Icons.info,
                       onPressed: () => Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => PendahuluanPage())),
+                              builder: (context) => PetunjukPage())),
                     ),
                     Menu(
+                      label: 'Indikator',
+                      icon: Icons.settings,
                       onPressed: () => Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => PendahuluanPage())),
+                              builder: (context) => IndikatorPage())),
                     ),
                     Menu(
+                      label: 'Peta Konsep',
+                      icon: Icons.map,
                       onPressed: () => Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => PendahuluanPage())),
+                              builder: (context) => PetaKonsepPage())),
                     ),
                     Menu(
+                      label: 'Materi dan Ar',
+                      icon: Icons.book,
                       onPressed: () => Navigator.push(
                           context,
                           MaterialPageRoute(
@@ -100,30 +126,38 @@ class _HomePageState extends State<HomePage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Menu(
+                      label: 'LKPD',
+                      icon: Icons.bookmark_add_rounded,
+                      onPressed: () => Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => LkpdPage())),
+                    ),
+                    Menu(
+                      label: 'Formatif',
+                      icon: Icons.leaderboard,
+                      onPressed: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => FormatifPage())),
+                    ),
+                    Menu(
+                      label: 'Pustaka',
+                      icon: Icons.search,
+                      onPressed: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => BibliographyPage())),
+                    ),
+                    Menu(
+                      label: 'Glosarium',
+                      icon: Icons.tab_unselected_sharp,
                       onPressed: () => Navigator.push(
                           context,
                           MaterialPageRoute(
                               builder: (context) => PendahuluanPage())),
                     ),
                     Menu(
-                      onPressed: () => Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => PendahuluanPage())),
-                    ),
-                    Menu(
-                      onPressed: () => Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => PendahuluanPage())),
-                    ),
-                    Menu(
-                      onPressed: () => Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => PendahuluanPage())),
-                    ),
-                    Menu(
+                      label: 'Pengembang',
+                      icon: Icons.people,
                       onPressed: () => Navigator.push(
                           context,
                           MaterialPageRoute(
@@ -132,14 +166,39 @@ class _HomePageState extends State<HomePage> {
                   ],
                 ),
                 Spacing3,
-                Container(
-                  width: MediaQuery.of(context).size.width,
-                  height: 200,
-                  decoration: BoxDecoration(
-                    color: Colors.brown,
-                    borderRadius: BorderRadius.circular(10),
+                CarouselSlider(
+                  options: CarouselOptions(
+                    viewportFraction: 0.8,
+                    initialPage: 0,
+                    enableInfiniteScroll: true,
+                    reverse: false,
+                    autoPlay: true,
+                    autoPlayInterval: Duration(seconds: 3),
+                    autoPlayAnimationDuration: Duration(milliseconds: 800),
+                    autoPlayCurve: Curves.fastOutSlowIn,
+                    enlargeCenterPage: true,
+                    enlargeFactor: 0.3,
+                    scrollDirection: Axis.horizontal,
                   ),
-                )
+                  items: imagesBanner.map((i) {
+                    return Builder(
+                      builder: (BuildContext context) {
+                        return Container(
+                          width: MediaQuery.of(context).size.width,
+                          height: 200,
+                          decoration: BoxDecoration(
+                            color: bPrimary,
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          child: Image.asset(
+                            i,
+                            fit: BoxFit.cover,
+                          ),
+                        );
+                      },
+                    );
+                  }).toList(),
+                ),
               ],
             ),
           ),

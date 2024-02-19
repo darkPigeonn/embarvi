@@ -6,6 +6,7 @@ import 'package:embarvi/pages/daftarPustaka.dart';
 import 'package:embarvi/pages/formatif.dart';
 import 'package:embarvi/pages/indikator.dart';
 import 'package:embarvi/pages/lkpd.dart';
+import 'package:embarvi/pages/materi.dart';
 import 'package:embarvi/pages/pendahuluan.dart';
 import 'package:embarvi/pages/petaKonsep.dart';
 import 'package:embarvi/pages/petunjuk.dart';
@@ -75,9 +76,8 @@ class _HomePageState extends State<HomePage> {
             child: Column(
               children: [
                 const Header(),
-                Spacing2,
+                Spacing3,
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Menu(
                       label: 'Pendahuluan',
@@ -111,20 +111,18 @@ class _HomePageState extends State<HomePage> {
                           MaterialPageRoute(
                               builder: (context) => PetaKonsepPage())),
                     ),
+                  ],
+                ),
+                Row(
+                  children: [
                     Menu(
                       label: 'Materi dan Ar',
                       icon: Icons.book,
                       onPressed: () => Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => PendahuluanPage())),
+                              builder: (context) => const MateriPage())),
                     ),
-                  ],
-                ),
-                Spacing3,
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
                     Menu(
                       label: 'LKPD',
                       icon: Icons.bookmark_add_rounded,
@@ -147,6 +145,10 @@ class _HomePageState extends State<HomePage> {
                           MaterialPageRoute(
                               builder: (context) => BibliographyPage())),
                     ),
+                  ],
+                ),
+                Row(
+                  children: [
                     Menu(
                       label: 'Glosarium',
                       icon: Icons.tab_unselected_sharp,

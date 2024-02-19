@@ -28,22 +28,26 @@ class Button1 extends StatelessWidget {
                 width: 20,
               ),
               Container(
+                padding: EdgeInsets.all(5),
                 decoration:
-                    BoxDecoration(color: Colors.orange, shape: BoxShape.circle),
+                    BoxDecoration(color: Colors.white, shape: BoxShape.circle),
                 child: Icon(
                   icon,
                   size: 35,
-                  color: Colors.white,
+                  color: Colors.black,
                 ),
               ),
               SizedBox(
                 width: 60,
               ),
-              Text(
-                label,
-                style:
-                    const TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
-                textAlign: TextAlign.center,
+              Container(
+                width: 140,
+                child: Text(
+                  label,
+                  style: const TextStyle(
+                      fontSize: 12, fontWeight: FontWeight.bold),
+                  textAlign: TextAlign.center,
+                ),
               )
             ],
           )),
@@ -78,22 +82,26 @@ class Button2 extends StatelessWidget {
                 width: 20,
               ),
               Container(
+                padding: EdgeInsets.all(5),
                 decoration:
-                    BoxDecoration(color: Colors.orange, shape: BoxShape.circle),
+                    BoxDecoration(color: Colors.white, shape: BoxShape.circle),
                 child: Icon(
                   icon,
                   size: 35,
-                  color: Colors.white,
+                  color: Colors.black,
                 ),
               ),
               SizedBox(
                 width: 60,
               ),
-              Text(
-                label,
-                style:
-                    const TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
-                textAlign: TextAlign.center,
+              Container(
+                width: 140,
+                child: Text(
+                  label,
+                  style: const TextStyle(
+                      fontSize: 12, fontWeight: FontWeight.bold),
+                  textAlign: TextAlign.center,
+                ),
               )
             ],
           )),

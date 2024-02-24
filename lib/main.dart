@@ -1,7 +1,18 @@
+import 'package:embarvi/pages/ar/ar.dart';
+import 'package:embarvi/pages/home.dart';
+import 'package:embarvi/pages/layout.dart';
+import 'package:embarvi/pages/materi.dart';
+import 'package:embarvi/pages/materi/materi1/informasi.dart';
+import 'package:embarvi/pages/materi/materi1/materiPembelajaran.dart';
+import 'package:embarvi/pages/quiz/quiz.dart';
 import 'package:embarvi/pages/splashscreen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations(
+      [DeviceOrientation.portraitDown, DeviceOrientation.portraitUp]);
   runApp(const MyApp());
 }
 
@@ -32,7 +43,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: false,
       ),
-      home: const SplashScreenPage(),
+      home: const LayoutPage(),
     );
   }
 }

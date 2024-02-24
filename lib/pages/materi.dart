@@ -21,36 +21,82 @@ class _MateriPageState extends State<MateriPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-          child: SingleChildScrollView(
-        child: Container(
-          color: primaryC,
-          width: MediaQuery.of(context).size.width,
-          height: MediaQuery.of(context).size.height,
-          padding: EdgeInsets.symmetric(horizontal: 10),
-          child: Column(
-            children: [
-              Spacing3,
-              const TitlePage(
-                title: 'Materi',
+          child: Stack(
+        children: [
+          SingleChildScrollView(
+            child: Container(
+              color: primaryC,
+              width: MediaQuery.of(context).size.width,
+              height: MediaQuery.of(context).size.height,
+              padding: EdgeInsets.symmetric(horizontal: 10),
+              child: Column(
+                children: [
+                  Spacing2,
+                  const TitlePage(
+                    title: 'Materi',
+                  ),
+                  Spacing1,
+                  Spacing3,
+                  Button1(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => MenuMateri(
+                                      content: materi1,
+                                    )));
+                      },
+                      icon: Icons.menu_book,
+                      label: 'Sejarah, Ciri, Struktur, dan Bentuk Virus'),
+                  Spacing3,
+                  Button2(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => MenuMateri(
+                                      content: materi2,
+                                    )));
+                      },
+                      icon: Icons.menu_book,
+                      label: 'Cara hidup, Replikasi, dan Peranan Virus')
+                ],
               ),
-              Spacing1,
-              Spacing3,
-              Button1(
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => MenuMateri()));
-                  },
-                  icon: Icons.menu_book,
-                  label: 'Sejarah, Ciri, Struktur, dan Bentuk Virus'),
-              Spacing3,
-              Button2(
-                  onPressed: () {},
-                  icon: Icons.menu_book,
-                  label: 'Cara hidup, Replikasi, dan Peranan Virus')
-            ],
+            ),
           ),
-        ),
+          BottomBack()
+        ],
       )),
+    );
+  }
+}
+
+class BottomBack extends StatelessWidget {
+  const BottomBack({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Positioned(
+      left: 0,
+      right: 0,
+      bottom: 50,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          InkWell(
+            onTap: () {
+              Navigator.pop(context);
+            },
+            child: Image.asset(
+              'assets/images/icons/14.png',
+              width: 60,
+              height: 60,
+            ),
+          )
+        ],
+      ),
     );
   }
 }

@@ -3,8 +3,10 @@ import 'package:embarvi/Components/header.dart';
 import 'package:embarvi/Components/menu.dart';
 import 'package:embarvi/Components/spacing/spacing.dart';
 import 'package:embarvi/helpers/textFungtions.dart';
+import 'package:embarvi/pages/pendahuluan.dart';
 import 'package:embarvi/utils/colorLib.dart';
 import 'package:embarvi/utils/dataText.dart';
+import 'package:embarvi/utils/util.dart';
 import 'package:flutter/material.dart';
 
 class PetunjukPage extends StatefulWidget {
@@ -19,10 +21,12 @@ class _PetunjukPageState extends State<PetunjukPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: primaryC,
       body: SafeArea(
           child: SingleChildScrollView(
         child: Container(
           color: primaryC,
+          margin: marginPrimary,
           width: MediaQuery.of(context).size.width,
           padding: EdgeInsets.symmetric(horizontal: 10),
           child: Column(
@@ -41,27 +45,7 @@ class _PetunjukPageState extends State<PetunjukPage> {
                     physics: NeverScrollableScrollPhysics(),
                     itemBuilder: (context, index) {
                       return content[index]['type'] == 'text'
-                          ? RichText(
-                              textAlign: TextAlign.justify,
-                              text: TextSpan(
-                                style: const TextStyle(height: 1.6),
-                                children: <TextSpan>[
-                                  TextSpan(
-                                    text:
-                                        '\ t', // Tambahkan spasi tambahan di antara karakter tab dan teks
-                                    style: TextStyle(
-                                      height: 2,
-                                      fontSize:
-                                          16, // Sesuaikan ukuran teks sesuai kebutuhan
-                                    ),
-                                  ),
-                                  TextSpan(
-                                    text: content[index]['detail'].toString(),
-                                    style: DefaultTextStyle.of(context).style,
-                                  ),
-                                ],
-                              ),
-                            )
+                          ? RichTextCustom(content: content[index]['detail'])
                           : SubTitle(
                               label: content[index]['detail'],
                             );
@@ -73,63 +57,63 @@ class _PetunjukPageState extends State<PetunjukPage> {
 
               const TabelPetunjuk(
                 label: 'Pendahuluan',
-                iconData: Icons.message,
+                iconData: '1.png',
                 textbold: 'Menu Pendahuluan',
                 text:
                     ' berisikan penjelasan secara singkat tujuan dikembangkannya aplikasi EMBARVI ini. ',
               ),
               const TabelPetunjuk(
                 label: 'Indikator',
-                iconData: Icons.settings,
+                iconData: '2.png',
                 textbold: 'Menu Indikator',
                 text:
                     ' berisikan kompetensi awal, profil pelajar pancasila, sarana dan prasarana, capaian pembelajaran, serta tujuan pembelajaran.',
               ),
               const TabelPetunjuk(
                 label: 'Peta Konsep',
-                iconData: Icons.maps_ugc_sharp,
+                iconData: '3.png',
                 textbold: 'Menu Peta Konsep',
                 text:
                     ' berisikan gambaran mengenai materi yang disajikan pada EMBARVI. ',
               ),
               const TabelPetunjuk(
                 label: 'Materi dan Ar', //perlu khusus
-                iconData: Icons.book,
+                iconData: '4.png',
                 textbold: 'Menu Materi dan Ar (<i>Augmented Reality</i>)',
                 text:
-                    ' berisikan uraian materi yang dilengkapi dengan AR dan rangkuman materi untuk mempermudah pemahaman peserta didik. \nCatatan: Gambar 3D (AR) hanya terdapat pada sub materi struktur dan bentuk, cara hidup, serta replikasi virus. ',
+                    ' berisikan uraian materi yang dilengkapi dengan AR dan rangkuman materi untuk mempermudah pemahaman peserta didik. \n<b>Catatan</b>: Gambar 3D (AR) hanya terdapat pada sub materi struktur dan bentuk, cara hidup, serta replikasi virus. ',
               ),
               const TabelPetunjuk(
                 label: 'LPKD', //perlu khusus
-                iconData: Icons.bookmark_added_rounded,
+                iconData: '5.png',
                 textbold: 'Menu LPKD',
                 text:
                     ' berisikan lembar kerja peserta didik (LKPD) yang dapat diunduh dan dikerjakan oleh peserta didik pada saat kegiatan pembelajaran di kelas.',
               ),
               const TabelPetunjuk(
                 label: 'Diskusi', //perlu khusus
-                iconData: Icons.leaderboard,
+                iconData: '6.png',
                 textbold: 'Menu Diskusi',
                 text:
                     ' berisikan fasilitas yang disediakan kepada peserta didik untuk melakukan diskusi antar peserta didik ataupun dengan guru. ',
               ),
               const TabelPetunjuk(
                 label: 'Pustaka', //perlu khusus
-                iconData: Icons.search,
+                iconData: '7.png',
                 textbold: 'Menu Pustaka',
                 text:
                     ' berisikan sumber referensi yang digunakan dalam menyusun materi virus. ',
               ),
               const TabelPetunjuk(
                 label: 'Glosarium', //perlu khusus
-                iconData: Icons.tab_unselected_sharp,
+                iconData: '8.png',
                 textbold: 'Menu Glosarium',
                 text:
                     ' berisikan beberapa kata atau istilah penting mengenai materi virus.  ',
               ),
               const TabelPetunjuk(
                 label: 'Pengembang', //perlu khusus
-                iconData: Icons.people,
+                iconData: '9.png',
                 textbold: 'Menu Pengembang',
                 text:
                     ' berisikan informasi mengenai aplikasi, pengembang dan dosen pembimbing.  ',
@@ -148,7 +132,7 @@ class _PetunjukPageState extends State<PetunjukPage> {
 
 class TabelPetunjuk extends StatelessWidget {
   final String label;
-  final IconData iconData;
+  final String iconData;
   final String textbold;
   final String text;
   const TabelPetunjuk({
@@ -172,25 +156,9 @@ class TabelPetunjuk extends StatelessWidget {
             onPressed: () => null,
           ),
           Flexible(
-            child: RichText(
-              textAlign: TextAlign.justify,
-              text: TextSpan(
-                style: const TextStyle(height: 1.6),
-                children: <TextSpan>[
-                  TextSpan(
-                      text: textbold,
-                      style: const TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 14,
-                          color: Colors.black)),
-                  TextSpan(
-                      text: text,
-                      style: const TextStyle(
-                        fontSize: 14,
-                        color: Colors.black,
-                      )),
-                ],
-              ),
+            child: RichTextCustom2(
+              content: text,
+              label: textbold,
             ),
           )
         ],

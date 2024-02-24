@@ -6,6 +6,7 @@ import 'package:embarvi/helpers/textFungtions.dart';
 import 'package:embarvi/pages/indikator.dart';
 import 'package:embarvi/utils/colorLib.dart';
 import 'package:embarvi/utils/dataText.dart';
+import 'package:embarvi/utils/util.dart';
 import 'package:flutter/material.dart';
 
 class FormatifPage extends StatefulWidget {
@@ -20,21 +21,22 @@ class _FormatifPageState extends State<FormatifPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: primaryC,
       body: SafeArea(
           child: SingleChildScrollView(
         child: Container(
-          color: primaryC,
+          margin: marginPrimary,
           width: MediaQuery.of(context).size.width,
           height: MediaQuery.of(context).size.height,
           padding: EdgeInsets.symmetric(horizontal: 10),
-          child: const Column(
+          child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Spacing3,
+              Spacing2,
               TitlePage(
                 title: 'FORMATIF',
               ),
-              Spacing3,
+              Spacing2,
               Text(
                 'Petunjuk Penggunaan',
                 style: TextStyle(
@@ -67,7 +69,10 @@ class _FormatifPageState extends State<FormatifPage> {
               Spacing3,
               Center(
                 child: Text('_Selamat Mengerjakan_'),
-              )
+              ),
+              Container(
+                  width: MediaQuery.of(context).size.width,
+                  child: ElevatedButton(onPressed: null, child: Text('Mulai')))
             ],
           ),
         ),

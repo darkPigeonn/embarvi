@@ -2,6 +2,7 @@ import 'package:embarvi/Components/content.dart';
 import 'package:embarvi/Components/header.dart';
 import 'package:embarvi/Components/spacing/spacing.dart';
 import 'package:embarvi/helpers/textFungtions.dart';
+import 'package:embarvi/pages/pendahuluan.dart';
 import 'package:embarvi/utils/colorLib.dart';
 import 'package:embarvi/utils/dataText.dart';
 import 'package:flutter/material.dart';
@@ -18,10 +19,11 @@ class _IndikatorPageState extends State<IndikatorPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: primaryC,
       body: SafeArea(
           child: SingleChildScrollView(
         child: Container(
-          color: primaryC,
+          margin: EdgeInsets.symmetric(horizontal: 20),
           width: MediaQuery.of(context).size.width,
           padding: EdgeInsets.symmetric(horizontal: 10),
           child: Column(
@@ -39,27 +41,7 @@ class _IndikatorPageState extends State<IndikatorPage> {
                   physics: NeverScrollableScrollPhysics(),
                   itemBuilder: (context, index) {
                     return content[index]['type'] == 'text'
-                        ? RichText(
-                            textAlign: TextAlign.justify,
-                            text: TextSpan(
-                              style: const TextStyle(height: 1.6),
-                              children: <TextSpan>[
-                                TextSpan(
-                                  text:
-                                      '\ t', // Tambahkan spasi tambahan di antara karakter tab dan teks
-                                  style: TextStyle(
-                                    height: 2,
-                                    fontSize:
-                                        16, // Sesuaikan ukuran teks sesuai kebutuhan
-                                  ),
-                                ),
-                                TextSpan(
-                                  text: content[index]['detail'].toString(),
-                                  style: DefaultTextStyle.of(context).style,
-                                ),
-                              ],
-                            ),
-                          )
+                        ? RichTextCustom(content: content[index]['detail'])
                         : SubTitle(
                             label: content[index]['detail'],
                           );

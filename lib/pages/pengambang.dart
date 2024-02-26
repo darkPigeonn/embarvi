@@ -26,18 +26,18 @@ class _PengembangPageState extends State<PengembangPage> {
           padding: EdgeInsets.symmetric(horizontal: 10),
           child: Column(
             children: [
-              Spacing3,
+              Spacing2,
               TitlePage(
                 title: 'Tentang Pengembang',
               ),
-              Spacing3,
+              Spacing2,
               Personal(
                 img: 'assets/images/p1.png',
                 name: 'Retno Sandi Saputra, S.Pd',
                 description:
                     'Merupakan mahasiswa yang sedang menempuh Program Studi Magister Pendidikan Biologi di Universitas Negeri Yogyakarta. Aplikasi EMBARVI ini merupakan produk akhir Tesis yang bertujuan untuk membantu peserta didik kelas X (Fase E) dalam mempelajari materi virus. Semoga produk yang sederhana ini dapat bermanfaat bagi semua.',
               ),
-              Spacing3,
+              Spacing2,
               Personal(
                   img: 'assets/images/p2.png',
                   name: 'Dr. Dra. Bernadetta Octavia, M.Si',

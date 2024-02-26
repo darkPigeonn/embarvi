@@ -3,6 +3,7 @@ import 'package:embarvi/Components/content.dart';
 import 'package:embarvi/Components/header.dart';
 import 'package:embarvi/Components/spacing/spacing.dart';
 import 'package:embarvi/helpers/textFungtions.dart';
+import 'package:embarvi/pages/layout.dart';
 import 'package:embarvi/pages/materi/materi1/materi1.dart';
 import 'package:embarvi/utils/colorLib.dart';
 import 'package:embarvi/utils/dataText.dart';
@@ -93,6 +94,46 @@ class BottomBack extends StatelessWidget {
               'assets/images/icons/14.png',
               width: 60,
               height: 60,
+            ),
+          )
+        ],
+      ),
+    );
+  }
+}
+
+class BottomBackHome extends StatelessWidget {
+  const BottomBackHome({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Positioned(
+      left: 0,
+      right: 0,
+      bottom: 50,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          InkWell(
+            onTap: () {
+              Navigator.pushReplacement(context,
+                  MaterialPageRoute(builder: (context) => LayoutPage()));
+            },
+            child: Container(
+              width: 60,
+              height: 60,
+              padding: EdgeInsets.all(10),
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: Colors.white, // Warna latar belakang putih
+              ),
+              child: Image.asset(
+                'assets/images/icons/11.png',
+                width: 30, // Sesuaikan ukuran gambar jika perlu
+                height: 30, // Sesuaikan ukuran gambar jika perlu
+              ),
             ),
           )
         ],

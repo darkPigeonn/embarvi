@@ -74,7 +74,7 @@ class _LayoutPageState extends State<LayoutPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: primaryC,
-      body: Column(
+      body: Stack(
         children: [
           Flexible(
             child: [
@@ -85,15 +85,8 @@ class _LayoutPageState extends State<LayoutPage> {
               PetunjukPage()
             ][currentPageIndex],
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              Menu2(onPressed: () {}, icon: '11.png', label: 'Beranda'),
-              Menu2(onPressed: () {}, icon: '6.png', label: 'LPKD'),
-              Menu2(onPressed: () {}, icon: '5.png', label: 'Materi & AR'),
-              Menu2(onPressed: () {}, icon: '12.png', label: 'Diskusi'),
-              Menu2(onPressed: () {}, icon: '2.png', label: 'Petunjuk'),
-            ],
+          Stack(
+            children: [BottomNavigationCustom()],
           )
         ],
       ),

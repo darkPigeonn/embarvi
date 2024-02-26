@@ -1,8 +1,10 @@
 import 'package:embarvi/Components/spacing/spacing.dart';
 import 'package:embarvi/pages/quiz/result.dart';
+import 'package:embarvi/utils/colorLib.dart';
 import 'package:embarvi/utils/dataText.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_widget_from_html/flutter_widget_from_html.dart';
 
 class QuisPage extends StatefulWidget {
@@ -18,10 +20,25 @@ class _QuisPageState extends State<QuisPage> {
   int score = 0;
 
   void pickAnswer(int value) {
-    selectedAnswerIndex = value;
+    selectedAnswerIndex = value + 1;
     final question = questions[questionIndex];
     if (selectedAnswerIndex == question['correctAnswer']) {
       score++;
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+            content: successAlert(),
+            backgroundColor: Colors.transparent,
+            behavior: SnackBarBehavior.floating,
+            elevation: 0),
+      );
+    } else {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+            content: failAlert(),
+            backgroundColor: Colors.transparent,
+            behavior: SnackBarBehavior.floating,
+            elevation: 0),
+      );
     }
     setState(() {});
   }
@@ -53,14 +70,6 @@ class _QuisPageState extends State<QuisPage> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Container(
-                  width: MediaQuery.of(context).size.width,
-                  height: 200,
-                  child: HtmlWidget(
-                    '<iframe src="https://app.vectary.com/p/1EsuXg8QpCBHvWA2P0lOpi" frameborder="0" width="100%" height="480"></iframe>',
-                    enableCaching: true,
-                  ),
-                ),
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -115,6 +124,178 @@ class _QuisPageState extends State<QuisPage> {
           ),
         ),
       ),
+    );
+  }
+}
+
+class failAlert extends StatelessWidget {
+  const failAlert({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Stack(
+      clipBehavior: Clip.none,
+      children: [
+        Container(
+          padding: EdgeInsets.all(16),
+          height: 100,
+          decoration: const BoxDecoration(
+              color: Color(0xFFC72C41),
+              borderRadius: BorderRadius.all(Radius.circular(20))),
+          child: const Row(
+            children: [
+              const SizedBox(
+                width: 48,
+              ),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Maaf!',
+                      style: TextStyle(fontSize: 18, color: Colors.white),
+                    ),
+                    Text(
+                      'Jawabanmu kurang tepat',
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(
+                        fontSize: 12,
+                        color: Colors.white,
+                      ),
+                    )
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+        Positioned(
+          bottom: 0,
+          child: ClipRRect(
+            borderRadius:
+                const BorderRadius.only(bottomLeft: Radius.circular(20)),
+            child: Stack(
+              children: [
+                SvgPicture.asset(
+                  "assets/images/icons/bubbles.svg",
+                  height: 48,
+                  width: 48,
+                  color: Colors.red,
+                ),
+              ],
+            ),
+          ),
+        ),
+        Positioned(
+          top: -20,
+          left: 0,
+          child: Stack(
+            alignment: Alignment.center,
+            children: [
+              SvgPicture.asset(
+                "assets/images/icons/back.svg",
+                height: 40,
+              ),
+              Positioned(
+                top: 10,
+                child: SvgPicture.asset(
+                  "assets/images/icons/failure.svg",
+                  height: 16,
+                ),
+              ),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+class successAlert extends StatelessWidget {
+  const successAlert({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Stack(
+      clipBehavior: Clip.none,
+      children: [
+        Container(
+          padding: EdgeInsets.all(16),
+          height: 100,
+          decoration: BoxDecoration(
+              color: Colors.green,
+              borderRadius: BorderRadius.all(Radius.circular(20))),
+          child: Row(
+            children: [
+              const SizedBox(
+                width: 48,
+              ),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Yeay!',
+                      style: TextStyle(fontSize: 18, color: Colors.white),
+                    ),
+                    Text(
+                      'Jawabanmu benar',
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(
+                        fontSize: 12,
+                        color: Colors.white,
+                      ),
+                    )
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+        Positioned(
+          bottom: 0,
+          child: ClipRRect(
+            borderRadius:
+                const BorderRadius.only(bottomLeft: Radius.circular(20)),
+            child: Stack(
+              children: [
+                SvgPicture.asset(
+                  "assets/images/icons/bubbles.svg",
+                  height: 48,
+                  width: 48,
+                  color: Colors.green,
+                ),
+              ],
+            ),
+          ),
+        ),
+        Positioned(
+          top: -20,
+          left: 0,
+          child: Stack(
+            alignment: Alignment.center,
+            children: [
+              SvgPicture.asset(
+                "assets/images/icons/back.svg",
+                height: 40,
+              ),
+              Positioned(
+                top: 10,
+                child: SvgPicture.asset(
+                  "assets/images/icons/success.svg",
+                  height: 16,
+                ),
+              ),
+            ],
+          ),
+        ),
+      ],
     );
   }
 }
@@ -267,7 +448,7 @@ class RectangularButton extends StatelessWidget {
         height: 50,
         width: double.infinity,
         child: Card(
-          color: onPressed != null ? Colors.white24 : null,
+          color: onPressed != null ? bPrimary : null,
           child: Center(
             child: Text(
               label,

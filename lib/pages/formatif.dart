@@ -4,6 +4,8 @@ import 'package:embarvi/Components/header.dart';
 import 'package:embarvi/Components/spacing/spacing.dart';
 import 'package:embarvi/helpers/textFungtions.dart';
 import 'package:embarvi/pages/indikator.dart';
+import 'package:embarvi/pages/materi.dart';
+import 'package:embarvi/pages/quiz/quiz.dart';
 import 'package:embarvi/utils/colorLib.dart';
 import 'package:embarvi/utils/dataText.dart';
 import 'package:embarvi/utils/util.dart';
@@ -70,9 +72,27 @@ class _FormatifPageState extends State<FormatifPage> {
               Center(
                 child: Text('_Selamat Mengerjakan_'),
               ),
-              Container(
-                  width: MediaQuery.of(context).size.width,
-                  child: ElevatedButton(onPressed: null, child: Text('Mulai')))
+              Spacing3,
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  BottomBackHome(),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => QuisPage()));
+                    },
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 80),
+                      child: Text('Mulai'),
+                    ),
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: bPrimary,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(50))),
+                  ),
+                ],
+              )
             ],
           ),
         ),

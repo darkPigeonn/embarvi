@@ -3,6 +3,7 @@ import 'package:embarvi/Components/header.dart';
 import 'package:embarvi/Components/spacing/spacing.dart';
 import 'package:embarvi/helpers/textFungtions.dart';
 import 'package:embarvi/pages/pendahuluan.dart';
+import 'package:embarvi/pages/petaKonsep.dart';
 import 'package:embarvi/utils/colorLib.dart';
 import 'package:embarvi/utils/dataText.dart';
 import 'package:flutter/material.dart';
@@ -21,51 +22,61 @@ class _IndikatorPageState extends State<IndikatorPage> {
     return Scaffold(
       backgroundColor: primaryC,
       body: SafeArea(
-          child: SingleChildScrollView(
-        child: Container(
-          margin: EdgeInsets.symmetric(horizontal: 20),
-          width: MediaQuery.of(context).size.width,
-          padding: EdgeInsets.symmetric(horizontal: 10),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Spacing3,
-              TitlePage(
-                title: indikator['title'].toString(),
+          child: Stack(
+        children: [
+          SingleChildScrollView(
+            child: Container(
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              width: MediaQuery.of(context).size.width,
+              padding: EdgeInsets.symmetric(horizontal: 10),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Spacing2,
+                  TitlePage(
+                    title: indikator['title'].toString(),
+                  ),
+                  Spacing3,
+                  ListView.builder(
+                      itemCount: content.length,
+                      shrinkWrap: true,
+                      physics: NeverScrollableScrollPhysics(),
+                      itemBuilder: (context, index) {
+                        return content[index]['type'] == 'text'
+                            ? RichTextCustom(content: content[index]['detail'])
+                            : SubTitle(
+                                label: content[index]['detail'],
+                              );
+                        // return Text(content[0].toString(),
+                        //     textAlign: TextAlign.justify,
+                        //     style: TextStyle(height: 1.8));
+                      }),
+                  const BulletItem(
+                      text:
+                          'Menganalisis sejarah penemuan virus dengan benar.'),
+                  const BulletItem(
+                      text: 'Menganalisis ciri-ciri virus dengan benar.'),
+                  const BulletItem(
+                      text:
+                          'Menentukan struktur dan bentuk virus dengan benar.'),
+                  const BulletItem(
+                      text: 'Menganalisis cara hidup virus dengan benar.'),
+                  const BulletItem(
+                      text:
+                          'Menganalisis proses replikasi virus dengan benar.'),
+                  const BulletItem(
+                      text:
+                          'Menentukan peranan virus dalam kehidupan dengan benar.'),
+                  Spacing1,
+                ],
               ),
-              Spacing3,
-              ListView.builder(
-                  itemCount: content.length,
-                  shrinkWrap: true,
-                  physics: NeverScrollableScrollPhysics(),
-                  itemBuilder: (context, index) {
-                    return content[index]['type'] == 'text'
-                        ? RichTextCustom(content: content[index]['detail'])
-                        : SubTitle(
-                            label: content[index]['detail'],
-                          );
-                    // return Text(content[0].toString(),
-                    //     textAlign: TextAlign.justify,
-                    //     style: TextStyle(height: 1.8));
-                  }),
-              const BulletItem(
-                  text: 'Menganalisis sejarah penemuan virus dengan benar.'),
-              const BulletItem(
-                  text: 'Menganalisis ciri-ciri virus dengan benar.'),
-              const BulletItem(
-                  text: 'Menentukan struktur dan bentuk virus dengan benar.'),
-              const BulletItem(
-                  text: 'Menganalisis cara hidup virus dengan benar.'),
-              const BulletItem(
-                  text: 'Menganalisis proses replikasi virus dengan benar.'),
-              const BulletItem(
-                  text:
-                      'Menentukan peranan virus dalam kehidupan dengan \n \t \tbenar.'),
-              Spacing3
-            ],
+            ),
           ),
-        ),
+          Stack(
+            children: [BottomNavigationCustom()],
+          )
+        ],
       )),
     );
   }
@@ -80,30 +91,34 @@ class BulletItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return RichText(
-      text: TextSpan(
-        style: const TextStyle(
-          height: 1.6,
-          fontSize: 14.0,
-          color: Colors.black,
-        ),
-        children: [
-          const WidgetSpan(
-            alignment: PlaceholderAlignment.middle,
-            child: Padding(
-              padding: EdgeInsets.only(right: 5.0),
-              child: Icon(
-                Icons.circle,
-                size: 10.0,
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisAlignment: MainAxisAlignment.start,
+      children: [
+        Padding(
+            padding: EdgeInsets.only(right: 10, top: 10, left: 10),
+            child: Icon(
+              Icons.circle,
+              size: 10.0,
+              color: Colors.black,
+            )),
+        Flexible(
+          child: RichText(
+            text: TextSpan(
+              style: const TextStyle(
+                height: 1.6,
+                fontSize: 17.0,
                 color: Colors.black,
               ),
+              children: [
+                TextSpan(
+                  text: '$text',
+                ),
+              ],
             ),
           ),
-          TextSpan(
-            text: '$text',
-          ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }

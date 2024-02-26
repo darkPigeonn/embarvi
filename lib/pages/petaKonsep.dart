@@ -3,6 +3,11 @@ import 'package:embarvi/Components/header.dart';
 import 'package:embarvi/Components/menu.dart';
 import 'package:embarvi/Components/spacing/spacing.dart';
 import 'package:embarvi/helpers/textFungtions.dart';
+import 'package:embarvi/pages/diskusi.dart';
+import 'package:embarvi/pages/layout.dart';
+import 'package:embarvi/pages/lkpd.dart';
+import 'package:embarvi/pages/materi.dart';
+import 'package:embarvi/pages/petunjuk.dart';
 import 'package:embarvi/utils/colorLib.dart';
 import 'package:embarvi/utils/dataText.dart';
 import 'package:embarvi/utils/util.dart';
@@ -70,14 +75,40 @@ class BottomNavigationCustom extends StatelessWidget {
           children: [
             Menu2(
                 onPressed: () {
-                  Navigator.pop(context);
+                  Navigator.pushReplacement(context,
+                      MaterialPageRoute(builder: (context) => LayoutPage()));
                 },
                 icon: '11.png',
                 label: 'Beranda'),
-            Menu2(onPressed: () {}, icon: '6.png', label: 'LPKD'),
-            Menu2(onPressed: () {}, icon: '5.png', label: 'Materi & AR'),
-            Menu2(onPressed: () {}, icon: '12.png', label: 'Diskusi'),
-            Menu2(onPressed: () {}, icon: '2.png', label: 'Petunjuk'),
+            Menu2(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => LkpdPage()));
+                },
+                icon: '6.png',
+                label: 'LPKD'),
+            Menu2(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => MateriPage()));
+                },
+                icon: '5.png',
+                label: 'Materi & AR'),
+            Menu2(
+                onPressed: () {
+                  ;
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => DiskusiPage()));
+                },
+                icon: '12.png',
+                label: 'Diskusi'),
+            Menu2(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => PetunjukPage()));
+                },
+                icon: '2.png',
+                label: 'Petunjuk'),
           ],
         ),
       ),

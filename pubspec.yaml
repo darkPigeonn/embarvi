@@ -44,6 +44,9 @@ dependencies:
 
   flutter_inappwebview: ^5.8.0
   insta_image_viewer: ^1.0.2
+  flutter_svg: ^2.0.10+1
+  webview_flutter: ^4.7.0
+  permission_handler: ^11.3.0
 
 
 dev_dependencies:

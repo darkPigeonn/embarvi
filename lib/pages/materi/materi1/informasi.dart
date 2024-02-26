@@ -2,6 +2,7 @@ import 'package:embarvi/Components/content.dart';
 import 'package:embarvi/Components/header.dart';
 import 'package:embarvi/Components/spacing/spacing.dart';
 import 'package:embarvi/helpers/textFungtions.dart';
+import 'package:embarvi/pages/pendahuluan.dart';
 import 'package:embarvi/pages/petaKonsep.dart';
 import 'package:embarvi/utils/colorLib.dart';
 import 'package:embarvi/utils/dataText.dart';
@@ -35,7 +36,7 @@ class _InformationPageState extends State<InformationPage> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Spacing3,
+                  Spacing2,
                   TitlePage(
                     title: widget.content['title'].toString(),
                   ),
@@ -46,27 +47,7 @@ class _InformationPageState extends State<InformationPage> {
                       physics: NeverScrollableScrollPhysics(),
                       itemBuilder: (context, index) {
                         return content[index]['type'] == 'text'
-                            ? RichText(
-                                textAlign: TextAlign.justify,
-                                text: TextSpan(
-                                  style: const TextStyle(height: 1.6),
-                                  children: <TextSpan>[
-                                    TextSpan(
-                                      text:
-                                          '\ t t', // Tambahkan spasi tambahan di antara karakter tab dan teks
-                                      style: TextStyle(
-                                        height: 2,
-                                        fontSize:
-                                            16, // Sesuaikan ukuran teks sesuai kebutuhan
-                                      ),
-                                    ),
-                                    TextSpan(
-                                      text: content[index]['detail'].toString(),
-                                      style: DefaultTextStyle.of(context).style,
-                                    ),
-                                  ],
-                                ),
-                              )
+                            ? RichTextCustom(content: content[index]['detail'])
                             : content[index]['type'] == 'bullet'
                                 ? BulletItem2(text: content[index]['detail'])
                                 : content[index]['type'] == 'images'
@@ -168,68 +149,6 @@ class BulletItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return RichText(
-      text: TextSpan(
-        style: const TextStyle(
-          height: 1.6,
-          fontSize: 14.0,
-          color: Colors.black,
-        ),
-        children: [
-          const WidgetSpan(
-            alignment: PlaceholderAlignment.middle,
-            child: Padding(
-              padding: EdgeInsets.only(right: 5.0),
-              child: Icon(
-                Icons.circle,
-                size: 10.0,
-                color: Colors.black,
-              ),
-            ),
-          ),
-          TextSpan(
-            text: '$text',
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class BulletItem2 extends StatelessWidget {
-  final String text;
-  const BulletItem2({
-    super.key,
-    required this.text,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    // return RichText(
-    //   text: TextSpan(
-    //     style: const TextStyle(
-    //       height: 1.6,
-    //       fontSize: 14.0,
-    //       color: Colors.black,
-    //     ),
-    //     children: [
-    //       const WidgetSpan(
-    //         alignment: PlaceholderAlignment.middle,
-    //         child: Padding(
-    //           padding: EdgeInsets.only(right: 5.0),
-    //           child: Icon(
-    //             Icons.circle,
-    //             size: 10.0,
-    //             color: Colors.black,
-    //           ),
-    //         ),
-    //       ),
-    //       TextSpan(
-    //         text: '$text',
-    //       ),
-    //     ],
-    //   ),
-    // );
     return Container(
       margin: EdgeInsets.symmetric(vertical: 5, horizontal: 5),
       child: Row(
@@ -247,6 +166,40 @@ class BulletItem2 extends StatelessWidget {
             child: Text(
               '$text',
               style: TextStyle(height: 1.5),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class BulletItem2 extends StatelessWidget {
+  final String text;
+  const BulletItem2({
+    super.key,
+    required this.text,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.symmetric(vertical: 5, horizontal: 5),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Padding(
+            padding: EdgeInsets.only(right: 5.0, top: 6),
+            child: Icon(
+              Icons.circle,
+              size: 10.0,
+              color: Colors.black,
+            ),
+          ),
+          Flexible(
+            child: Text(
+              '$text',
+              style: TextStyle(height: 1.5, fontSize: 17),
             ),
           ),
         ],

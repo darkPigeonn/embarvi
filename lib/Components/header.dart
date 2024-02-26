@@ -98,12 +98,12 @@ class SubTitle extends StatelessWidget {
         Container(
           decoration: BoxDecoration(
               color: Colors.yellow, borderRadius: BorderRadius.circular(20)),
-          margin: const EdgeInsets.only(top: 10),
-          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+          margin: const EdgeInsets.only(top: 10, bottom: 10),
+          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
           child: Text(
             label,
             textAlign: TextAlign.center,
-            style: const TextStyle(fontWeight: FontWeight.bold),
+            style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
           ),
         ),
       ],
@@ -120,19 +120,23 @@ class SubTitle2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Container(
-          decoration: BoxDecoration(color: Color.fromARGB(255, 104, 165, 215)),
-          margin: const EdgeInsets.only(top: 10),
-          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-          child: Text(
-            label,
-            textAlign: TextAlign.center,
-            style: const TextStyle(fontWeight: FontWeight.bold),
+    return Container(
+      margin: EdgeInsets.symmetric(vertical: 20),
+      child: Row(
+        children: [
+          Container(
+            decoration:
+                BoxDecoration(color: Color.fromARGB(255, 104, 165, 215)),
+            margin: const EdgeInsets.only(top: 10),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+            child: Text(
+              label,
+              textAlign: TextAlign.center,
+              style: const TextStyle(fontWeight: FontWeight.bold),
+            ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }

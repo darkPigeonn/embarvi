@@ -1,10 +1,14 @@
 import 'package:embarvi/Components/content.dart';
+import 'package:embarvi/Components/header.dart';
 import 'package:embarvi/Components/spacing/spacing.dart';
 import 'package:embarvi/helpers/textFungtions.dart';
+import 'package:embarvi/pages/materi/materi1/materiPembelajaran.dart';
+import 'package:embarvi/pages/petaKonsep.dart';
 import 'package:embarvi/utils/colorLib.dart';
 import 'package:embarvi/utils/dataText.dart';
 import 'package:embarvi/utils/util.dart';
 import 'package:flutter/material.dart';
+import 'package:insta_image_viewer/insta_image_viewer.dart';
 
 class PendahuluanPage extends StatefulWidget {
   const PendahuluanPage({super.key});
@@ -20,37 +24,118 @@ class _PendahuluanPageState extends State<PendahuluanPage> {
     return Scaffold(
       backgroundColor: primaryC,
       body: SafeArea(
-          child: SingleChildScrollView(
-        child: Container(
-          margin: marginPrimary,
-          width: MediaQuery.of(context).size.width,
-          padding: EdgeInsets.symmetric(horizontal: 10),
-          child: Column(
-            children: [
-              Spacing3,
-              TitlePage(
-                title: pendahuluan['title'].toString(),
+          child: Stack(
+        children: [
+          SingleChildScrollView(
+            child: Container(
+              margin: marginPrimary,
+              width: MediaQuery.of(context).size.width,
+              padding: EdgeInsets.symmetric(horizontal: 10),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Spacing2,
+                  TitlePage(
+                    title: 'Pendahuluan',
+                  ),
+                  Spacing2,
+                  ListView.builder(
+                      itemCount: content.length,
+                      shrinkWrap: true,
+                      physics: NeverScrollableScrollPhysics(),
+                      itemBuilder: (context, index) {
+                        return content[index]['type'] == 'text'
+                            ? RichTextCustom(content: content[index]['detail'])
+                            : content[index]['type'] == 'bullet'
+                                ? BulletItem2(text: content[index]['detail'])
+                                : content[index]['type'] == 'images'
+                                    ? Column(
+                                        children: [
+                                          InstaImageViewer(
+                                              child: Container(
+                                            margin: EdgeInsets.symmetric(
+                                                vertical: 10),
+                                            child: ClipRRect(
+                                              child: Image.asset(
+                                                  'assets/images/materi/' +
+                                                      content[index]['name']),
+                                            ),
+                                          )),
+                                          Container(
+                                            margin: EdgeInsets.symmetric(
+                                              horizontal: 10,
+                                            ),
+                                            padding: EdgeInsets.all(10),
+                                            decoration: BoxDecoration(
+                                                color: Color.fromARGB(
+                                                    255, 217, 196, 136),
+                                                borderRadius:
+                                                    BorderRadius.circular(50)),
+                                            child: Column(
+                                              children: [
+                                                Row(
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment.center,
+                                                  children: [
+                                                    Text(
+                                                      'Gambar',
+                                                      style: TextStyle(
+                                                          fontWeight:
+                                                              FontWeight.bold,
+                                                          fontSize: 11),
+                                                    ),
+                                                    Text(
+                                                      ' : ' +
+                                                          content[index]
+                                                              ['label'],
+                                                      style: TextStyle(
+                                                          fontSize: 11),
+                                                    ),
+                                                  ],
+                                                ),
+                                                Row(
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment.center,
+                                                  children: [
+                                                    Text(
+                                                      'Sumber',
+                                                      style: TextStyle(
+                                                          fontSize: 11),
+                                                    ),
+                                                    Text(
+                                                      ' : ' +
+                                                          content[index]
+                                                              ['Sumber'],
+                                                      style: TextStyle(
+                                                          fontSize: 11),
+                                                    ),
+                                                  ],
+                                                )
+                                              ],
+                                            ),
+                                          ),
+                                        ],
+                                      )
+                                    : SubTitle(
+                                        label: content[index]['detail'],
+                                      );
+                        // return Text(content[0].toString(),
+                        //     textAlign: TextAlign.justify,
+                        //     style: TextStyle(height: 1.8));
+                      }),
+                  Spacing3,
+                  SizedBox(
+                    height: 100,
+                  ),
+                ],
               ),
-              Spacing3,
-              Container(
-                height: MediaQuery.of(context).size.height,
-                margin: EdgeInsets.only(bottom: 40, left: 10, right: 10),
-                child: ListView.builder(
-                    itemCount: content.length,
-                    shrinkWrap: false,
-                    physics: NeverScrollableScrollPhysics(),
-                    itemBuilder: (context, index) {
-                      return RichTextCustom(
-                          content: content[index]['detail'].toString());
-                    }),
-              ),
-
-              // Container(
-              //   child: Text(pendahuluan['content'].toString()),
-              // )
-            ],
+            ),
           ),
-        ),
+          Stack(
+            children: [BottomNavigationCustom()],
+          )
+        ],
       )),
     );
   }
@@ -65,17 +150,20 @@ class RichTextCustom extends StatelessWidget {
   }
 
   Widget buildRichTextWithItalic(String text) {
-    print(text);
-    List<TextSpan> textSpans = [
-      TextSpan(
-        text:
-            '\ t t t', // Tambahkan spasi tambahan di antara karakter tab dan teks
-        style: TextStyle(
-          height: 1.6,
-          fontSize: 17, // Sesuaikan ukuran teks sesuai kebutuhan
+    List<TextSpan> textSpans = [];
+
+    if (text.contains('\t')) {
+      textSpans.add(
+        TextSpan(
+          text:
+              '\ t ', // Tambahkan spasi tambahan di antara karakter tab dan teks
+          style: TextStyle(
+            height: 1.6,
+            fontSize: 17, // Sesuaikan ukuran teks sesuai kebutuhan
+          ),
         ),
-      ),
-    ];
+      );
+    }
     RegExp regex = RegExp(r'<i>(.*?)<\/i>');
 
     List<RegExpMatch> matches = regex.allMatches(text).toList();
@@ -111,7 +199,6 @@ class RichTextCustomLabel extends StatelessWidget {
   }
 
   Widget buildRichTextWithItalic(String text) {
-    print(text);
     List<TextSpan> textSpans = [];
     var italicMatches = RegExp(r'<i>(.*?)<\/i>').allMatches(text);
     var boldMatches = RegExp(r'<b>(.*?)<\/b>').allMatches(text);

@@ -8,9 +8,12 @@ import 'package:embarvi/pages/quiz/quiz.dart';
 import 'package:embarvi/pages/splashscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:permission_handler/permission_handler.dart';
 
-void main() {
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await Permission.camera.request();
+  await Permission.microphone.request();
   SystemChrome.setPreferredOrientations(
       [DeviceOrientation.portraitDown, DeviceOrientation.portraitUp]);
   runApp(const MyApp());

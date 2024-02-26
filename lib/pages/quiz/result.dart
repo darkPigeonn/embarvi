@@ -1,3 +1,9 @@
+import 'package:embarvi/Components/content.dart';
+import 'package:embarvi/Components/spacing/spacing.dart';
+import 'package:embarvi/pages/materi.dart';
+import 'package:embarvi/utils/colorLib.dart';
+import 'package:embarvi/utils/dataText.dart';
+import 'package:embarvi/utils/util.dart';
 import 'package:flutter/material.dart';
 
 class ResultScreen extends StatelessWidget {
@@ -10,48 +16,106 @@ class ResultScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final finalScore = (score / questions.length) * 100;
     return Scaffold(
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
-          const SizedBox(width: 1000),
-          const Text(
-            'Your Score: ',
-            style: TextStyle(
-              fontSize: 34,
-              fontWeight: FontWeight.w500,
+      backgroundColor: primaryC,
+      body: Container(
+        margin: marginPrimary,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Spacing1,
+            TitlePage(
+              title: 'FORMATIF',
             ),
-          ),
-          Stack(
-            alignment: Alignment.center,
-            children: [
-              SizedBox(
-                height: 250,
-                width: 250,
-                child: CircularProgressIndicator(
-                  strokeWidth: 10,
-                  value: score / 9,
-                  color: Colors.green,
-                  backgroundColor: Colors.white,
-                ),
+            Spacing1,
+            const Text(
+              'Nilai Kamu: ',
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.w500,
               ),
-              Column(
-                children: [
-                  Text(
-                    score.toString(),
-                    style: const TextStyle(fontSize: 80),
+            ),
+            Spacing3,
+            Stack(
+              alignment: Alignment.center,
+              children: [
+                Center(
+                  child: SizedBox(
+                    height: 250,
+                    width: 250,
+                    child: CircularProgressIndicator(
+                      strokeWidth: 10,
+                      value: score / 9,
+                      color: Colors.green,
+                      backgroundColor: Colors.white,
+                    ),
                   ),
-                  const SizedBox(height: 10),
-                  Text(
-                    'ad',
-                    // '${(score / questions.length * 100).round()}%',
-                    style: const TextStyle(fontSize: 25),
-                  )
-                ],
-              ),
-            ],
-          ),
-        ],
+                ),
+                Column(
+                  children: [
+                    Text(
+                      finalScore.toString(),
+                      style: const TextStyle(fontSize: 80),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+            Spacing2,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Container(
+                  padding: EdgeInsets.symmetric(vertical: 30, horizontal: 50),
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(20)),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Text(
+                        'Benar',
+                        style: TextStyle(
+                            fontSize: 18, fontWeight: FontWeight.bold),
+                      ),
+                      Spacing3,
+                      Text(
+                        score.toString(),
+                        style: TextStyle(
+                            fontSize: 18, fontWeight: FontWeight.bold),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.symmetric(vertical: 30, horizontal: 50),
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(20)),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        'Salah',
+                        style: TextStyle(
+                            fontSize: 18, fontWeight: FontWeight.bold),
+                      ),
+                      Spacing3,
+                      Text(
+                        (questions.length - score).toString(),
+                        style: TextStyle(
+                            fontSize: 18, fontWeight: FontWeight.bold),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            Spacing2,
+            BottomBackHome()
+          ],
+        ),
       ),
     );
   }

@@ -44,9 +44,7 @@ class Menu extends StatelessWidget {
                 child: Text(
                   label,
                   textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 10,
-                  ),
+                  style: TextStyle(fontSize: 10, fontWeight: FontWeight.bold),
                 ),
               )
             ],

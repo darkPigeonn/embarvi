@@ -30,28 +30,6 @@ class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0;
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
-  static const List<Widget> _widgetOptions = <Widget>[
-    Text(
-      'Index 0: Beranda',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 1: LKPD',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 2: Materi dan Ar',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 3: Diskusi',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 4: Petunjuk',
-      style: optionStyle,
-    ),
-  ];
 
   String nama = '';
   void _onItemTapped(int index) {

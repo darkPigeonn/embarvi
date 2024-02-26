@@ -2,6 +2,8 @@ import 'package:embarvi/Components/content.dart';
 import 'package:embarvi/Components/header.dart';
 import 'package:embarvi/Components/spacing/spacing.dart';
 import 'package:embarvi/helpers/textFungtions.dart';
+import 'package:embarvi/pages/ar/ar.dart';
+import 'package:embarvi/pages/materi/materi1/arView.dart';
 import 'package:embarvi/pages/materi/materi1/rangkuman.dart';
 import 'package:embarvi/pages/pendahuluan.dart';
 import 'package:embarvi/utils/colorLib.dart';
@@ -47,8 +49,10 @@ class _MateriPembelajaranState extends State<MateriPembelajaran> {
                   physics: NeverScrollableScrollPhysics(),
                   itemBuilder: (context, index) {
                     return content[index]['type'] == 'text'
-                        ? RichTextCustom(
-                            content: content[index]['detail'].toString())
+                        ? Container(
+                            child: RichTextCustom(
+                                content: content[index]['detail'].toString()),
+                          )
                         : content[index]['type'] == 'bullet'
                             ? BulletItem2(text: content[index]['detail'])
                             : content[index]['type'] == 'youtube'
@@ -246,7 +250,7 @@ class ImagesSingle extends StatefulWidget {
 
 class _ImagesSingleState extends State<ImagesSingle> {
   formatName(String name) {
-    return 'Gambar ${name.split('_')[2].split('.')[0]}';
+    return 'Gambar ${name.split('_')[2].split('.')[0]}. ';
   }
 
   @override
@@ -268,7 +272,7 @@ class _ImagesSingleState extends State<ImagesSingle> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    formatName(widget.content['name']) + ' : ',
+                    formatName(widget.content['name']),
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
                   ),
                   Flexible(
@@ -285,9 +289,18 @@ class _ImagesSingleState extends State<ImagesSingle> {
         SizedBox(
           height: 10,
         ),
-        InstaImageViewer(
-            child:
-                Image.asset('assets/images/materi/${widget.content['name']}'))
+        widget.content['isAr'].toString().isNotEmpty
+            ? InkWell(
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => ArViewPage()));
+                },
+                child: Image.asset(
+                    'assets/images/materi/${widget.content['name']}'),
+              )
+            : InstaImageViewer(
+                child: Image.asset(
+                    'assets/images/materi/${widget.content['name']}'))
       ],
     );
   }
@@ -307,7 +320,7 @@ class ImagesMulti extends StatefulWidget {
 
 class _ImagesMultiState extends State<ImagesMulti> {
   formatName(String name) {
-    return 'Gambar ${name.split('_')[2].split('.')[0]}';
+    return 'Gambar ${name.split('_')[2].split('.')[0]} .';
   }
 
   formatNameTable(String name) {
@@ -317,10 +330,12 @@ class _ImagesMultiState extends State<ImagesMulti> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: EdgeInsets.symmetric(vertical: 10),
       child: Row(
         mainAxisAlignment: widget.content['Sumber2'] == '-'
             ? MainAxisAlignment.center
             : MainAxisAlignment.spaceAround,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           itemImages(
             name: widget.content['name1'],
@@ -484,7 +499,7 @@ class itemImages extends StatelessWidget {
                       children: [
                         Flexible(
                           child: Text(
-                            '$imageLabel : ',
+                            '$imageLabel ',
                             style: TextStyle(
                                 fontWeight: FontWeight.bold, fontSize: 9),
                           ),

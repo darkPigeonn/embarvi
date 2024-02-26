@@ -62,7 +62,7 @@ class _MenuMateriState extends State<MenuMateri> {
                   Button2Materi(
                       onPressed: () {
                         Map dataContent = {};
-                        print(widget.content['code']);
+
                         if (widget.content['code'] == 1) {
                           dataContent = mp_materi1;
                         } else {

@@ -86,7 +86,7 @@ class _LayoutPageState extends State<LayoutPage> {
             ][currentPageIndex],
           ),
           Stack(
-            children: [BottomNavigationCustom()],
+            children: [BottomNavigationCustomHome()],
           )
         ],
       ),

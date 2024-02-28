@@ -189,7 +189,7 @@ class BulletItem2 extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
-            padding: EdgeInsets.only(right: 5.0, top: 6),
+            padding: EdgeInsets.only(right: 5.0, top: 10),
             child: Icon(
               Icons.circle,
               size: 10.0,
@@ -197,9 +197,8 @@ class BulletItem2 extends StatelessWidget {
             ),
           ),
           Flexible(
-            child: Text(
-              '$text',
-              style: TextStyle(height: 1.5, fontSize: 17),
+            child: RichTextCustom(
+              content: text,
             ),
           ),
         ],

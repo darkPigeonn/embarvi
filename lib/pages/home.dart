@@ -135,7 +135,6 @@ class _HomePageState extends State<HomePage> {
           child: Container(
             color: primaryC,
             width: MediaQuery.of(context).size.width,
-            height: MediaQuery.of(context).size.height,
             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
             child: Column(
               children: [
@@ -156,10 +155,22 @@ class _HomePageState extends State<HomePage> {
                   onTap: () {},
                   child: CarouselSlider(
                     items: imagesBanner
-                        .map((item) => Image.asset(
-                              item,
-                              fit: BoxFit.contain,
-                              width: double.infinity,
+                        .map((item) => Column(
+                              children: [
+                                Flexible(
+                                  child: Container(
+                                    width: 1200,
+                                    margin:
+                                        EdgeInsets.symmetric(horizontal: 10.0),
+                                    child: Image.asset(
+                                      item,
+                                      width: double.infinity,
+                                      height: 300,
+                                      fit: BoxFit.contain,
+                                    ),
+                                  ),
+                                ),
+                              ],
                             ))
                         .toList(),
                     carouselController: carouselController,
@@ -170,6 +181,8 @@ class _HomePageState extends State<HomePage> {
                       autoPlayAnimationDuration: Duration(milliseconds: 800),
                       autoPlayCurve: Curves.fastOutSlowIn,
                       enlargeCenterPage: true,
+                      aspectRatio: 1.0,
+                      viewportFraction: 1,
                     ),
                   ),
                 )

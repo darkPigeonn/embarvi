@@ -104,6 +104,7 @@ class BulletItem extends StatelessWidget {
             )),
         Flexible(
           child: RichText(
+            textAlign: TextAlign.justify,
             text: TextSpan(
               style: const TextStyle(
                 height: 1.6,

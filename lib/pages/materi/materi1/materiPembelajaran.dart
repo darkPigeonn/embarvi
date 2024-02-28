@@ -12,6 +12,7 @@ import 'package:embarvi/utils/dataText.dart';
 import 'package:embarvi/utils/util.dart';
 import 'package:flutter/material.dart';
 import 'package:insta_image_viewer/insta_image_viewer.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class MateriPembelajaran extends StatefulWidget {
   final Map content;
@@ -88,7 +89,10 @@ class _MateriPembelajaranState extends State<MateriPembelajaran> {
                                               width: 10,
                                             ),
                                             InkWell(
-                                              onTap: () {},
+                                              onTap: () {
+                                                launchUrl(Uri.parse(
+                                                    content[index]['link']));
+                                              },
                                               child: Image.asset(
                                                 'assets/images/youtube.png',
                                                 scale: 3,
@@ -101,26 +105,21 @@ class _MateriPembelajaranState extends State<MateriPembelajaran> {
                                         ? Stack(
                                             children: [
                                               Container(
-                                                margin:
-                                                    EdgeInsets.only(top: 50),
-                                                padding: EdgeInsets.symmetric(
-                                                    horizontal: 20,
-                                                    vertical: 15),
-                                                decoration: BoxDecoration(
-                                                    color: Color.fromARGB(
-                                                        255, 239, 227, 186),
-                                                    borderRadius:
-                                                        BorderRadius.circular(
-                                                            10)),
-                                                child: Text(
-                                                  content[index]['detail'],
-                                                  textAlign: TextAlign.justify,
-                                                  style: TextStyle(
+                                                  margin: EdgeInsets.only(
+                                                      top: 50, bottom: 20),
+                                                  padding: EdgeInsets.symmetric(
+                                                      horizontal: 20,
+                                                      vertical: 15),
+                                                  decoration: BoxDecoration(
                                                       color: Color.fromARGB(
-                                                          255, 0, 0, 0),
-                                                      height: 1.5),
-                                                ),
-                                              ),
+                                                          255, 239, 227, 186),
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              10)),
+                                                  child: RichTextCustom(
+                                                    content: content[index]
+                                                        ['detail'],
+                                                  )),
                                               Center(
                                                 child: Container(
                                                   width: 140,
@@ -140,7 +139,8 @@ class _MateriPembelajaranState extends State<MateriPembelajaran> {
                                                     style: TextStyle(
                                                         color: Colors.white,
                                                         fontWeight:
-                                                            FontWeight.bold),
+                                                            FontWeight.bold,
+                                                        fontSize: 17),
                                                   ),
                                                 ),
                                               ),
@@ -181,39 +181,11 @@ class _MateriPembelajaranState extends State<MateriPembelajaran> {
                                                     ? Container(
                                                         margin: EdgeInsets.only(
                                                             left: 15),
-                                                        child: RichText(
-                                                          textAlign:
-                                                              TextAlign.justify,
-                                                          text: TextSpan(
-                                                            style:
-                                                                const TextStyle(
-                                                                    height:
-                                                                        1.6),
-                                                            children: <TextSpan>[
-                                                              TextSpan(
-                                                                text:
-                                                                    '\ t', // Tambahkan spasi tambahan di antara karakter tab dan teks
-                                                                style:
-                                                                    TextStyle(
-                                                                  height: 2,
-                                                                  fontSize:
-                                                                      16, // Sesuaikan ukuran teks sesuai kebutuhan
-                                                                ),
-                                                              ),
-                                                              TextSpan(
-                                                                text: content[
-                                                                            index]
-                                                                        [
-                                                                        'detail']
-                                                                    .toString(),
-                                                                style: DefaultTextStyle.of(
-                                                                        context)
-                                                                    .style,
-                                                              ),
-                                                            ],
-                                                          ),
-                                                        ),
-                                                      )
+                                                        child: RichTextCustom(
+                                                          content:
+                                                              content[index]
+                                                                  ['detail'],
+                                                        ))
                                                     : content[index]['type'] ==
                                                             'images'
                                                         ? ImagesSingle(
@@ -223,9 +195,8 @@ class _MateriPembelajaranState extends State<MateriPembelajaran> {
                                                                     ['type'] ==
                                                                 'imagesAr'
                                                             ? ImagesSingle(
-                                                                content:
-                                                                    content[
-                                                                        index])
+                                                                content: content[
+                                                                    index])
                                                             : content[index][
                                                                         'type'] ==
                                                                     'imagesMulti'
@@ -282,6 +253,7 @@ class _ImagesSingleState extends State<ImagesSingle> {
 
   @override
   Widget build(BuildContext context) {
+    print(widget.content);
     return Container(
       child: widget.content['isAr'].toString().isNotEmpty
           ? Column(
@@ -290,20 +262,29 @@ class _ImagesSingleState extends State<ImagesSingle> {
                 SizedBox(
                   height: 20,
                 ),
-                widget.content['isAr'].toString().isNotEmpty
+                widget.content['isAr'] != null
                     ? InkWell(
                         onTap: () {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => ArViewPage()));
+                                  builder: (context) => ArViewPage(
+                                        code: widget.content['isAr'],
+                                      )));
                         },
                         child: Image.asset(
                             'assets/images/materi/${widget.content['name']}'),
                       )
-                    : InstaImageViewer(
-                        child: Image.asset(
-                            'assets/images/materi/${widget.content['name']}')),
+                    : widget.content['detail'] == null
+                        ? InstaImageViewer(
+                            child: Image.asset(
+                                'assets/images/materi/${widget.content['name']}'))
+                        : itemImages4(
+                            name: widget.content['name'],
+                            label: widget.content['label'],
+                            sumber: widget.content['Sumber'],
+                            imageLabel: 'kosong',
+                            detail: widget.content['detail']),
                 Container(
                   width: 250,
                   margin: EdgeInsets.only(top: 10),
@@ -320,12 +301,12 @@ class _ImagesSingleState extends State<ImagesSingle> {
                           Text(
                             formatName(widget.content['name']),
                             style: TextStyle(
-                                fontWeight: FontWeight.bold, fontSize: 12),
+                                fontWeight: FontWeight.bold, fontSize: 9),
                           ),
                           Flexible(
                             child: Text(
                               '${widget.content['label']}',
-                              style: TextStyle(fontSize: 12),
+                              style: TextStyle(fontSize: 9),
                             ),
                           ),
                         ],
@@ -390,7 +371,9 @@ class _ImagesSingleState extends State<ImagesSingle> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => ArViewPage()));
+                                  builder: (context) => ArViewPage(
+                                        code: widget.content['isAr'],
+                                      )));
                         },
                         child: Image.asset(
                             'assets/images/materi/${widget.content['name']}'),
@@ -427,6 +410,7 @@ class _ImagesMultiState extends State<ImagesMulti> {
 
   @override
   Widget build(BuildContext context) {
+    print('${widget.content['isAr'].toString()} isAr');
     return Container(
       margin: EdgeInsets.symmetric(vertical: 10),
       child: Row(
@@ -435,20 +419,47 @@ class _ImagesMultiState extends State<ImagesMulti> {
             : MainAxisAlignment.spaceAround,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          itemImages(
-            name: widget.content['name1'],
-            label: widget.content['label1'],
-            sumber: widget.content['Sumber1'],
-            imageLabel: formatName(widget.content['name1']),
-          ),
-          widget.content['Sumber2'] != '-'
-              ? itemImages(
-                  name: widget.content['name2'],
-                  label: widget.content['label2'],
-                  sumber: widget.content['Sumber2'],
-                  imageLabel: widget.content['Sumber2'] != '-'
-                      ? formatName(widget.content['name2'])
-                      : formatNameTable(widget.content['name2']))
+          widget.content['isAr'] != null
+              ? Container(
+                  margin: EdgeInsets.symmetric(horizontal: 10),
+                  child: itemImages2(
+                    name: widget.content['name1'],
+                    label: widget.content['label1'],
+                    sumber: widget.content['Sumber1'],
+                    imageLabel: formatName(widget.content['name1']),
+                    code: widget.content['isAr'],
+                  ),
+                )
+              : widget.content['detail1'] == null
+                  ? itemImages(
+                      name: widget.content['name1'],
+                      label: widget.content['label1'],
+                      sumber: widget.content['Sumber1'],
+                      imageLabel: formatName(widget.content['name1']),
+                    )
+                  : itemImages4(
+                      name: widget.content['name1'],
+                      detail: widget.content['detail1'],
+                      label: widget.content['label1'],
+                      sumber: widget.content['Sumber1'],
+                      imageLabel: formatName(widget.content['name1']),
+                    ),
+          widget.content['label2'] != '-'
+              ? widget.content['detail2'] == null
+                  ? itemImages(
+                      name: widget.content['name2'],
+                      label: widget.content['label2'],
+                      sumber: widget.content['Sumber2'],
+                      imageLabel: widget.content['Sumber2'] != '-'
+                          ? formatName(widget.content['name2'])
+                          : formatNameTable(widget.content['name2']))
+                  : itemImages4(
+                      name: widget.content['name2'],
+                      detail: widget.content['detail2'],
+                      label: widget.content['label2'],
+                      sumber: widget.content['Sumber2'],
+                      imageLabel: formatName(widget.content['name2']),
+                    )
               : Container()
         ],
       ),
@@ -489,14 +500,15 @@ class _TableImageState extends State<TableImage> {
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    formatName(widget.content['name']),
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+                  RichTextCustomLabel(
+                    content: formatName(widget.content['name']),
                   ),
-                  Text(
-                    ' ${widget.content['label']}',
-                    style: TextStyle(fontSize: 12),
+                  Flexible(
+                    child: RichTextCustomLabel(
+                      content: ' ${widget.content['label']}',
+                    ),
                   ),
                 ],
               ),
@@ -506,9 +518,80 @@ class _TableImageState extends State<TableImage> {
         SizedBox(
           height: 10,
         ),
-        InstaImageViewer(
-            child:
-                Image.asset('assets/images/materi/${widget.content['name']}'))
+        widget.content['detail'] == null
+            ? InstaImageViewer(
+                child: Image.asset(
+                    'assets/images/materi/${widget.content['name']}'))
+            : InkWell(
+                onTap: () {
+                  print(widget.content['detail'] is List);
+                  showDialog(
+                    context: context,
+                    builder: (context) => Dialog(
+                      elevation: 0,
+                      backgroundColor: Colors.white,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(20),
+                        ),
+                      ),
+                      child: Container(
+                        height: 300,
+                        padding: EdgeInsets.all(15),
+                        decoration: const BoxDecoration(
+                            shape: BoxShape.rectangle,
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(20))),
+                        child: SingleChildScrollView(
+                          child: Column(
+                            children: [
+                              widget.content['detail'] is List
+                                  ? ListView.builder(
+                                      itemCount:
+                                          widget.content['detail'].length,
+                                      shrinkWrap: true,
+                                      physics: NeverScrollableScrollPhysics(),
+                                      itemBuilder: (context, index) {
+                                        print(widget.content);
+                                        return widget.content['detail'][index]
+                                                    ['type'] ==
+                                                'text'
+                                            ? Container(
+                                                child: RichTextCustom(
+                                                    content: widget
+                                                        .content['detail']
+                                                            [index]['detail']
+                                                        .toString()),
+                                              )
+                                            : widget.content['detail'][index]
+                                                        ['type'] ==
+                                                    'bullet'
+                                                ? BulletItem2(
+                                                    text: widget
+                                                        .content['detail']
+                                                            [index]['detail']
+                                                        .toString())
+                                                : Container();
+                                      },
+                                    )
+                                  : RichTextCustom(
+                                      content: "${widget.content['detail']}")
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  );
+                },
+                child: Container(
+                  margin: EdgeInsets.only(bottom: 10),
+                  child: ClipRRect(
+                      borderRadius: BorderRadius.circular(10),
+                      child: Image.asset(
+                        'assets/images/materi/${widget.content['name']}',
+                      )),
+                ),
+              ),
       ],
     );
   }
@@ -542,15 +625,15 @@ class itemImages extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
-                        Text(
-                          imageLabel,
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold, fontSize: 12),
+                        Container(
+                          margin: EdgeInsets.only(top: 3),
+                          child: Text(
+                            imageLabel + ' ',
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 9),
+                          ),
                         ),
-                        Text(
-                          ' $label',
-                          style: TextStyle(fontSize: 12),
-                        ),
+                        RichTextCustomLabel(content: label)
                       ],
                     ),
                   ],
@@ -559,14 +642,13 @@ class itemImages extends StatelessWidget {
             : Container(),
         InstaImageViewer(
             child: Container(
-          margin: EdgeInsets.only(bottom: 15, top: 15),
+          margin: EdgeInsets.only(bottom: 10),
           child: ClipRRect(
+              borderRadius: BorderRadius.circular(10),
               child: Image.asset(
-            'assets/images/materi/$name',
-            fit: BoxFit.contain,
-            width: 150,
-            height: 150,
-          )),
+                'assets/images/materi/$name',
+                width: 150,
+              )),
         )
             // Container(
             //   width: MediaQuery.of(context).size.width * 0.4,
@@ -582,6 +664,259 @@ class itemImages extends StatelessWidget {
             //   ),
             // ),
             ),
+        sumber != '-'
+            ? Container(
+                width: 150,
+                padding: EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                    color: Color.fromARGB(255, 217, 196, 136),
+                    borderRadius: BorderRadius.circular(50)),
+                child: Column(
+                  children: [
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Flexible(
+                          child: Text(
+                            '$imageLabel ',
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 9),
+                          ),
+                        ),
+                        Flexible(
+                          child: Text(
+                            '$label',
+                            style: TextStyle(fontSize: 9),
+                          ),
+                        ),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                          margin: EdgeInsets.only(top: 2),
+                          child: Text(
+                            'Sumber : ',
+                            style: TextStyle(fontSize: 9),
+                          ),
+                        ),
+                        // Text(
+                        //   ' : $sumber',
+                        //   style: TextStyle(fontSize: 9),
+                        // ),
+                        RichTextCustomLabel(content: sumber)
+                      ],
+                    )
+                  ],
+                ),
+              )
+            : Container()
+      ],
+    );
+  }
+}
+
+class itemImages4 extends StatelessWidget {
+  const itemImages4({
+    super.key,
+    required this.name,
+    required this.label,
+    required this.sumber,
+    required this.imageLabel,
+    required this.detail,
+  });
+  final String imageLabel;
+  final String name;
+  final String label;
+  final String sumber;
+  final String detail;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        sumber == '-'
+            ? Container(
+                padding: EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                    color: Color.fromARGB(255, 217, 196, 136),
+                    borderRadius: BorderRadius.circular(50)),
+                child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Container(
+                          margin: EdgeInsets.only(top: 3),
+                          child: Text(
+                            imageLabel + ' ',
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 9),
+                          ),
+                        ),
+                        RichTextCustomLabel(content: label)
+                      ],
+                    ),
+                  ],
+                ),
+              )
+            : Container(),
+        InkWell(
+          onTap: () {
+            showDialog(
+              context: context,
+              builder: (context) => Dialog(
+                elevation: 0,
+                backgroundColor: Colors.white,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(20),
+                  ),
+                ),
+                child: Container(
+                  height: 300,
+                  padding: EdgeInsets.all(15),
+                  decoration: const BoxDecoration(
+                      shape: BoxShape.rectangle,
+                      borderRadius: BorderRadius.all(Radius.circular(20))),
+                  child: SingleChildScrollView(
+                    child: Column(
+                      children: [RichTextCustom(content: detail)],
+                    ),
+                  ),
+                ),
+              ),
+            );
+          },
+          child: Container(
+            margin: EdgeInsets.only(bottom: 10),
+            child: ClipRRect(
+                borderRadius: BorderRadius.circular(10),
+                child: Image.asset(
+                  'assets/images/materi/$name',
+                  width: imageLabel == 'kosong' ? 250 : 150,
+                )),
+          ),
+        ),
+        sumber != '-'
+            ? imageLabel != 'kosong'
+                ? Container(
+                    width: 150,
+                    padding: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                        color: Color.fromARGB(255, 217, 196, 136),
+                        borderRadius: BorderRadius.circular(50)),
+                    child: Column(
+                      children: [
+                        Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Flexible(
+                              child: Text(
+                                '$imageLabel ',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold, fontSize: 9),
+                              ),
+                            ),
+                            Flexible(
+                              child: Text(
+                                '$label',
+                                style: TextStyle(fontSize: 9),
+                              ),
+                            ),
+                          ],
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Container(
+                              margin: EdgeInsets.only(top: 2),
+                              child: Text(
+                                'Sumber : ',
+                                style: TextStyle(fontSize: 9),
+                              ),
+                            ),
+                            // Text(
+                            //   ' : $sumber',
+                            //   style: TextStyle(fontSize: 9),
+                            // ),
+                            RichTextCustomLabel(content: sumber)
+                          ],
+                        )
+                      ],
+                    ),
+                  )
+                : Container()
+            : Container()
+      ],
+    );
+  }
+}
+
+class itemImages2 extends StatelessWidget {
+  const itemImages2({
+    super.key,
+    required this.name,
+    required this.label,
+    required this.sumber,
+    required this.imageLabel,
+    required this.code,
+  });
+  final String imageLabel;
+  final String name;
+  final String label;
+  final String sumber;
+  final String code;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        sumber == '-'
+            ? Container(
+                padding: EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                    color: Color.fromARGB(255, 217, 196, 136),
+                    borderRadius: BorderRadius.circular(50)),
+                child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Text(
+                          imageLabel,
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 12),
+                        ),
+                        Text(
+                          ' $label',
+                          style: TextStyle(fontSize: 12),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              )
+            : Container(),
+        InkWell(
+          onTap: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => ArViewPage(
+                          code: code,
+                        )));
+          },
+          child: Image.asset(
+            'assets/images/materi/$name',
+            fit: BoxFit.contain,
+            width: 150,
+            height: 150,
+          ),
+        ),
         sumber != '-'
             ? Container(
                 width: 150,
@@ -714,7 +1049,7 @@ class BulletItem2 extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
-            padding: EdgeInsets.only(right: 5.0, top: 6),
+            padding: EdgeInsets.only(right: 5.0, top: 10),
             child: Icon(
               Icons.circle,
               size: 10.0,
@@ -722,12 +1057,9 @@ class BulletItem2 extends StatelessWidget {
             ),
           ),
           Flexible(
-            child: Text(
-              '$text',
-              style: TextStyle(height: 1.5, fontSize: 17),
-              textAlign: TextAlign.justify,
-            ),
-          ),
+              child: RichTextCustom(
+            content: text,
+          )),
         ],
       ),
     );

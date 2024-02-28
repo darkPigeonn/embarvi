@@ -8,7 +8,9 @@ import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 class ArViewPage extends StatefulWidget {
-  const ArViewPage({super.key});
+  const ArViewPage({super.key, required this.code});
+
+  final String code;
 
   @override
   State<ArViewPage> createState() => _ArViewPageState();
@@ -29,7 +31,7 @@ class _ArViewPageState extends State<ArViewPage> {
     return InAppWebView(
         initialUrlRequest: URLRequest(
             url: Uri.parse(
-                "https://darkpigeonn.github.io/ar-view-node/public/index.html")),
+                "https://darkpigeonn.github.io/ar-view-node/public/model/${widget.code}.html")),
         initialOptions: InAppWebViewGroupOptions(
           crossPlatform: InAppWebViewOptions(
             mediaPlaybackRequiresUserGesture: false,

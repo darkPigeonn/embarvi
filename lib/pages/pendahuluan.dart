@@ -214,13 +214,13 @@ class RichTextCustomLabel extends StatelessWidget {
     for (int i = 0; i < parts.length; i++) {
       textSpans.add(TextSpan(
           text: parts[i],
-          style: TextStyle(height: 1.6, color: Colors.black, fontSize: 12)));
+          style: TextStyle(height: 1.6, color: Colors.black, fontSize: 9)));
 
       if (i < italicMatches.length) {
         textSpans.add(TextSpan(
           text: italicMatches.elementAt(i).group(1),
           style: TextStyle(
-              fontStyle: FontStyle.italic, color: Colors.black, fontSize: 12),
+              fontStyle: FontStyle.italic, color: Colors.black, fontSize: 9),
         ));
       }
 
@@ -228,7 +228,7 @@ class RichTextCustomLabel extends StatelessWidget {
         textSpans.add(TextSpan(
           text: boldMatches.elementAt(i).group(1),
           style: TextStyle(
-              fontWeight: FontWeight.bold, color: Colors.black, fontSize: 12),
+              fontWeight: FontWeight.bold, color: Colors.black, fontSize: 9),
         ));
       }
     }
@@ -261,7 +261,7 @@ class RichTextCustom2 extends StatelessWidget {
       textSpans.add(TextSpan(
           text: splitTextBold[i],
           style: TextStyle(
-              fontWeight: FontWeight.bold, fontSize: 14, color: Colors.black)));
+              fontWeight: FontWeight.bold, fontSize: 17, color: Colors.black)));
 
       if (i < matchesBold.length) {
         textSpans.add(TextSpan(
@@ -269,7 +269,7 @@ class RichTextCustom2 extends StatelessWidget {
           style: TextStyle(
               fontStyle: FontStyle.italic,
               fontWeight: FontWeight.bold,
-              fontSize: 14,
+              fontSize: 17,
               color: Colors.black),
         ));
       }
@@ -282,12 +282,20 @@ class RichTextCustom2 extends StatelessWidget {
 
     for (int i = 0; i < parts.length; i++) {
       textSpans.add(TextSpan(
-          text: parts[i], style: TextStyle(height: 1.6, color: Colors.black)));
+          text: parts[i],
+          style: TextStyle(
+            height: 1.6,
+            color: Colors.black,
+            fontSize: 17,
+          )));
 
       if (i < italicMatches.length) {
         textSpans.add(TextSpan(
           text: italicMatches.elementAt(i).group(1),
-          style: TextStyle(fontStyle: FontStyle.italic),
+          style: TextStyle(
+            fontStyle: FontStyle.italic,
+            fontSize: 17,
+          ),
         ));
       }
 

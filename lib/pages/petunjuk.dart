@@ -164,7 +164,7 @@ class TabelPetunjuk extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Menu(
+          Menu3(
             label: label,
             icon: iconData,
             onPressed: () => null,

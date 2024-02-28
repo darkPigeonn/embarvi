@@ -20,25 +20,30 @@ class _QuisPageState extends State<QuisPage> {
   int score = 0;
 
   void pickAnswer(int value) {
-    selectedAnswerIndex = value + 1;
+    selectedAnswerIndex = value;
+    print('$value value $selectedAnswerIndex  ');
     final question = questions[questionIndex];
-    if (selectedAnswerIndex == question['correctAnswer']) {
+    print(question['correctAnswer']);
+    final correctAnswer = int.parse(question['correctAnswer'].toString()) - 1;
+    if (selectedAnswerIndex == correctAnswer) {
       score++;
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-            content: successAlert(),
-            backgroundColor: Colors.transparent,
-            behavior: SnackBarBehavior.floating,
-            elevation: 0),
-      );
+      // ScaffoldMessenger.of(context).showSnackBar(
+      //   const SnackBar(
+      //       content: successAlert(),
+      //       backgroundColor: Colors.transparent,
+      //       behavior: SnackBarBehavior.floating,
+      //       elevation: 0),
+      // );
+      showDialog(context: context, builder: (context) => successAlert());
     } else {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-            content: failAlert(),
-            backgroundColor: Colors.transparent,
-            behavior: SnackBarBehavior.floating,
-            elevation: 0),
-      );
+      // ScaffoldMessenger.of(context).showSnackBar(
+      //   const SnackBar(
+      //       content: failAlert(),
+      //       backgroundColor: Colors.transparent,
+      //       behavior: SnackBarBehavior.floating,
+      //       elevation: 0),
+      // );
+      showDialog(context: context, builder: (context) => failAlert());
     }
     setState(() {});
   }
@@ -95,7 +100,7 @@ class _QuisPageState extends State<QuisPage> {
                         question: question['options'][index]['value'],
                         isSelected: selectedAnswerIndex == index,
                         selectedAnswerIndex: selectedAnswerIndex,
-                        correctAnswerIndex: question['correctAnswer'],
+                        correctAnswerIndex: question['correctAnswer'] - 1,
                       ),
                     );
                   },
@@ -135,81 +140,64 @@ class failAlert extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      clipBehavior: Clip.none,
-      children: [
-        Container(
-          padding: EdgeInsets.all(16),
-          height: 100,
-          decoration: const BoxDecoration(
-              color: Color(0xFFC72C41),
-              borderRadius: BorderRadius.all(Radius.circular(20))),
-          child: const Row(
-            children: [
-              const SizedBox(
-                width: 48,
-              ),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Maaf!',
-                      style: TextStyle(fontSize: 18, color: Colors.white),
-                    ),
-                    Text(
-                      'Jawabanmu kurang tepat',
-                      maxLines: 2,
-                      overflow: TextOverflow.ellipsis,
-                      style: TextStyle(
-                        fontSize: 12,
+    return Dialog(
+      elevation: 0,
+      backgroundColor: Colors.white,
+      shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.all(Radius.circular(20))),
+      child: Container(
+        height: 200,
+        decoration: const BoxDecoration(
+            shape: BoxShape.rectangle,
+            borderRadius: BorderRadius.all(Radius.circular(20))),
+        child: Column(
+          children: [
+            Container(
+              width: double.infinity,
+              decoration: const BoxDecoration(
+                  color: Color(0xFFC72C41),
+                  shape: BoxShape.rectangle,
+                  borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(12),
+                      topRight: Radius.circular(12))),
+              child: Column(
+                children: [
+                  SizedBox(
+                    height: 10,
+                  ),
+                  CircleAvatar(
+                      backgroundColor: Colors.red,
+                      child: Icon(
+                        Icons.close,
                         color: Colors.white,
-                      ),
-                    )
-                  ],
-                ),
+                      )),
+                  SizedBox(
+                    height: 5,
+                  ),
+                  Text(
+                    'Oopps..!',
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white),
+                  ),
+                  Divider(),
+                ],
               ),
-            ],
-          ),
-        ),
-        Positioned(
-          bottom: 0,
-          child: ClipRRect(
-            borderRadius:
-                const BorderRadius.only(bottomLeft: Radius.circular(20)),
-            child: Stack(
-              children: [
-                SvgPicture.asset(
-                  "assets/images/icons/bubbles.svg",
-                  height: 48,
-                  width: 48,
-                  color: Colors.red,
-                ),
-              ],
             ),
-          ),
-        ),
-        Positioned(
-          top: -20,
-          left: 0,
-          child: Stack(
-            alignment: Alignment.center,
-            children: [
-              SvgPicture.asset(
-                "assets/images/icons/back.svg",
-                height: 40,
+            Container(
+              padding: EdgeInsets.all(20),
+              child: Text(
+                'Jawabanmu Kurang Tepat',
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xFFC72C41)),
               ),
-              Positioned(
-                top: 10,
-                child: SvgPicture.asset(
-                  "assets/images/icons/failure.svg",
-                  height: 16,
-                ),
-              ),
-            ],
-          ),
+            ),
+          ],
         ),
-      ],
+      ),
     );
   }
 }
@@ -221,81 +209,70 @@ class successAlert extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      clipBehavior: Clip.none,
-      children: [
-        Container(
-          padding: EdgeInsets.all(16),
-          height: 100,
-          decoration: BoxDecoration(
-              color: Colors.green,
-              borderRadius: BorderRadius.all(Radius.circular(20))),
-          child: Row(
-            children: [
-              const SizedBox(
-                width: 48,
-              ),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Yeay!',
-                      style: TextStyle(fontSize: 18, color: Colors.white),
-                    ),
-                    Text(
-                      'Jawabanmu benar',
-                      maxLines: 2,
-                      overflow: TextOverflow.ellipsis,
-                      style: TextStyle(
-                        fontSize: 12,
+    return Dialog(
+      elevation: 0,
+      backgroundColor: Colors.white,
+      shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.all(Radius.circular(20))),
+      child: Container(
+        height: 180,
+        decoration: const BoxDecoration(
+            shape: BoxShape.rectangle,
+            borderRadius: BorderRadius.all(Radius.circular(20))),
+        child: Column(
+          children: [
+            Container(
+              width: double.infinity,
+              decoration: const BoxDecoration(
+                  color: Colors.white,
+                  shape: BoxShape.rectangle,
+                  borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(12),
+                      topRight: Radius.circular(12))),
+              child: Column(
+                children: [
+                  SizedBox(
+                    height: 30,
+                  ),
+                  CircleAvatar(
+                      backgroundColor: Colors.green,
+                      child: Icon(
+                        Icons.check,
                         color: Colors.white,
-                      ),
-                    )
-                  ],
-                ),
+                      )),
+                  SizedBox(
+                    height: 15,
+                  ),
+                  Text(
+                    'Selamat!',
+                    style: TextStyle(
+                        fontSize: 25,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.green),
+                  ),
+                  Text(
+                    'Jawabanmu Benar',
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.green),
+                  ),
+                ],
               ),
-            ],
-          ),
-        ),
-        Positioned(
-          bottom: 0,
-          child: ClipRRect(
-            borderRadius:
-                const BorderRadius.only(bottomLeft: Radius.circular(20)),
-            child: Stack(
-              children: [
-                SvgPicture.asset(
-                  "assets/images/icons/bubbles.svg",
-                  height: 48,
-                  width: 48,
-                  color: Colors.green,
-                ),
-              ],
             ),
-          ),
+            // Container(
+            //   padding: EdgeInsets.all(20),
+            //   child: Text(
+            //     'Jawabanmu Benar',
+            //     style: TextStyle(
+            //         fontSize: 20,
+            //         fontWeight: FontWeight.bold,
+            //         color: Colors.white),
+            //   ),
+            // ),
+          ],
         ),
-        Positioned(
-          top: -20,
-          left: 0,
-          child: Stack(
-            alignment: Alignment.center,
-            children: [
-              SvgPicture.asset(
-                "assets/images/icons/back.svg",
-                height: 40,
-              ),
-              Positioned(
-                top: 10,
-                child: SvgPicture.asset(
-                  "assets/images/icons/success.svg",
-                  height: 16,
-                ),
-              ),
-            ],
-          ),
-        ),
-      ],
+      ),
     );
   }
 }

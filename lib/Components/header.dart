@@ -96,13 +96,14 @@ class SubTitle extends StatelessWidget {
     return Row(
       children: [
         Container(
+          width: 300,
           decoration: BoxDecoration(
               color: Colors.yellow, borderRadius: BorderRadius.circular(20)),
           margin: const EdgeInsets.only(top: 10, bottom: 10),
-          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
           child: Text(
             label,
-            textAlign: TextAlign.center,
+            textAlign: TextAlign.left,
             style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
           ),
         ),

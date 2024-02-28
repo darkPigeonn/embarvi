@@ -146,9 +146,7 @@ class BulletNumber extends StatelessWidget {
               child: Text(
             '$text',
             textAlign: TextAlign.justify,
-            style: TextStyle(
-              height: 1.6,
-            ),
+            style: TextStyle(height: 1.6, fontSize: 16),
           ))
         ],
       ),

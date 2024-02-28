@@ -115,3 +115,61 @@ class BottomNavigationCustom extends StatelessWidget {
     );
   }
 }
+
+class BottomNavigationCustom2 extends StatelessWidget {
+  const BottomNavigationCustom2({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Positioned(
+      left: 0,
+      right: 0,
+      bottom: 0,
+      child: Container(
+        color: primaryC,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            Menu2(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                icon: '14.png',
+                label: 'Kembali'),
+            Menu2(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => LkpdPage()));
+                },
+                icon: '6.png',
+                label: 'LPKD'),
+            Menu2(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => MateriPage()));
+                },
+                icon: '5.png',
+                label: 'Materi & AR'),
+            Menu2(
+                onPressed: () {
+                  ;
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => DiskusiPage()));
+                },
+                icon: '12.png',
+                label: 'Diskusi'),
+            Menu2(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => PetunjukPage()));
+                },
+                icon: '2.png',
+                label: 'Petunjuk'),
+          ],
+        ),
+      ),
+    );
+  }
+}

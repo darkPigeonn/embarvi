@@ -28,7 +28,7 @@ class ResultScreen extends StatelessWidget {
             TitlePage(
               title: 'FORMATIF',
             ),
-            Spacing1,
+            Spacing3,
             const Text(
               'Nilai Kamu: ',
               style: TextStyle(
@@ -55,7 +55,7 @@ class ResultScreen extends StatelessWidget {
                 Column(
                   children: [
                     Text(
-                      finalScore.toString(),
+                      finalScore.round().toString(),
                       style: const TextStyle(fontSize: 80),
                     ),
                   ],
@@ -69,7 +69,7 @@ class ResultScreen extends StatelessWidget {
                 Container(
                   padding: EdgeInsets.symmetric(vertical: 30, horizontal: 50),
                   decoration: BoxDecoration(
-                      color: Colors.white,
+                      color: Colors.green,
                       borderRadius: BorderRadius.circular(20)),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -77,13 +77,17 @@ class ResultScreen extends StatelessWidget {
                       Text(
                         'Benar',
                         style: TextStyle(
-                            fontSize: 18, fontWeight: FontWeight.bold),
+                            color: Colors.white,
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold),
                       ),
                       Spacing3,
                       Text(
                         score.toString(),
                         style: TextStyle(
-                            fontSize: 18, fontWeight: FontWeight.bold),
+                            color: Colors.white,
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold),
                       ),
                     ],
                   ),
@@ -91,7 +95,7 @@ class ResultScreen extends StatelessWidget {
                 Container(
                   padding: EdgeInsets.symmetric(vertical: 30, horizontal: 50),
                   decoration: BoxDecoration(
-                      color: Colors.white,
+                      color: Colors.red,
                       borderRadius: BorderRadius.circular(20)),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -99,20 +103,24 @@ class ResultScreen extends StatelessWidget {
                       Text(
                         'Salah',
                         style: TextStyle(
-                            fontSize: 18, fontWeight: FontWeight.bold),
+                            color: Colors.white,
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold),
                       ),
                       Spacing3,
                       Text(
                         (questions.length - score).toString(),
                         style: TextStyle(
-                            fontSize: 18, fontWeight: FontWeight.bold),
+                            color: Colors.white,
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold),
                       ),
                     ],
                   ),
                 ),
               ],
             ),
-            Spacing2,
+            Spacing3,
             BottomBackHome()
           ],
         ),

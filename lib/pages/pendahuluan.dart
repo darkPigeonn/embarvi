@@ -153,13 +153,13 @@ class RichTextCustom extends StatelessWidget {
     List<TextSpan> textSpans = [];
 
     if (text.contains('\t')) {
+      print('masuk sini');
       textSpans.add(
         TextSpan(
           text:
-              '\ t ', // Tambahkan spasi tambahan di antara karakter tab dan teks
+              'HA ', // Tambahkan spasi tambahan di antara karakter tab dan teks
           style: TextStyle(
-            height: 1.6,
-            fontSize: 17, // Sesuaikan ukuran teks sesuai kebutuhan
+            color: Colors.transparent,
           ),
         ),
       );
@@ -170,9 +170,15 @@ class RichTextCustom extends StatelessWidget {
     List<String> splitText = text.split(regex);
 
     for (int i = 0; i < splitText.length; i++) {
-      textSpans.add(TextSpan(
-          text: splitText[i],
-          style: TextStyle(height: 1.6, fontSize: 17, color: Colors.black)));
+      textSpans.add(
+        TextSpan(
+            text: splitText[i],
+            style: TextStyle(
+              height: 1.6,
+              fontSize: 17,
+              color: Colors.black,
+            )),
+      );
 
       if (i < matches.length) {
         textSpans.add(TextSpan(
@@ -208,13 +214,13 @@ class RichTextCustomLabel extends StatelessWidget {
     for (int i = 0; i < parts.length; i++) {
       textSpans.add(TextSpan(
           text: parts[i],
-          style: TextStyle(height: 1.6, color: Colors.black, fontSize: 9)));
+          style: TextStyle(height: 1.6, color: Colors.black, fontSize: 12)));
 
       if (i < italicMatches.length) {
         textSpans.add(TextSpan(
           text: italicMatches.elementAt(i).group(1),
           style: TextStyle(
-              fontStyle: FontStyle.italic, color: Colors.black, fontSize: 9),
+              fontStyle: FontStyle.italic, color: Colors.black, fontSize: 12),
         ));
       }
 
@@ -222,7 +228,7 @@ class RichTextCustomLabel extends StatelessWidget {
         textSpans.add(TextSpan(
           text: boldMatches.elementAt(i).group(1),
           style: TextStyle(
-              fontWeight: FontWeight.bold, color: Colors.black, fontSize: 9),
+              fontWeight: FontWeight.bold, color: Colors.black, fontSize: 12),
         ));
       }
     }

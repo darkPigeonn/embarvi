@@ -43,6 +43,7 @@ class _FormatifPageState extends State<FormatifPage> {
                 'Petunjuk Penggunaan',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
+                  fontSize: 17,
                 ),
               ),
               SizedBox(

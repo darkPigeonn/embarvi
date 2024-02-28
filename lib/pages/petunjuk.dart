@@ -67,56 +67,62 @@ class _PetunjukPageState extends State<PetunjukPage> {
                   ),
                   const TabelPetunjuk(
                     label: 'Indikator',
-                    iconData: '2.png',
+                    iconData: '3.png',
                     textbold: 'Menu Indikator',
                     text:
                         ' berisikan kompetensi awal, profil pelajar pancasila, sarana dan prasarana, capaian pembelajaran, serta tujuan pembelajaran.',
                   ),
                   const TabelPetunjuk(
                     label: 'Peta Konsep',
-                    iconData: '3.png',
+                    iconData: '4.png',
                     textbold: 'Menu Peta Konsep',
                     text:
                         ' berisikan gambaran mengenai materi yang disajikan pada EMBARVI. ',
                   ),
                   const TabelPetunjuk(
                     label: 'Materi dan Ar', //perlu khusus
-                    iconData: '4.png',
+                    iconData: '5.png',
                     textbold: 'Menu Materi dan Ar (<i>Augmented Reality</i>)',
                     text:
                         ' berisikan uraian materi yang dilengkapi dengan AR dan rangkuman materi untuk mempermudah pemahaman peserta didik. \n<b>Catatan</b>: Gambar 3D (AR) hanya terdapat pada sub materi struktur dan bentuk, cara hidup, serta replikasi virus. ',
                   ),
                   const TabelPetunjuk(
                     label: 'LPKD', //perlu khusus
-                    iconData: '5.png',
+                    iconData: '6.png',
                     textbold: 'Menu LPKD',
                     text:
                         ' berisikan lembar kerja peserta didik (LKPD) yang dapat diunduh dan dikerjakan oleh peserta didik pada saat kegiatan pembelajaran di kelas.',
                   ),
                   const TabelPetunjuk(
+                      label: 'Formatif', //perlu khusus
+                      iconData: '7.png',
+                      textbold: 'Menu Formatif',
+                      text:
+                          ' berisikan soal-soal latihan evaluasi pembelajaran yang dapat dikerjakan peserta didik untuk menguji pemahaman terhadap materi virus. '),
+                  const TabelPetunjuk(
                     label: 'Diskusi', //perlu khusus
-                    iconData: '6.png',
+                    iconData: '12.png',
                     textbold: 'Menu Diskusi',
                     text:
                         ' berisikan fasilitas yang disediakan kepada peserta didik untuk melakukan diskusi antar peserta didik ataupun dengan guru. ',
                   ),
                   const TabelPetunjuk(
                     label: 'Pustaka', //perlu khusus
-                    iconData: '7.png',
+                    iconData: '8.png',
                     textbold: 'Menu Pustaka',
                     text:
                         ' berisikan sumber referensi yang digunakan dalam menyusun materi virus. ',
                   ),
                   const TabelPetunjuk(
                     label: 'Glosarium', //perlu khusus
-                    iconData: '8.png',
+                    iconData: '9.png',
                     textbold: 'Menu Glosarium',
                     text:
                         ' berisikan beberapa kata atau istilah penting mengenai materi virus.  ',
                   ),
                   const TabelPetunjuk(
                     label: 'Pengembang', //perlu khusus
-                    iconData: '9.png',
+                    iconData: '10.png',
                     textbold: 'Menu Pengembang',
                     text:
                         ' berisikan informasi mengenai aplikasi, pengembang dan dosen pembimbing.  ',

@@ -40,8 +40,7 @@ class _LkpdPageState extends State<LkpdPage> {
                   Spacing3,
                   Button1(
                       onPressed: () async {
-                        final link =
-                            'https://www.canva.com/design/DAF7sopAx-s/nQnILPPu43NbK8lqfXkHXQ/edit?utm_content=DAF7sopAx-s&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton';
+                        final link = '''https://bit.ly/lpkd1Embarvi''';
                         final uri = Uri.parse(link);
                         if (await canLaunchUrl(uri)) {
                           print('disini');
@@ -54,8 +53,7 @@ class _LkpdPageState extends State<LkpdPage> {
                   Spacing2,
                   Button2(
                       onPressed: () async {
-                        final link =
-                            'https://www.canva.com/design/DAF5jrfrkoE/sTTbHfatNLq1TL2sdjlEMA/edit?utm_content=DAF5jrfrkoE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton';
+                        final link = '''https://bit.ly/lpkd2Embarvi''';
                         final uri = Uri.parse(link);
                         if (await canLaunchUrl(uri)) {
                           ;

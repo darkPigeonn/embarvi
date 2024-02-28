@@ -6,6 +6,7 @@ import 'package:embarvi/pages/ar/ar.dart';
 import 'package:embarvi/pages/materi/materi1/arView.dart';
 import 'package:embarvi/pages/materi/materi1/rangkuman.dart';
 import 'package:embarvi/pages/pendahuluan.dart';
+import 'package:embarvi/pages/petaKonsep.dart';
 import 'package:embarvi/utils/colorLib.dart';
 import 'package:embarvi/utils/dataText.dart';
 import 'package:embarvi/utils/util.dart';
@@ -29,208 +30,234 @@ class _MateriPembelajaranState extends State<MateriPembelajaran> {
     return Scaffold(
       backgroundColor: primaryC,
       body: SafeArea(
-          child: SingleChildScrollView(
-        child: Container(
-          margin: marginPrimary,
-          width: MediaQuery.of(context).size.width,
-          padding: EdgeInsets.symmetric(horizontal: 10),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Spacing2,
-              TitlePage(
-                title: widget.content['title'].toString(),
-              ),
-              Spacing2,
-              ListView.builder(
-                  itemCount: content.length,
-                  shrinkWrap: true,
-                  physics: NeverScrollableScrollPhysics(),
-                  itemBuilder: (context, index) {
-                    return content[index]['type'] == 'text'
-                        ? Container(
-                            child: RichTextCustom(
-                                content: content[index]['detail'].toString()),
-                          )
-                        : content[index]['type'] == 'bullet'
-                            ? BulletItem2(text: content[index]['detail'])
-                            : content[index]['type'] == 'youtube'
-                                ? Container(
-                                    width: MediaQuery.of(context).size.width,
-                                    padding: EdgeInsets.all(10),
-                                    margin: EdgeInsets.only(top: 15),
-                                    color: const Color.fromARGB(255, 0, 49, 88),
-                                    child: Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceAround,
-                                      children: [
-                                        Flexible(
-                                            child: Container(
-                                          padding: EdgeInsets.all(10),
-                                          decoration: BoxDecoration(
-                                              color: Colors.white,
-                                              borderRadius:
-                                                  BorderRadius.circular(50)),
-                                          child: Text(
-                                            content[index]['detail'],
-                                            textAlign: TextAlign.center,
-                                          ),
-                                        )),
-                                        SizedBox(
-                                          width: 10,
-                                        ),
-                                        InkWell(
-                                          onTap: () {},
-                                          child: Image.asset(
-                                            'assets/images/youtube.png',
-                                            scale: 3,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  )
-                                : content[index]['type'] == 'info'
-                                    ? Stack(
-                                        children: [
-                                          Container(
-                                            margin: EdgeInsets.only(top: 50),
-                                            padding: EdgeInsets.symmetric(
-                                                horizontal: 20, vertical: 15),
-                                            decoration: BoxDecoration(
-                                                color: Color.fromARGB(
-                                                    255, 239, 227, 186),
-                                                borderRadius:
-                                                    BorderRadius.circular(10)),
-                                            child: Text(
-                                              content[index]['detail'],
-                                              textAlign: TextAlign.justify,
-                                              style: TextStyle(
-                                                  color: Color.fromARGB(
-                                                      255, 0, 0, 0),
-                                                  height: 1.5),
-                                            ),
-                                          ),
-                                          Center(
-                                            child: Container(
-                                              width: 140,
-                                              margin: EdgeInsets.only(top: 20),
-                                              padding: EdgeInsets.symmetric(
-                                                  horizontal: 20, vertical: 15),
+          child: Stack(
+        children: [
+          SingleChildScrollView(
+            child: Container(
+              margin: marginPrimary,
+              width: MediaQuery.of(context).size.width,
+              padding: EdgeInsets.symmetric(horizontal: 10),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Spacing2,
+                  TitlePage(
+                    title: widget.content['title'].toString(),
+                  ),
+                  Spacing2,
+                  ListView.builder(
+                      itemCount: content.length,
+                      shrinkWrap: true,
+                      physics: NeverScrollableScrollPhysics(),
+                      itemBuilder: (context, index) {
+                        return content[index]['type'] == 'text'
+                            ? Container(
+                                child: RichTextCustom(
+                                    content:
+                                        content[index]['detail'].toString()),
+                              )
+                            : content[index]['type'] == 'bullet'
+                                ? BulletItem2(text: content[index]['detail'])
+                                : content[index]['type'] == 'youtube'
+                                    ? Container(
+                                        width:
+                                            MediaQuery.of(context).size.width,
+                                        padding: EdgeInsets.all(10),
+                                        margin: EdgeInsets.only(top: 15),
+                                        color: const Color.fromARGB(
+                                            255, 0, 49, 88),
+                                        child: Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.spaceAround,
+                                          children: [
+                                            Flexible(
+                                                child: Container(
+                                              padding: EdgeInsets.all(10),
                                               decoration: BoxDecoration(
-                                                  color: Color(0xFF6998AB),
+                                                  color: Colors.white,
                                                   borderRadius:
                                                       BorderRadius.circular(
-                                                          10)),
+                                                          50)),
                                               child: Text(
-                                                content[index]['label'],
+                                                content[index]['detail'],
                                                 textAlign: TextAlign.center,
-                                                style: TextStyle(
-                                                    color: Colors.white,
-                                                    fontWeight:
-                                                        FontWeight.bold),
+                                              ),
+                                            )),
+                                            SizedBox(
+                                              width: 10,
+                                            ),
+                                            InkWell(
+                                              onTap: () {},
+                                              child: Image.asset(
+                                                'assets/images/youtube.png',
+                                                scale: 3,
                                               ),
                                             ),
-                                          ),
-                                        ],
+                                          ],
+                                        ),
                                       )
-                                    : content[index]['type'] == 'buttons'
-                                        ? ElevatedButton(
-                                            style: ElevatedButton.styleFrom(
-                                                backgroundColor: bPrimary),
-                                            onPressed: () {
-                                              Map dataContent = {};
-                                              if (widget.code == 1) {
-                                                dataContent = rangkuman_materi1;
-                                              } else {
-                                                dataContent = rangkuman_materi2;
-                                              }
-                                              Navigator.push(
-                                                  context,
-                                                  MaterialPageRoute(
-                                                      builder: (context) =>
-                                                          RangkumanPage(
-                                                            content:
-                                                                dataContent,
-                                                          )));
-                                            },
-                                            child:
-                                                Text(content[index]['detail']))
-                                        : content[index]['type'] == 'textBold'
-                                            ? SubTitleBold(
-                                                label: content[index]['detail'],
-                                              )
+                                    : content[index]['type'] == 'info'
+                                        ? Stack(
+                                            children: [
+                                              Container(
+                                                margin:
+                                                    EdgeInsets.only(top: 50),
+                                                padding: EdgeInsets.symmetric(
+                                                    horizontal: 20,
+                                                    vertical: 15),
+                                                decoration: BoxDecoration(
+                                                    color: Color.fromARGB(
+                                                        255, 239, 227, 186),
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            10)),
+                                                child: Text(
+                                                  content[index]['detail'],
+                                                  textAlign: TextAlign.justify,
+                                                  style: TextStyle(
+                                                      color: Color.fromARGB(
+                                                          255, 0, 0, 0),
+                                                      height: 1.5),
+                                                ),
+                                              ),
+                                              Center(
+                                                child: Container(
+                                                  width: 140,
+                                                  margin:
+                                                      EdgeInsets.only(top: 20),
+                                                  padding: EdgeInsets.symmetric(
+                                                      horizontal: 20,
+                                                      vertical: 15),
+                                                  decoration: BoxDecoration(
+                                                      color: Color(0xFF6998AB),
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              10)),
+                                                  child: Text(
+                                                    content[index]['label'],
+                                                    textAlign: TextAlign.center,
+                                                    style: TextStyle(
+                                                        color: Colors.white,
+                                                        fontWeight:
+                                                            FontWeight.bold),
+                                                  ),
+                                                ),
+                                              ),
+                                            ],
+                                          )
+                                        : content[index]['type'] == 'buttons'
+                                            ? ElevatedButton(
+                                                style: ElevatedButton.styleFrom(
+                                                    backgroundColor: bPrimary),
+                                                onPressed: () {
+                                                  Map dataContent = {};
+                                                  if (widget.code == 1) {
+                                                    dataContent =
+                                                        rangkuman_materi1;
+                                                  } else {
+                                                    dataContent =
+                                                        rangkuman_materi2;
+                                                  }
+                                                  Navigator.push(
+                                                      context,
+                                                      MaterialPageRoute(
+                                                          builder: (context) =>
+                                                              RangkumanPage(
+                                                                content:
+                                                                    dataContent,
+                                                              )));
+                                                },
+                                                child: Text(
+                                                    content[index]['detail']))
                                             : content[index]['type'] ==
-                                                    'textBoldContent'
-                                                ? Container(
-                                                    margin: EdgeInsets.only(
-                                                        left: 15),
-                                                    child: RichText(
-                                                      textAlign:
-                                                          TextAlign.justify,
-                                                      text: TextSpan(
-                                                        style: const TextStyle(
-                                                            height: 1.6),
-                                                        children: <TextSpan>[
-                                                          TextSpan(
-                                                            text:
-                                                                '\ t', // Tambahkan spasi tambahan di antara karakter tab dan teks
-                                                            style: TextStyle(
-                                                              height: 2,
-                                                              fontSize:
-                                                                  16, // Sesuaikan ukuran teks sesuai kebutuhan
-                                                            ),
-                                                          ),
-                                                          TextSpan(
-                                                            text: content[index]
-                                                                    ['detail']
-                                                                .toString(),
-                                                            style: DefaultTextStyle
-                                                                    .of(context)
-                                                                .style,
-                                                          ),
-                                                        ],
-                                                      ),
-                                                    ),
+                                                    'textBold'
+                                                ? SubTitleBold(
+                                                    label: content[index]
+                                                        ['detail'],
                                                   )
                                                 : content[index]['type'] ==
-                                                        'images'
-                                                    ? ImagesSingle(
-                                                        content: content[index])
+                                                        'textBoldContent'
+                                                    ? Container(
+                                                        margin: EdgeInsets.only(
+                                                            left: 15),
+                                                        child: RichText(
+                                                          textAlign:
+                                                              TextAlign.justify,
+                                                          text: TextSpan(
+                                                            style:
+                                                                const TextStyle(
+                                                                    height:
+                                                                        1.6),
+                                                            children: <TextSpan>[
+                                                              TextSpan(
+                                                                text:
+                                                                    '\ t', // Tambahkan spasi tambahan di antara karakter tab dan teks
+                                                                style:
+                                                                    TextStyle(
+                                                                  height: 2,
+                                                                  fontSize:
+                                                                      16, // Sesuaikan ukuran teks sesuai kebutuhan
+                                                                ),
+                                                              ),
+                                                              TextSpan(
+                                                                text: content[
+                                                                            index]
+                                                                        [
+                                                                        'detail']
+                                                                    .toString(),
+                                                                style: DefaultTextStyle.of(
+                                                                        context)
+                                                                    .style,
+                                                              ),
+                                                            ],
+                                                          ),
+                                                        ),
+                                                      )
                                                     : content[index]['type'] ==
-                                                            'imagesMulti'
-                                                        ? ImagesMulti(
+                                                            'images'
+                                                        ? ImagesSingle(
                                                             content:
                                                                 content[index])
                                                         : content[index]
                                                                     ['type'] ==
-                                                                'table'
-                                                            ? TableImage(
+                                                                'imagesAr'
+                                                            ? ImagesSingle(
                                                                 content:
                                                                     content[
                                                                         index])
                                                             : content[index][
                                                                         'type'] ==
-                                                                    'subTitle2'
-                                                                ? SubTitle2(
-                                                                    label: content[
-                                                                            index]
-                                                                        [
-                                                                        'detail'])
-                                                                : SubTitle(
-                                                                    label: content[
-                                                                            index]
-                                                                        [
-                                                                        'detail'],
-                                                                  );
-                    // return Text(content[0].toString(),
-                    //     textAlign: TextAlign.justify,
-                    //     style: TextStyle(height: 1.8));
-                  }),
-              Spacing3
-            ],
+                                                                    'imagesMulti'
+                                                                ? ImagesMulti(
+                                                                    content:
+                                                                        content[
+                                                                            index])
+                                                                : content[index]['type'] ==
+                                                                        'table'
+                                                                    ? TableImage(
+                                                                        content:
+                                                                            content[
+                                                                                index])
+                                                                    : content[index]['type'] ==
+                                                                            'subTitle2'
+                                                                        ? SubTitle2(
+                                                                            label: content[index]['detail'])
+                                                                        : SubTitle(
+                                                                            label:
+                                                                                content[index]['detail'],
+                                                                          );
+                        // return Text(content[0].toString(),
+                        //     textAlign: TextAlign.justify,
+                        //     style: TextStyle(height: 1.8));
+                      }),
+                  Spacing3
+                ],
+              ),
+            ),
           ),
-        ),
+          BottomNavigationCustom2()
+        ],
       )),
     );
   }
@@ -255,53 +282,124 @@ class _ImagesSingleState extends State<ImagesSingle> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.spaceAround,
-      children: [
-        Container(
-          width: 250,
-          margin: EdgeInsets.only(top: 10),
-          padding: EdgeInsets.all(10),
-          decoration: BoxDecoration(
-              color: Color.fromARGB(255, 217, 196, 136),
-              borderRadius: BorderRadius.circular(50)),
-          child: Column(
-            children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    formatName(widget.content['name']),
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+    return Container(
+      child: widget.content['isAr'].toString().isNotEmpty
+          ? Column(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                SizedBox(
+                  height: 20,
+                ),
+                widget.content['isAr'].toString().isNotEmpty
+                    ? InkWell(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => ArViewPage()));
+                        },
+                        child: Image.asset(
+                            'assets/images/materi/${widget.content['name']}'),
+                      )
+                    : InstaImageViewer(
+                        child: Image.asset(
+                            'assets/images/materi/${widget.content['name']}')),
+                Container(
+                  width: 250,
+                  margin: EdgeInsets.only(top: 10),
+                  padding: EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                      color: Color.fromARGB(255, 217, 196, 136),
+                      borderRadius: BorderRadius.circular(50)),
+                  child: Column(
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            formatName(widget.content['name']),
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 12),
+                          ),
+                          Flexible(
+                            child: Text(
+                              '${widget.content['label']}',
+                              style: TextStyle(fontSize: 12),
+                            ),
+                          ),
+                        ],
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Flexible(
+                            child: RichTextCustomLabel(
+                                content:
+                                    'Sumber : ${widget.content['Sumber']}'),
+                          ),
+                        ],
+                      ),
+                    ],
                   ),
-                  Flexible(
-                    child: Text(
-                      '${widget.content['label']}',
-                      style: TextStyle(fontSize: 12),
-                    ),
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+              ],
+            )
+          : Column(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Container(
+                  width: 250,
+                  margin: EdgeInsets.only(top: 10),
+                  padding: EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                      color: Color.fromARGB(255, 217, 196, 136),
+                      borderRadius: BorderRadius.circular(50)),
+                  child: Column(
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            formatName(widget.content['name']),
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 12),
+                          ),
+                          Flexible(
+                            child: Text(
+                              '${widget.content['label']}',
+                              style: TextStyle(fontSize: 12),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
                   ),
-                ],
-              ),
-            ],
-          ),
-        ),
-        SizedBox(
-          height: 10,
-        ),
-        widget.content['isAr'].toString().isNotEmpty
-            ? InkWell(
-                onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => ArViewPage()));
-                },
-                child: Image.asset(
-                    'assets/images/materi/${widget.content['name']}'),
-              )
-            : InstaImageViewer(
-                child: Image.asset(
-                    'assets/images/materi/${widget.content['name']}'))
-      ],
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                widget.content['isAr'].toString().isNotEmpty
+                    ? InkWell(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => ArViewPage()));
+                        },
+                        child: Image.asset(
+                            'assets/images/materi/${widget.content['name']}'),
+                      )
+                    : InstaImageViewer(
+                        child: Image.asset(
+                            'assets/images/materi/${widget.content['name']}'))
+              ],
+            ),
     );
   }
 }

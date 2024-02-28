@@ -133,7 +133,7 @@ class _InformationPageState extends State<InformationPage> {
               ),
             ),
           ),
-          BottomNavigationCustom()
+          BottomNavigationCustom2()
         ],
       )),
     );

@@ -76,7 +76,7 @@ class _LayoutPageState extends State<LayoutPage> {
       backgroundColor: primaryC,
       body: Stack(
         children: [
-          Flexible(
+          Container(
             child: [
               HomePage(),
               LkpdPage(),

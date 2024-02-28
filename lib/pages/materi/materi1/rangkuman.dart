@@ -130,7 +130,7 @@ class _RangkumanPageState extends State<RangkumanPage> {
               ),
             ),
           ),
-          BottomNavigationCustom()
+          BottomNavigationCustom2()
         ],
       )),
     );

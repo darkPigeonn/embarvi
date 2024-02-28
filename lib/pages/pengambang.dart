@@ -3,6 +3,7 @@ import 'package:embarvi/Components/spacing/spacing.dart';
 import 'package:embarvi/helpers/textFungtions.dart';
 import 'package:embarvi/utils/colorLib.dart';
 import 'package:embarvi/utils/dataText.dart';
+import 'package:embarvi/utils/util.dart';
 import 'package:flutter/material.dart';
 
 class PengembangPage extends StatefulWidget {
@@ -17,10 +18,11 @@ class _PengembangPageState extends State<PengembangPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: primaryC,
       body: SafeArea(
           child: SingleChildScrollView(
         child: Container(
-          color: primaryC,
+          margin: marginPrimary,
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
           padding: EdgeInsets.symmetric(horizontal: 10),
@@ -32,14 +34,14 @@ class _PengembangPageState extends State<PengembangPage> {
               ),
               Spacing2,
               Personal(
-                img: 'assets/images/p1.png',
+                img: 'assets/images/sandi.png',
                 name: 'Retno Sandi Saputra, S.Pd',
                 description:
                     'Merupakan mahasiswa yang sedang menempuh Program Studi Magister Pendidikan Biologi di Universitas Negeri Yogyakarta. Aplikasi EMBARVI ini merupakan produk akhir Tesis yang bertujuan untuk membantu peserta didik kelas X (Fase E) dalam mempelajari materi virus. Semoga produk yang sederhana ini dapat bermanfaat bagi semua.',
               ),
               Spacing2,
               Personal(
-                  img: 'assets/images/p2.png',
+                  img: 'assets/images/dosen.png',
                   name: 'Dr. Dra. Bernadetta Octavia, M.Si',
                   description:
                       'Merupakan Dosen Pembimbing Tesis sekaligus sebagai Dosen Jurusan Pendidikan Biologi, Fakultas Matematika dan Ilmu Pengetahuan Alam, Universitas Negeri Yogyakarta.'),
@@ -69,7 +71,11 @@ class Personal extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Image.asset(img),
+        Image.asset(
+          img,
+          height: 100,
+          width: 100,
+        ),
         SizedBox(
           height: 10,
         ),

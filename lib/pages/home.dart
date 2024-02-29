@@ -157,17 +157,13 @@ class _HomePageState extends State<HomePage> {
                     items: imagesBanner
                         .map((item) => Column(
                               children: [
-                                Flexible(
-                                  child: Container(
-                                    width: 1200,
-                                    margin:
-                                        EdgeInsets.symmetric(horizontal: 10.0),
-                                    child: Image.asset(
-                                      item,
-                                      width: double.infinity,
-                                      height: 300,
-                                      fit: BoxFit.contain,
-                                    ),
+                                ClipRRect(
+                                  borderRadius: BorderRadius.circular(20),
+                                  child: Image.asset(
+                                    item,
+                                    width: double.infinity,
+                                    height: 300,
+                                    fit: BoxFit.cover,
                                   ),
                                 ),
                               ],

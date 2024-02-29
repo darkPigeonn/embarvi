@@ -101,7 +101,7 @@ class TableCustoms extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                width: 22,
+                width: 30,
                 child: Text(
                   number.toString() + '.',
                   style: TextStyle(fontWeight: FontWeight.bold),

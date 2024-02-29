@@ -1,5 +1,7 @@
 import 'package:embarvi/Components/content.dart';
+import 'package:embarvi/Components/menu.dart';
 import 'package:embarvi/Components/spacing/spacing.dart';
+import 'package:embarvi/pages/layout.dart';
 import 'package:embarvi/utils/colorLib.dart';
 import 'package:embarvi/utils/util.dart';
 import 'package:flutter/material.dart';
@@ -35,7 +37,15 @@ class _BibliographyPageState extends State<BibliographyPage> {
             Container(
                 margin: marginPrimary,
                 child: TitlePage(title: 'Daftar Pustaka')),
+            Spacing3,
             Expanded(child: WebNew(controller: controller)),
+            Menu2(
+                onPressed: () {
+                  Navigator.pushReplacement(context,
+                      MaterialPageRoute(builder: (context) => LayoutPage()));
+                },
+                icon: '11.png',
+                label: 'Beranda'),
           ],
         ),
       ),

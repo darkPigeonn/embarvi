@@ -29,7 +29,6 @@ class _FormatifPageState extends State<FormatifPage> {
         child: Container(
           margin: marginPrimary,
           width: MediaQuery.of(context).size.width,
-          height: MediaQuery.of(context).size.height,
           padding: EdgeInsets.symmetric(horizontal: 10),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,

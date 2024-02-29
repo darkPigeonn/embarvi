@@ -390,7 +390,7 @@ final mp_materi1 = {
     {
       'type': 'imagesAr',
       'name': 'm1_ar_9.png',
-      'label': 'Struktu Virus Fa',
+      'label': 'Struktur Virus Fag',
       'Sumber': 'Shutterstock.com',
       'isAr': '1',
     },
@@ -605,8 +605,8 @@ final mp_materi2 = {
     {
       'type': 'youtube',
       'detail':
-          'Ayo kita belajar bersama mengenai siklus litik dengan cara mengklik ikon YouTube di samping!',
-      'link': 'https://youtu.be/pHIWJfz8748?si=brioXUNgybe1E8Z2'
+          'Ayo kita belajar bersama mengenai siklus lisogenik dengan cara mengklik ikon YouTube di samping!',
+      'link': 'https://youtu.be/jQwEiehL8k0?si=ZhmZ67PeNUTx6cn5'
     },
     {"type": "subtitle", "detail": "C. Peranan Virus "},
     {
@@ -627,13 +627,13 @@ final mp_materi2 = {
       'Sumber1': 'www.ruangguru.com',
       'title1': 'Mosaik',
       'detail1':
-          '\tMosaik merupakan jenis penyakit yang disebabkan oleh Tobacco mosaic virus (TMV). Virus ini menyebabkan bercak kuning pada daun tumbuhan tembakau, kacang kedelai, tomat, labu, kentang, mentimun, buncis, gandum, dan tebu (Suhara. 2020). Virus TMV ini ditularkan secara mekanis atau melalui benih. Virus ini dapat bertahan dan bersifat infektif selama beberapa tahun. Umumnya gejala daun tanaman tembakau yang terinfeksi virus ini yaitu daun menjadi berwarna belang hijau muda sampai hijau tua dan mengkerut (Gambar 15). Ukuran daun relatif lebih kecil apabila dibandingkan dengan warna ukuran daun normal. Sedangkan apabila menyerang daun tanaman yang masih muda maka akan menyebabkan pertumbuhannya terhambat dan akhirnya kerdil.',
+          '\tMosaik merupakan jenis penyakit yang disebabkan oleh <i>Tobacco mosaic</i> virus (TMV). Virus ini menyebabkan bercak kuning pada daun tumbuhan tembakau, kacang kedelai, tomat, labu, kentang, mentimun, buncis, gandum, dan tebu (Suhara. 2020). Virus TMV ini ditularkan secara mekanis atau melalui benih. Virus ini dapat bertahan dan bersifat infektif selama beberapa tahun. Umumnya gejala daun tanaman tembakau yang terinfeksi virus ini yaitu daun menjadi berwarna belang hijau muda sampai hijau tua dan mengkerut (Gambar 15). Ukuran daun relatif lebih kecil apabila dibandingkan dengan warna ukuran daun normal. Sedangkan apabila menyerang daun tanaman yang masih muda maka akan menyebabkan pertumbuhannya terhambat dan akhirnya kerdil.',
       'name2': 'm2_img_16.png',
       'label2': 'Penyakit Tungro Pada Padi',
       'Sumber2': 'Kampustani.com',
       'title2': 'Tungro',
       'detail2':
-          '\tTungro merupakan jenis penyakit yang disebabkan oleh dua jenis virus yang berbeda yaitu virus batang Rice Tungro Bacilliform Virus (RTBV) dan virus bentuk bulat Rice Tungro Spherical Virus (RTSV) (Gambar 16). Tungro merupakan penyakit yang menyerang tanaman padi, biasanya terjadi pada fase pertumbuhan vegetatif sehingga menyebabkan tanaman menjadi kerdil, pelepah dan helai daun akan memendek serta daun yang terserang berwarna kuning sampai ke orange sehingga menyebabkan berkurangnya jumlah anakan (Sutrawati. 2019). '
+          '\tTungro merupakan jenis penyakit yang disebabkan oleh dua jenis virus yang berbeda yaitu virus batang <i>Rice Tungro Bacilliform Virus</i> (RTBV) dan virus bentuk bulat Rice Tungro Spherical Virus (RTSV) (Gambar 16). Tungro merupakan penyakit yang menyerang tanaman padi, biasanya terjadi pada fase pertumbuhan vegetatif sehingga menyebabkan tanaman menjadi kerdil, pelepah dan helai daun akan memendek serta daun yang terserang berwarna kuning sampai ke orange sehingga menyebabkan berkurangnya jumlah anakan (Sutrawati. 2019). '
     },
     {
       "type": "text",
@@ -647,13 +647,13 @@ final mp_materi2 = {
       'Sumber1': 'Graham <i>et al</i> (2021)',
       'title1': 'Penyakit Mulut dan Kuku',
       'detail1':
-          '\t      Penyakit mulut dan kuku (PMK) merupakan jenis penyakit disebabkan oleh Aphthovirus yang menyerang ternak seperti sapi, babi dan kerbau. Penyakit ini disebabkan oleh virus yang mudah menyerang hewan ternak berkuku belah (Belsham et al. 2021). Penyebaran penyakit ini disebabkan oleh beberapa hal seperti virus yang terbawa oleh angin, persinggungan badan dengan hewan ternak yang sudah terinfeksi, bercampurnya hewan ternak dalam proses pengangkutan, serta pakan ternak yang mengandung virus. Penyakit ini menyebabkan hewan ternak mengalami sariawan atau luka yang mengganggu kuku dan mulut ternak. Hal ini menyebabkan hewan menjadi tidak nafsu makan selama hampir dua minggu dan menyebabkan kekurusan serta akhirnya menyebabkan kematian (Gambar 17). ',
+          '\t      Penyakit mulut dan kuku (PMK) merupakan jenis penyakit disebabkan oleh <i>Aphthovirus</i> yang menyerang ternak seperti sapi, babi dan kerbau. Penyakit ini disebabkan oleh virus yang mudah menyerang hewan ternak berkuku belah (Belsham <i>et al</i>. 2021). Penyebaran penyakit ini disebabkan oleh beberapa hal seperti virus yang terbawa oleh angin, persinggungan badan dengan hewan ternak yang sudah terinfeksi, bercampurnya hewan ternak dalam proses pengangkutan, serta pakan ternak yang mengandung virus. Penyakit ini menyebabkan hewan ternak mengalami sariawan atau luka yang mengganggu kuku dan mulut ternak. Hal ini menyebabkan hewan menjadi tidak nafsu makan selama hampir dua minggu dan menyebabkan kekurusan serta akhirnya menyebabkan kematian (Gambar 17). ',
       'name2': 'm2_img_18.png',
       'label2': 'Penyakit Rabies pada Anjing',
       'Sumber2': 'halodoc',
       'title2': 'Rabies',
       'detail2':
-          '\t      Rabies merupakan jenis penyakit menyerang hewan seperti anjing, kucing, sapi, dan monyet (Gambar 18). Penyakit ini disebabkan oleh virus Rhabdovirus. Penyakit ini dapat menular dan menyerang pada jaringan saraf pusat melalui gigitan dan air liur hewan yang terinfeksi. Hewan yang terkena penyakit ini akan menunjukan perilaku agresif atau kelumpuhan. Virus ditularkan kepada manusia melalui gigitan hewan yang terinfeksi. Penyakit ini sangat ditakuti dan mengganggu karena apabila menggigit manusia dapat menyebabkan timbulnya gejala kesemutan di sekitar luka gigitan, perasaan gelisah, otot menjadi tegang, gangguan fungsi otak seperti kehilangan kesadaran serta dapat menyebabkan kematian. Pencegahan penyakit rabies yang dapat dilakukan pada hewan ialah dengan dilakukannya vaksinasi (Kesumah. 2020).'
+          '\t      Rabies merupakan jenis penyakit menyerang hewan seperti anjing, kucing, sapi, dan monyet (Gambar 18). Penyakit ini disebabkan oleh virus <i>Rhabdovirus</i>. Penyakit ini dapat menular dan menyerang pada jaringan saraf pusat melalui gigitan dan air liur hewan yang terinfeksi. Hewan yang terkena penyakit ini akan menunjukan perilaku agresif atau kelumpuhan. Virus ditularkan kepada manusia melalui gigitan hewan yang terinfeksi. Penyakit ini sangat ditakuti dan mengganggu karena apabila menggigit manusia dapat menyebabkan timbulnya gejala kesemutan di sekitar luka gigitan, perasaan gelisah, otot menjadi tegang, gangguan fungsi otak seperti kehilangan kesadaran serta dapat menyebabkan kematian. Pencegahan penyakit rabies yang dapat dilakukan pada hewan ialah dengan dilakukannya vaksinasi (Kesumah. 2020).'
     },
     {
       "type": "text",
@@ -667,13 +667,13 @@ final mp_materi2 = {
       'Sumber1': 'Alodokter.com',
       'title1': 'Influenza',
       'detail1':
-          '\t   Influenza merupakan jenis penyakit yang disebabkan oleh virus golongan Orthomyxovirus yang berbentuk seperti bola (Puspaningsih et al. 2021). Virus influenza ditularkan melalui udara dan masuk ke tubuh manusia melalui saluran pernapasan. Gejala influenza ialah demam, sakit kepala, pegal linu pada otot dan kehilangan nafsu makan (Gambar 19). Penanggulangan virus ini dapat dilakukan dengan pemakaian mutan vaksin hidup yang dilemahkan untuk mendorong supaya respon kekebalan tubuh meningkat. Pencegahan terhadap influenza ialah dengan menjaga daya tahan tubuh, melakukan vaksinasi influenza serta menghindar kontak dengan penderita. ',
+          '\t   Influenza merupakan jenis penyakit yang disebabkan oleh virus golongan <i>Orthomyxovirus</i> yang berbentuk seperti bola (Puspaningsih <i>et al</i>. 2021). Virus influenza ditularkan melalui udara dan masuk ke tubuh manusia melalui saluran pernapasan. Gejala influenza ialah demam, sakit kepala, pegal linu pada otot dan kehilangan nafsu makan (Gambar 19). Penanggulangan virus ini dapat dilakukan dengan pemakaian mutan vaksin hidup yang dilemahkan untuk mendorong supaya respon kekebalan tubuh meningkat. Pencegahan terhadap influenza ialah dengan menjaga daya tahan tubuh, melakukan vaksinasi influenza serta menghindar kontak dengan penderita. ',
       'name2': 'm2_img_20.png',
       'label2': 'Penyakit Herpes Simplex',
       'Sumber2': 'Alodokter.com',
       'title2': 'Herpes Simplex',
       'detail2':
-          '\t   Herpes simplex merupakan jenis penyakit disebabkan oleh virus anggota suku Herpesviridae yang menyerang kulit dan selaput lendir (Karasneh, G. A., & Shukla, D. 2011). Penyakit ini biasanya mengenai mata, bibir, mulut, kulit, dan alat kelamin. Infeksi penyakit ini pertama biasanya pada satu tempat dan cenderung hilang timbul. Virus dapat masuk ke dalam tubuh melalui luka kecil. Selain itu, dapat ditularkan melalui hubungan seksual, kecuali pada bagian mata. Gejala utama dari penyakit ini yaitu timbulnya gelembung-gelembung kecil. Gelembung tersebut mudah pecah dan apabila pecah dapat menular pada bagian tubuh lainnya (Gambar 20). '
+          '\t   Herpes simplex merupakan jenis penyakit disebabkan oleh virus anggota suku <i>Herpesviridae</i> yang menyerang kulit dan selaput lendir (Karasneh, G. A., & Shukla, D. 2011). Penyakit ini biasanya mengenai mata, bibir, mulut, kulit, dan alat kelamin. Infeksi penyakit ini pertama biasanya pada satu tempat dan cenderung hilang timbul. Virus dapat masuk ke dalam tubuh melalui luka kecil. Selain itu, dapat ditularkan melalui hubungan seksual, kecuali pada bagian mata. Gejala utama dari penyakit ini yaitu timbulnya gelembung-gelembung kecil. Gelembung tersebut mudah pecah dan apabila pecah dapat menular pada bagian tubuh lainnya (Gambar 20). '
     },
     {
       "type": 'imagesMulti',
@@ -682,13 +682,13 @@ final mp_materi2 = {
       'Sumber1': 'Alodokter.com',
       'title1': 'Ebola',
       'detail1':
-          '\t     Demam berdarah ebola adalah jenis penyakit yang disebabkan oleh Ebola Virus Disease (EVD) (Gambar 21). Gejala awal yang ditimbulkan ebola mirip penyakit influenza yaitu demam, menggigil, sakit kepala, nyeri otot dan nafsu makan berkurang. Gejala ini muncul setelah tubuh terinfeksi dan virus mulai mereplikasikan dirinya. EVD akan menyerang sel darah merah, sehingga menyebabkan kematian dan menyumbatnya saluran kapiler darah yang mengakibatkan kulit memar dan melepuh. Ebola ditularkan melalui kontak langsung dengan cairan tubuh penderita misalnya melalui darah, feses (tinja), urin, ludah, dan keringat (Jacob et al. 2020). ',
+          '\t     Demam berdarah ebola adalah jenis penyakit yang disebabkan oleh <i>Ebola Virus Disease</i> (EVD) (Gambar 21). Gejala awal yang ditimbulkan ebola mirip penyakit influenza yaitu demam, menggigil, sakit kepala, nyeri otot dan nafsu makan berkurang. Gejala ini muncul setelah tubuh terinfeksi dan virus mulai mereplikasikan dirinya. EVD akan menyerang sel darah merah, sehingga menyebabkan kematian dan menyumbatnya saluran kapiler darah yang mengakibatkan kulit memar dan melepuh. Ebola ditularkan melalui kontak langsung dengan cairan tubuh penderita misalnya melalui darah, feses (tinja), urin, ludah, dan keringat (Jacob <i>et al</i>. 2020). ',
       'name2': 'm2_img_22.png',
       'label2': 'Penderita AIDS',
       'Sumber2': 'Alodokter.com',
       'title2': 'AIDS',
       'detail2':
-          '\t     AIDS (Acquired Immunodeficiency Syndrome) merupakan penurunan sistem kekebalan tubuh yang disebabkan oleh HIV (Human Immunodeficiency Virus). HIV merupakan virus golongan Retrovirus yang memiliki 2 molekul RNA. HIV tidak menular melalui udara, kontak biasa, atau melalui gigitan serangga, batuk, bersin, berjabat tangan, atau menggunakan peralatan makan atau mandi yang sama. HIV menular melalui hubungan seksual, transfusi darah, air susu ibu (ASI) serta penggunaan jarum suntik yang terkontaminasi HIV (Siagian. 2023).\n       Masa inkubasi HIV dapat berlangsung dalam hitungan bulan bahkan tahun (Nishiura. 2019). Tubuh yang terinfeksi HIV tidak secara langsung menunjukan gejala sakit yang parah. Akan tetapi, HIV yang berada di dalam tubuh akan bereproduksi dan menyerang sistem kekebalan tubuh. Tubuh penderita akan semakin rentan terhadap berbagai penyakit yang diakibatkan oleh sistem kekebalan tubuh yang melemah (Gambar 22). Penyakit yang umumnya diderita ialah pneumonia, diare, kanker, penurunan berat badan, dan gagal jantung hingga akhirnya menyebabkan kematian.'
+          '\t     AIDS <i>(Acquired Immunodeficiency Syndrome)</i> merupakan penurunan sistem kekebalan tubuh yang disebabkan oleh HIV <i>(Human Immunodeficiency Virus)</i>. HIV merupakan virus golongan Retrovirus yang memiliki 2 molekul RNA. HIV tidak menular melalui udara, kontak biasa, atau melalui gigitan serangga, batuk, bersin, berjabat tangan, atau menggunakan peralatan makan atau mandi yang sama. HIV menular melalui hubungan seksual, transfusi darah, air susu ibu (ASI) serta penggunaan jarum suntik yang terkontaminasi HIV (Siagian. 2023).\n       Masa inkubasi HIV dapat berlangsung dalam hitungan bulan bahkan tahun (Nishiura. 2019). Tubuh yang terinfeksi HIV tidak secara langsung menunjukan gejala sakit yang parah. Akan tetapi, HIV yang berada di dalam tubuh akan bereproduksi dan menyerang sistem kekebalan tubuh. Tubuh penderita akan semakin rentan terhadap berbagai penyakit yang diakibatkan oleh sistem kekebalan tubuh yang melemah (Gambar 22). Penyakit yang umumnya diderita ialah pneumonia, diare, kanker, penurunan berat badan, dan gagal jantung hingga akhirnya menyebabkan kematian.'
     },
     {
       "type": 'imagesMulti',
@@ -697,7 +697,7 @@ final mp_materi2 = {
       'Sumber1': 'Alodokter.com',
       'title1': 'Coronavirus',
       'detail1':
-          '\t    Coronavirus atau yang sering dikenal dengan Covid-19 merupakan penyakit yang disebabkan oleh virus SARS-CoV-2 (Severe Acute Respiratory Syndrome Coronavirus 2) (Gambar 23). Penyakit ini telah menyebabkan pandemi di seluruh bagian dunia dan menyebabkan banyaknya korban meninggal. Adapun gejala dari virus ini membuat penderita sakit pada saluran pernapasan bagian atas dengan tingkat ringan hingga sedang, mirip dengan flu biasa. Gejala Covid-19 lainnya seperti pilek, batuk, sakit tenggorokan, sakit kepala dan demam. Bagi penderita yang memiliki sistem kekebalan tubuh yang lemah, virus ini dapat menyebabkan penyakit pada saluran pernapasan dan yang lebih seriusnya pneumonia atau bronkitis bahkan dapat menyebabkan kematian (Levani, 2021).',
+          '\t    Coronavirus atau yang sering dikenal dengan Covid-19 merupakan penyakit yang disebabkan oleh virus SARS-CoV-2 <i>(Severe Acute Respiratory Syndrome Coronavirus 2)</i> (Gambar 23). Penyakit ini telah menyebabkan pandemi di seluruh bagian dunia dan menyebabkan banyaknya korban meninggal. Adapun gejala dari virus ini membuat penderita sakit pada saluran pernapasan bagian atas dengan tingkat ringan hingga sedang, mirip dengan flu biasa. Gejala Covid-19 lainnya seperti pilek, batuk, sakit tenggorokan, sakit kepala dan demam. Bagi penderita yang memiliki sistem kekebalan tubuh yang lemah, virus ini dapat menyebabkan penyakit pada saluran pernapasan dan yang lebih seriusnya pneumonia atau bronkitis bahkan dapat menyebabkan kematian (Levani, 2021).',
       'name2': '-',
       'label2': '-',
       'Sumber2': '-',
@@ -730,7 +730,7 @@ final mp_materi2 = {
       'Sumber1': 'CNBC Indonesia',
       'title1': 'Memproduksi Vaksin',
       'detail1':
-          '\t     Menurut Kis, Z., et al (2019) mengatakan bahwa vaksin merupakan bibit penyakit yang telah dilemahkan dan apabila menyerang manusia tidak akan berbahaya lagi. Vaksin digunakan manusia untuk memperoleh kekebalan tubuh (antibodi). Apabila ada penyakit yang menyerang manusia, maka tubuh yang telah memiliki kekebalan akan menjaga tubuh berasal dari antibodi bagi penyakit tersebut. Contohnya vaksin cacar, polio, covid-19 dan campak (Gambar 24). Metode yang paling efektif digunakan adalah vaksinasi yang berfungsi merangsang kekebalan alami tubuh terhadap proses infeksi. Sedangkan penggunaan antibiotik diantisipasi untuk mengatasi gejala infeksi virus.',
+          '\t     Menurut Kis, Z., <i>et al</i> (2019) mengatakan bahwa vaksin merupakan bibit penyakit yang telah dilemahkan dan apabila menyerang manusia tidak akan berbahaya lagi. Vaksin digunakan manusia untuk memperoleh kekebalan tubuh (antibodi). Apabila ada penyakit yang menyerang manusia, maka tubuh yang telah memiliki kekebalan akan menjaga tubuh berasal dari antibodi bagi penyakit tersebut. Contohnya vaksin cacar, polio, covid-19 dan campak (Gambar 24). Metode yang paling efektif digunakan adalah vaksinasi yang berfungsi merangsang kekebalan alami tubuh terhadap proses infeksi. Sedangkan penggunaan antibiotik diantisipasi untuk mengatasi gejala infeksi virus.',
       'name2': 'm2_img_25.png',
       'label2': 'Virus sebagai Bahan Pembuatan Antitoksin Tetanus',
       'Sumber2': 'CNBC Indonesia',
@@ -751,7 +751,7 @@ final mp_materi2 = {
       'Sumber2': 'www.famasetika.com',
       'title2': 'Rekayasa Genetika',
       'detail2':
-          '\t       Rekayasa genetika merupakan suatu sistem modifikasi genetik pada genom organisme (Puspaningsih et al. 2021). Rekayasa genetika digunakan ilmuwan untuk meningkatkan atau bahkan memodifikasi karakteristik ekspresi gen pada suatu organisme. Hal ini termasuk pula modifikasi gen yang memungkinkan adanya pencegahan dan pengobatan penyakit tertentu. Rekayasa genetika dalam bidang kesehatan salah satunya dapat dimanfaatkan untuk terapi penyakit melalui terapi gen.\n     Terapi gen merupakan salah satu prosedur medis yang melibatkan pengubahan gen dalam sel tubuh guna mengobati atau menghentikan suatu penyakit (Li, C., et al. 2020). Terapi gen dilakukan dengan menambahkan gen normal ke bagian genom yang rusak, sehingga fungsi gen dapat kembali salah satunya ialah menggunakan vektor (pembawa) virus. Terapi gen dapat dilakukan secara in vivo dan ex vivo. Terapi gen in vivo dilakukan dengan menempatkan gen-gen untuk penyembuhan (gen terapeutik) ke dalam genom virus. Vektor virus kemudian disuntikan ke dalam tubuh melalui intraparenkim (IV), intratekal (IT), intramuskular (IM), atau intraparenkim (IP) untuk mentransduksi sel sasaran. Sementara itu, terapi gen ex vivo dimulai dengan ekstraksi sel induk dari tubuh. Virus dengan gen terapeutik akan mentransduksi sel induk di luar tubuh pasien. Setelah vektor virus berhasil mentransfer gen ke sel, sel dimasukan kembali ke dalam tubuh melalui IV, IT, atau IM dan agar gen dapat diekspresikan. \n     Terapi gen juga digunakan untuk mengobati beberapa jenis penyakit contohnya leukimia. Metode vektor secara ex vivo contohnya melibatkan penggunaan virus vektor untuk memasukkan gen tertentu ke dalam sel leukemia yang dapat memicu kematian sel kanker atau menghentikan pertumbuhannya (Gambar 27). Sedangkan metode in vivo digunakan untuk kelainan genetik yang spesifik misalnya Luxturna untuk mengobati penyakit kebutaan yang langka. '
+          '\t       Rekayasa genetika merupakan suatu sistem modifikasi genetik pada genom organisme (Puspaningsih <i>et al</i>. 2021). Rekayasa genetika digunakan ilmuwan untuk meningkatkan atau bahkan memodifikasi karakteristik ekspresi gen pada suatu organisme. Hal ini termasuk pula modifikasi gen yang memungkinkan adanya pencegahan dan pengobatan penyakit tertentu. Rekayasa genetika dalam bidang kesehatan salah satunya dapat dimanfaatkan untuk terapi penyakit melalui terapi gen.\n     Terapi gen merupakan salah satu prosedur medis yang melibatkan pengubahan gen dalam sel tubuh guna mengobati atau menghentikan suatu penyakit (Li, C., <i>et al</i>. 2020). Terapi gen dilakukan dengan menambahkan gen normal ke bagian genom yang rusak, sehingga fungsi gen dapat kembali salah satunya ialah menggunakan vektor (pembawa) virus. Terapi gen dapat dilakukan secara <i>in vivo</i> dan <i>ex vivo</i>. Terapi gen <i>in vivo</i> dilakukan dengan menempatkan gen-gen untuk penyembuhan (gen terapeutik) ke dalam genom virus. Vektor virus kemudian disuntikan ke dalam tubuh melalui intraparenkim (IV), intratekal (IT), intramuskular (IM), atau intraparenkim (IP) untuk mentransduksi sel sasaran. Sementara itu, terapi gen <i>ex vivo</i> dimulai dengan ekstraksi sel induk dari tubuh. Virus dengan gen terapeutik akan mentransduksi sel induk di luar tubuh pasien. Setelah vektor virus berhasil mentransfer gen ke sel, sel dimasukan kembali ke dalam tubuh melalui IV, IT, atau IM dan agar gen dapat diekspresikan. \n     Terapi gen juga digunakan untuk mengobati beberapa jenis penyakit contohnya leukimia. Metode vektor secara <i>ex vivo</i> contohnya melibatkan penggunaan virus vektor untuk memasukkan gen tertentu ke dalam sel leukemia yang dapat memicu kematian sel kanker atau menghentikan pertumbuhannya (Gambar 27). Sedangkan metode <i>in vivo</i> digunakan untuk kelainan genetik yang spesifik misalnya Luxturna untuk mengobati penyakit kebutaan yang langka. '
     },
     {
       "type": "text",
@@ -764,7 +764,7 @@ final mp_materi2 = {
       'label': 'Baculovirus yang Menginfeksi Larva Serangga',
       'Sumber': 'Lee <i>et al</i>(2017)',
       'detail':
-          '\t      Penggunaan Baculovirus pada lahan telah berhasil mengendalikan hama serangga terutama dari hama serangga tanaman dari ordo Lepidoptera. Baculovirus merupakan alternatif dalam mengatasi permasalahan hama yang resisten terhadap insektisida sintetik. Baculovirus memiliki struktur yang kompleks sehingga membuat materi genetik virus lebih terlindungi dan menguntungkan aplikasi serta penyimpanannya (Gambar 28). Baculovirus akan menghambat aktivitas sel inang, memproduksi komponen-komponen virus dan menghancurkan sel inang yang perlahan akan mematikan larva serangga (Lee et al. 2017). \n     Beberapa virus hidup parasit pada serangga, virus tersebut dibiakan dan digunakan untuk menyemprot serangga atau tanaman misalnya Baculovirus. Baculovirus ditanamkan pada gen tanaman pertanian. Akibatnya, larva serangga yang memakan tumbuhan tersebut akan terinfeksi dengan Baculovirus dan lama-kelamaan dapat merusak jaringan tumbuhan. Baculovirus digunakan sebagai bioinsektisida semenjak tahun 1950. Penggunaan Baculovirus ini dikarenakan tidak mencemari lingkungan sebab tidak menghasilkan senyawa anorganik sebagai residu dari insektisida yang terbuang dan mencemari lingkungan sekitar. Kemampuannya dalam melemahkan inangnya dimanfaatkan dalam pengobatan biologis untuk melemahkan atau membunuh bakteri, jamur atau protozoa yang bersifat patogen.'
+          '\t      Penggunaan <i>Baculovirus</i> pada lahan telah berhasil mengendalikan hama serangga terutama dari hama serangga tanaman dari ordo Lepidoptera. <i>Baculovirus</i> merupakan alternatif dalam mengatasi permasalahan hama yang resisten terhadap insektisida sintetik. <i>Baculovirus</i> memiliki struktur yang kompleks sehingga membuat materi genetik virus lebih terlindungi dan menguntungkan aplikasi serta penyimpanannya (Gambar 28). <i>Baculovirus</i> akan menghambat aktivitas sel inang, memproduksi komponen-komponen virus dan menghancurkan sel inang yang perlahan akan mematikan larva serangga (Lee et al. 2017). \n     Beberapa virus hidup parasit pada serangga, virus tersebut dibiakan dan digunakan untuk menyemprot serangga atau tanaman misalnya <i>Baculovirus</i>. <i>Baculovirus</i> ditanamkan pada gen tanaman pertanian. Akibatnya, larva serangga yang memakan tumbuhan tersebut akan terinfeksi dengan <i>Baculovirus</i> dan lama-kelamaan dapat merusak jaringan tumbuhan. <i>Baculovirus</i> digunakan sebagai bioinsektisida semenjak tahun 1950. Penggunaan <i>Baculovirus</i> ini dikarenakan tidak mencemari lingkungan sebab tidak menghasilkan senyawa anorganik sebagai residu dari insektisida yang terbuang dan mencemari lingkungan sekitar. Kemampuannya dalam melemahkan inangnya dimanfaatkan dalam pengobatan biologis untuk melemahkan atau membunuh bakteri, jamur atau protozoa yang bersifat patogen.'
     },
     {
       "type": "text",
@@ -787,7 +787,7 @@ final mp_materi2 = {
       "detail":
           "\t  Virus seringkali merusak dan membunuh sel-sel yang diinfeksi sehingga akan muncul gejala penyakit seperti batuk, ataupun gejala lainnya. Munculnya gejala penyakit merupakan bentuk perlawanan sistem kekebalan tubuh terhadap virus. Akan tetapi, terkadang sistem kekebalan tubuh dapat melemah dan tidak mampu melawan infeksi virus secara optimal. Oleh sebab itu, diperlukan pencegahan dan pengobatan untuk mengurangi infeksi virus (Pratiwi <i>et al</i>. 2014; Puspaningsih <i>et al</i>. 2021). Pencegahan yang dapat dilakukan untuk terhindar dari virus ada beberapa antara lain:"
     },
-    {"type": "subtitle2", "detail": "1. Pencegahan"},
+    {"type": "subTitle2", "detail": "1. Pencegahan"},
     {"type": "textBold", "detail": "a. Vaksin "},
     {
       "type": "text",
@@ -837,7 +837,7 @@ final mp_materi2 = {
         {
           "type": "bullet",
           "detail":
-              "Vaksin DNA (Naked plasmid DNA), gen-gen tertentu dari mikroba diklon ke dalam suatu plasmid bakteri yang direkayasa untuk meningkatkan ekspresi gen yang diinsersikan ke dalam sel mamalia. "
+              "Vaksin DNA (<i>Naked plasmid</i> DNA), gen-gen tertentu dari mikroba diklon ke dalam suatu plasmid bakteri yang direkayasa untuk meningkatkan ekspresi gen yang diinsersikan ke dalam sel mamalia. "
         },
       ],
     },
@@ -859,7 +859,7 @@ final mp_materi2 = {
       "detail":
           "\t      Sistem imun akan membantu tubuh untuk bertahan dan memulihkan diri. Menerapkan pola hidup sehat dapat meningkatkan kekebalan tubuh untuk mencegah infeksi virus. Beberapa contoh pola hidup sehat antara lain rutin berolahraga, mengkonsumsi makanan dan minuman yang sehat (4 sehat 5 sempurna), menjaga kebersihan diri dan lingkungan (Gambar 29). "
     },
-    {"type": "subtitle2", "detail": "2. Pengobatan"},
+    {"type": "subTitle2", "detail": "2. Pengobatan"},
     {"type": "textBold", "detail": "1. Obat Antivirus "},
     {
       "type": "text",
@@ -1188,8 +1188,7 @@ final questions = [
     "options": [
       {
         "number": 1,
-        "value":
-            "<i><i>Tobacco Mosaic Virus</i> (TMV) dan <i>Adenovirus</i></i>"
+        "value": "<i>Tobacco Mosaic Virus</i> (TMV) dan <i>Adenovirus</i>"
       },
       {"number": 2, "value": "<i><i>Herpesvirus</i> dan <i>Papovirus</i></i>"},
       {"number": 3, "value": "<i><i>Adenovirus</i> dan <i>Reovirus</i></i>"},
@@ -1341,5 +1340,5 @@ final questions = [
     ],
     "correctAnswer": 1,
     "point": ""
-  }
+  },
 ];

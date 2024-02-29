@@ -1,5 +1,4 @@
 import 'package:embarvi/Components/content.dart';
-import 'package:embarvi/Components/header.dart';
 import 'package:embarvi/Components/menu.dart';
 import 'package:embarvi/Components/spacing/spacing.dart';
 import 'package:embarvi/helpers/textFungtions.dart';
@@ -177,6 +176,33 @@ class TabelPetunjuk extends StatelessWidget {
           )
         ],
       ),
+    );
+  }
+}
+
+class SubTitle extends StatelessWidget {
+  final String label;
+  const SubTitle({
+    super.key,
+    required this.label,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        Container(
+          decoration: BoxDecoration(
+              color: Colors.yellow, borderRadius: BorderRadius.circular(20)),
+          margin: const EdgeInsets.only(top: 10, bottom: 10),
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+          child: Text(
+            label,
+            textAlign: TextAlign.left,
+            style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
+          ),
+        ),
+      ],
     );
   }
 }

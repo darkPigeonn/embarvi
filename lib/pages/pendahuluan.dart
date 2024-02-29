@@ -214,7 +214,11 @@ class RichTextCustomLabel extends StatelessWidget {
     for (int i = 0; i < parts.length; i++) {
       textSpans.add(TextSpan(
           text: parts[i],
-          style: TextStyle(height: 1.6, color: Colors.black, fontSize: 9)));
+          style: TextStyle(
+              height: 1.6,
+              color: Colors.black,
+              fontSize: 9,
+              fontWeight: FontWeight.bold)));
 
       if (i < italicMatches.length) {
         textSpans.add(TextSpan(
@@ -234,6 +238,7 @@ class RichTextCustomLabel extends StatelessWidget {
     }
 
     return RichText(
+      textAlign: TextAlign.center,
       text: TextSpan(children: textSpans),
     );
   }
@@ -309,7 +314,7 @@ class RichTextCustom2 extends StatelessWidget {
     if (label.contains('Menu Materi')) {}
 
     return RichText(
-      textAlign: TextAlign.justify,
+      textAlign: TextAlign.center,
       text: TextSpan(children: textSpans),
     );
   }

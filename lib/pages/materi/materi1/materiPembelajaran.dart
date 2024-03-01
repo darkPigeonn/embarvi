@@ -536,7 +536,6 @@ class _TableImageState extends State<TableImage> {
                     'assets/images/materi/${widget.content['name']}'))
             : InkWell(
                 onTap: () {
-                  print(widget.content['detail'] is List);
                   showDialog(
                     context: context,
                     builder: (context) => Dialog(
@@ -613,14 +612,10 @@ class _TableImageState extends State<TableImage> {
                     ),
                   );
                 },
-                child: Container(
-                  margin: EdgeInsets.only(bottom: 10),
-                  child: ClipRRect(
-                      borderRadius: BorderRadius.circular(10),
-                      child: Image.asset(
-                        'assets/images/materi/${widget.content['name']}',
-                      )),
-                ),
+                child: ClipRRect(
+                    child: Image.asset(
+                  'assets/images/materi/${widget.content['name']}',
+                )),
               ),
       ],
     );
@@ -796,7 +791,7 @@ class itemImages4 extends StatelessWidget {
               )
             : Container(),
         title == 'kosong'
-            ? Text(title)
+            ? Container()
             : Container(
                 padding: EdgeInsets.all(10),
                 margin: EdgeInsets.symmetric(vertical: 10),

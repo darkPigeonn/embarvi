@@ -2,6 +2,7 @@ import 'package:embarvi/Components/content.dart';
 import 'package:embarvi/Components/header.dart';
 import 'package:embarvi/Components/spacing/spacing.dart';
 import 'package:embarvi/helpers/textFungtions.dart';
+import 'package:embarvi/pages/pendahuluan.dart';
 import 'package:embarvi/pages/petaKonsep.dart';
 import 'package:embarvi/utils/colorLib.dart';
 import 'package:embarvi/utils/dataText.dart';
@@ -45,27 +46,7 @@ class _RangkumanPageState extends State<RangkumanPage> {
                       physics: NeverScrollableScrollPhysics(),
                       itemBuilder: (context, index) {
                         return content[index]['type'] == 'text'
-                            ? RichText(
-                                textAlign: TextAlign.justify,
-                                text: TextSpan(
-                                  style: const TextStyle(height: 1.6),
-                                  children: <TextSpan>[
-                                    TextSpan(
-                                      text:
-                                          '\ t', // Tambahkan spasi tambahan di antara karakter tab dan teks
-                                      style: TextStyle(
-                                        height: 2,
-                                        fontSize:
-                                            17, // Sesuaikan ukuran teks sesuai kebutuhan
-                                      ),
-                                    ),
-                                    TextSpan(
-                                      text: content[index]['detail'].toString(),
-                                      style: DefaultTextStyle.of(context).style,
-                                    ),
-                                  ],
-                                ),
-                              )
+                            ? RichTextCustom(content: content[index]['detail'])
                             : content[index]['type'] == 'bullet'
                                 ? BulletItem2(text: content[index]['detail'])
                                 : content[index]['type'] == 'info'
@@ -214,7 +195,7 @@ class BulletItem2 extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
-            padding: EdgeInsets.only(right: 5.0, top: 6),
+            padding: EdgeInsets.only(right: 5.0, top: 10),
             child: Icon(
               Icons.circle,
               size: 10.0,
@@ -222,10 +203,8 @@ class BulletItem2 extends StatelessWidget {
             ),
           ),
           Flexible(
-            child: Text(
-              '$text',
-              style: TextStyle(height: 1.5, fontSize: 17),
-              textAlign: TextAlign.justify,
+            child: RichTextCustom(
+              content: text,
             ),
           ),
         ],

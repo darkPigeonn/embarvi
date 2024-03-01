@@ -4,6 +4,7 @@ import 'package:embarvi/Components/header.dart';
 import 'package:embarvi/Components/spacing/spacing.dart';
 import 'package:embarvi/helpers/textFungtions.dart';
 import 'package:embarvi/pages/indikator.dart';
+import 'package:embarvi/pages/layout.dart';
 import 'package:embarvi/pages/materi.dart';
 import 'package:embarvi/pages/quiz/quiz.dart';
 import 'package:embarvi/utils/colorLib.dart';
@@ -76,7 +77,28 @@ class _FormatifPageState extends State<FormatifPage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  BottomBackHome(),
+                  InkWell(
+                    onTap: () {
+                      Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => LayoutPage()));
+                    },
+                    child: Container(
+                      width: 60,
+                      height: 60,
+                      padding: EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: Colors.white, // Warna latar belakang putih
+                      ),
+                      child: Image.asset(
+                        'assets/images/icons/11.png',
+                        width: 30, // Sesuaikan ukuran gambar jika perlu
+                        height: 30, // Sesuaikan ukuran gambar jika perlu
+                      ),
+                    ),
+                  ),
                   ElevatedButton(
                     onPressed: () {
                       Navigator.push(context,

@@ -5,6 +5,7 @@ import 'package:embarvi/pages/materi.dart';
 import 'package:embarvi/pages/materi/materi1/informasi.dart';
 import 'package:embarvi/pages/materi/materi1/materiPembelajaran.dart';
 import 'package:embarvi/pages/quiz/quiz.dart';
+import 'package:embarvi/pages/quiz/result.dart';
 import 'package:embarvi/pages/splashscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -46,7 +47,9 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: false,
       ),
-      home: const SplashScreenPage(),
+      home: const ResultScreen(
+        score: 15,
+      ),
     );
   }
 }

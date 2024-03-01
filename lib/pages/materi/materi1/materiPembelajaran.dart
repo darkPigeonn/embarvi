@@ -325,7 +325,7 @@ class _ImagesSingleState extends State<ImagesSingle> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Flexible(
-                            child: RichTextCustomLabel(
+                            child: RichTextCustomSumber(
                                 content:
                                     'Sumber : ${widget.content['Sumber']}'),
                           ),
@@ -419,7 +419,6 @@ class _ImagesMultiState extends State<ImagesMulti> {
 
   @override
   Widget build(BuildContext context) {
-    print('${widget.content['isAr'].toString()} isAr');
     return Container(
       margin: EdgeInsets.symmetric(vertical: 10),
       child: Row(
@@ -451,7 +450,11 @@ class _ImagesMultiState extends State<ImagesMulti> {
                       detail: widget.content['detail1'],
                       label: widget.content['label1'],
                       sumber: widget.content['Sumber1'],
-                      title: 'a. ${widget.content['title1']}',
+                      title: widget.content['title1']
+                              .toString()
+                              .contains('Melemahkan Bakteri')
+                          ? 'c.  ${widget.content['title1']}'
+                          : 'a. ${widget.content['title1']}',
                       imageLabel: formatName(widget.content['name1']),
                     ),
           widget.content['label2'] != '-'
@@ -468,7 +471,11 @@ class _ImagesMultiState extends State<ImagesMulti> {
                       detail: widget.content['detail2'],
                       label: widget.content['label2'],
                       sumber: widget.content['Sumber2'],
-                      title: 'b. ${widget.content['title2']}',
+                      title: widget.content['title2']
+                              .toString()
+                              .contains('Rekayasa Genetika')
+                          ? 'd.${widget.content['title2']}'
+                          : 'b. ${widget.content['title2']}',
                       imageLabel: formatName(widget.content['name2']),
                     )
               : Container()
@@ -558,52 +565,57 @@ class _TableImageState extends State<TableImage> {
                                   width: 150,
                                 )),
                           )),
-                          Container(
-                            height: 400,
-                            padding: EdgeInsets.all(15),
-                            decoration: const BoxDecoration(
-                                shape: BoxShape.rectangle,
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20))),
+                          Expanded(
                             child: SingleChildScrollView(
-                              child: Column(
-                                children: [
-                                  widget.content['detail'] is List
-                                      ? ListView.builder(
-                                          itemCount:
-                                              widget.content['detail'].length,
-                                          shrinkWrap: true,
-                                          physics:
-                                              NeverScrollableScrollPhysics(),
-                                          itemBuilder: (context, index) {
-                                            print(widget.content);
-                                            return widget.content['detail']
-                                                        [index]['type'] ==
-                                                    'text'
-                                                ? Container(
-                                                    child: RichTextCustom(
-                                                        content: widget
-                                                            .content['detail']
-                                                                [index]
-                                                                ['detail']
-                                                            .toString()),
-                                                  )
-                                                : widget.content['detail']
+                              child: Container(
+                                padding: EdgeInsets.all(15),
+                                decoration: const BoxDecoration(
+                                    shape: BoxShape.rectangle,
+                                    borderRadius:
+                                        BorderRadius.all(Radius.circular(20))),
+                                child: SingleChildScrollView(
+                                  child: Column(
+                                    children: [
+                                      widget.content['detail'] is List
+                                          ? ListView.builder(
+                                              itemCount: widget
+                                                  .content['detail'].length,
+                                              shrinkWrap: true,
+                                              physics:
+                                                  NeverScrollableScrollPhysics(),
+                                              itemBuilder: (context, index) {
+                                                return widget.content['detail']
                                                             [index]['type'] ==
-                                                        'bullet'
-                                                    ? BulletItem2(
-                                                        text: widget
-                                                            .content['detail']
-                                                                [index]
-                                                                ['detail']
-                                                            .toString())
-                                                    : Container();
-                                          },
-                                        )
-                                      : RichTextCustom(
-                                          content:
-                                              "${widget.content['detail']}")
-                                ],
+                                                        'text'
+                                                    ? Container(
+                                                        child: RichTextCustom(
+                                                            content: widget
+                                                                .content[
+                                                                    'detail']
+                                                                    [index]
+                                                                    ['detail']
+                                                                .toString()),
+                                                      )
+                                                    : widget.content['detail']
+                                                                    [index]
+                                                                ['type'] ==
+                                                            'bullet'
+                                                        ? BulletItem2(
+                                                            text: widget
+                                                                .content[
+                                                                    'detail']
+                                                                    [index]
+                                                                    ['detail']
+                                                                .toString())
+                                                        : Container();
+                                              },
+                                            )
+                                          : RichTextCustom(
+                                              content:
+                                                  "${widget.content['detail']}")
+                                    ],
+                                  ),
+                                ),
                               ),
                             ),
                           ),
@@ -731,7 +743,7 @@ class itemImages extends StatelessWidget {
                         //   ' : $sumber',
                         //   style: TextStyle(fontSize: 9),
                         // ),
-                        RichTextCustomLabel(content: sumber)
+                        RichTextCustomSumber(content: sumber)
                       ],
                     )
                   ],
@@ -757,12 +769,15 @@ class itemImages4 extends StatelessWidget {
   final String name;
   final String label;
   final String sumber;
-  final String detail;
+  final dynamic detail;
   final String title;
 
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
+      mainAxisSize: MainAxisSize.max,
+      mainAxisAlignment: MainAxisAlignment.end,
       children: [
         sumber == '-'
             ? Container(
@@ -793,13 +808,17 @@ class itemImages4 extends StatelessWidget {
         title == 'kosong'
             ? Container()
             : Container(
-                padding: EdgeInsets.all(10),
                 margin: EdgeInsets.symmetric(vertical: 10),
+                width: 169,
                 decoration:
                     BoxDecoration(color: Color.fromARGB(255, 237, 228, 150)),
-                child: Text(
-                  title,
-                  style: TextStyle(fontWeight: FontWeight.bold),
+                child: Container(
+                  padding: EdgeInsets.all(10),
+                  child: Text(
+                    title,
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+                    textAlign: TextAlign.center,
+                  ),
                 ),
               ),
         InkWell(
@@ -816,8 +835,8 @@ class itemImages4 extends StatelessWidget {
                 ),
                 child: Column(
                   children: [
-                    Positioned(
-                      top: 0,
+                    Container(
+                      margin: EdgeInsets.only(top: 10),
                       child: InstaImageViewer(
                           child: Container(
                         margin: EdgeInsets.only(top: 10),
@@ -829,15 +848,43 @@ class itemImages4 extends StatelessWidget {
                             )),
                       )),
                     ),
-                    Container(
-                      height: 450,
-                      padding: EdgeInsets.all(15),
-                      decoration: const BoxDecoration(
-                          shape: BoxShape.rectangle,
-                          borderRadius: BorderRadius.all(Radius.circular(20))),
+                    Expanded(
                       child: SingleChildScrollView(
-                        child: Column(
-                          children: [RichTextCustom(content: detail)],
+                        child: Container(
+                          padding: EdgeInsets.all(15),
+                          decoration: const BoxDecoration(
+                              shape: BoxShape.rectangle,
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(20))),
+                          child: SingleChildScrollView(
+                            child: Column(
+                              children: [
+                                detail is List
+                                    ? ListView.builder(
+                                        itemCount: detail.length,
+                                        shrinkWrap: true,
+                                        physics: NeverScrollableScrollPhysics(),
+                                        itemBuilder: (context, index) {
+                                          return detail[index]['type'] == 'text'
+                                              ? Container(
+                                                  child: RichTextCustom(
+                                                      content: detail[index]
+                                                              ['detail']
+                                                          .toString()),
+                                                )
+                                              : detail[index]['type'] ==
+                                                      'bullet'
+                                                  ? BulletItem2(
+                                                      text: detail[index]
+                                                              ['detail']
+                                                          .toString())
+                                                  : Container();
+                                        },
+                                      )
+                                    : RichTextCustom(content: "${detail}")
+                              ],
+                            ),
+                          ),
                         ),
                       ),
                     ),
@@ -859,7 +906,7 @@ class itemImages4 extends StatelessWidget {
         sumber != '-'
             ? imageLabel != 'kosong'
                 ? Container(
-                    width: 150,
+                    width: 170,
                     padding: EdgeInsets.all(10),
                     decoration: BoxDecoration(
                         color: Color.fromARGB(255, 217, 196, 136),
@@ -899,7 +946,8 @@ class itemImages4 extends StatelessWidget {
                             //   ' : $sumber',
                             //   style: TextStyle(fontSize: 9),
                             // ),
-                            RichTextCustomLabel(content: sumber)
+                            Flexible(
+                                child: RichTextCustomSumber(content: sumber))
                           ],
                         )
                       ],

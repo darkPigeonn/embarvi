@@ -503,7 +503,7 @@ final mp_materi2 = {
     {
       'type': 'youtube',
       'detail':
-          'Ayo kita belajar bersama mengenai cara virus menginfeksi sel inang dengan mengklik ikon YouTube di samping!',
+          'Ayo kita belajar bersama menganai siklus litik dengan cara mengklik ikon YouTube di samping!',
       'link': 'https://youtu.be/pHIWJfz8748?si=brioXUNgybe1E8Z2'
     },
     {
@@ -539,7 +539,7 @@ final mp_materi2 = {
     {
       "type": "textBoldContent",
       "detail":
-          "\t      <i>Virus-virus</i> baru yang sempurna telah terbentuk, maka induk virus akan mengeluarkan enzim lisozim sebagai penghancur sel inang dan memungkinkan cairan masuk. Sel mengembang dan akhirnya pecah dengan melepaskan 100 sampai 200 virus baru. Virus tersebut akan mencari sel lain untuk kemudian melanjutkan siklus hidup mereka. "
+          "\t      Virus-virus baru yang sempurna telah terbentuk, maka induk virus akan mengeluarkan enzim lisozim sebagai penghancur sel inang dan memungkinkan cairan masuk. Sel mengembang dan akhirnya pecah dengan melepaskan 100 sampai 200 virus baru. Virus tersebut akan mencari sel lain untuk kemudian melanjutkan siklus hidup mereka. "
     },
     {
       "type": 'imagesMulti',
@@ -627,13 +627,13 @@ final mp_materi2 = {
       'Sumber1': 'www.ruangguru.com',
       'title1': 'Mosaik',
       'detail1':
-          '\tMosaik merupakan jenis penyakit yang disebabkan oleh <i>Tobacco mosaic</i> virus (TMV). Virus ini menyebabkan bercak kuning pada daun tumbuhan tembakau, kacang kedelai, tomat, labu, kentang, mentimun, buncis, gandum, dan tebu (Suhara. 2020). Virus TMV ini ditularkan secara mekanis atau melalui benih. Virus ini dapat bertahan dan bersifat infektif selama beberapa tahun. Umumnya gejala daun tanaman tembakau yang terinfeksi virus ini yaitu daun menjadi berwarna belang hijau muda sampai hijau tua dan mengkerut (Gambar 15). Ukuran daun relatif lebih kecil apabila dibandingkan dengan warna ukuran daun normal. Sedangkan apabila menyerang daun tanaman yang masih muda maka akan menyebabkan pertumbuhannya terhambat dan akhirnya kerdil.',
+          '\tMosaik merupakan jenis penyakit yang disebabkan oleh <i>Tobacco mosaic virus</i>  (TMV). Virus ini menyebabkan bercak kuning pada daun tumbuhan tembakau, kacang kedelai, tomat, labu, kentang, mentimun, buncis, gandum, dan tebu (Suhara. 2020). Virus TMV ini ditularkan secara mekanis atau melalui benih. Virus ini dapat bertahan dan bersifat infektif selama beberapa tahun. Umumnya gejala daun tanaman tembakau yang terinfeksi virus ini yaitu daun menjadi berwarna belang hijau muda sampai hijau tua dan mengkerut (Gambar 15). Ukuran daun relatif lebih kecil apabila dibandingkan dengan warna ukuran daun normal. Sedangkan apabila menyerang daun tanaman yang masih muda maka akan menyebabkan pertumbuhannya terhambat dan akhirnya kerdil.',
       'name2': 'm2_img_16.png',
       'label2': 'Penyakit Tungro Pada Padi',
       'Sumber2': 'Kampustani.com',
       'title2': 'Tungro',
       'detail2':
-          '\tTungro merupakan jenis penyakit yang disebabkan oleh dua jenis virus yang berbeda yaitu virus batang <i>Rice Tungro Bacilliform Virus</i> (RTBV) dan virus bentuk bulat Rice Tungro Spherical Virus (RTSV) (Gambar 16). Tungro merupakan penyakit yang menyerang tanaman padi, biasanya terjadi pada fase pertumbuhan vegetatif sehingga menyebabkan tanaman menjadi kerdil, pelepah dan helai daun akan memendek serta daun yang terserang berwarna kuning sampai ke orange sehingga menyebabkan berkurangnya jumlah anakan (Sutrawati. 2019). '
+          '\tTungro merupakan jenis penyakit yang disebabkan oleh dua jenis virus yang berbeda yaitu virus batang <i>Rice Tungro Bacilliform Virus</i> (RTBV) dan virus bentuk bulat <i>Rice Tungro Spherical Virus</i> (RTSV) (Gambar 16). Tungro merupakan penyakit yang menyerang tanaman padi, biasanya terjadi pada fase pertumbuhan vegetatif sehingga menyebabkan tanaman menjadi kerdil, pelepah dan helai daun akan memendek serta daun yang terserang berwarna kuning sampai ke orange sehingga menyebabkan berkurangnya jumlah anakan (Sutrawati. 2019). '
     },
     {
       "type": "text",
@@ -687,8 +687,18 @@ final mp_materi2 = {
       'label2': 'Penderita AIDS',
       'Sumber2': 'Alodokter.com',
       'title2': 'AIDS',
-      'detail2':
-          '\t     AIDS <i>(Acquired Immunodeficiency Syndrome)</i> merupakan penurunan sistem kekebalan tubuh yang disebabkan oleh HIV <i>(Human Immunodeficiency Virus)</i>. HIV merupakan virus golongan Retrovirus yang memiliki 2 molekul RNA. HIV tidak menular melalui udara, kontak biasa, atau melalui gigitan serangga, batuk, bersin, berjabat tangan, atau menggunakan peralatan makan atau mandi yang sama. HIV menular melalui hubungan seksual, transfusi darah, air susu ibu (ASI) serta penggunaan jarum suntik yang terkontaminasi HIV (Siagian. 2023).\n       Masa inkubasi HIV dapat berlangsung dalam hitungan bulan bahkan tahun (Nishiura. 2019). Tubuh yang terinfeksi HIV tidak secara langsung menunjukan gejala sakit yang parah. Akan tetapi, HIV yang berada di dalam tubuh akan bereproduksi dan menyerang sistem kekebalan tubuh. Tubuh penderita akan semakin rentan terhadap berbagai penyakit yang diakibatkan oleh sistem kekebalan tubuh yang melemah (Gambar 22). Penyakit yang umumnya diderita ialah pneumonia, diare, kanker, penurunan berat badan, dan gagal jantung hingga akhirnya menyebabkan kematian.'
+      'detail2': [
+        {
+          "type": 'text',
+          'detail':
+              '\tAIDS<i>(Acquired Immunodeficiency Syndrome)</i> merupakan penurunan sistem kekebalan tubuh yang disebabkan oleh HIV <i>(Human Immunodeficiency Virus)</i>. HIV merupakan virus golongan Retrovirus yang memiliki 2 molekul RNA. HIV tidak menular melalui udara, kontak biasa, atau melalui gigitan serangga, batuk, bersin, berjabat tangan, atau menggunakan peralatan makan atau mandi yang sama. HIV menular melalui hubungan seksual, transfusi darah, air susu ibu (ASI) serta penggunaan jarum suntik yang terkontaminasi HIV (Siagian. 2023).'
+        },
+        {
+          "type": 'text',
+          'detail':
+              '\tMasa inkubasi HIV dapat berlangsung dalam hitungan bulan bahkan tahun (Nishiura. 2019). Tubuh yang terinfeksi HIV tidak secara langsung menunjukan gejala sakit yang parah. Akan tetapi, HIV yang berada di dalam tubuh akan bereproduksi dan menyerang sistem kekebalan tubuh. Tubuh penderita akan semakin rentan terhadap berbagai penyakit yang diakibatkan oleh sistem kekebalan tubuh yang melemah (Gambar 22). Penyakit yang umumnya diderita ialah pneumonia, diare, kanker, penurunan berat badan, dan gagal jantung hingga akhirnya menyebabkan kematian.'
+        }
+      ]
     },
     {
       "type": 'imagesMulti',
@@ -750,8 +760,23 @@ final mp_materi2 = {
       'label2': 'Terapi Gen Menggunakan Virus Vektor untuk Penderita Leukimia',
       'Sumber2': 'www.famasetika.com',
       'title2': 'Rekayasa Genetika',
-      'detail2':
-          '\t       Rekayasa genetika merupakan suatu sistem modifikasi genetik pada genom organisme (Puspaningsih <i>et al</i>. 2021). Rekayasa genetika digunakan ilmuwan untuk meningkatkan atau bahkan memodifikasi karakteristik ekspresi gen pada suatu organisme. Hal ini termasuk pula modifikasi gen yang memungkinkan adanya pencegahan dan pengobatan penyakit tertentu. Rekayasa genetika dalam bidang kesehatan salah satunya dapat dimanfaatkan untuk terapi penyakit melalui terapi gen.\n     Terapi gen merupakan salah satu prosedur medis yang melibatkan pengubahan gen dalam sel tubuh guna mengobati atau menghentikan suatu penyakit (Li, C., <i>et al</i>. 2020). Terapi gen dilakukan dengan menambahkan gen normal ke bagian genom yang rusak, sehingga fungsi gen dapat kembali salah satunya ialah menggunakan vektor (pembawa) virus. Terapi gen dapat dilakukan secara <i>in vivo</i> dan <i>ex vivo</i>. Terapi gen <i>in vivo</i> dilakukan dengan menempatkan gen-gen untuk penyembuhan (gen terapeutik) ke dalam genom virus. Vektor virus kemudian disuntikan ke dalam tubuh melalui intraparenkim (IV), intratekal (IT), intramuskular (IM), atau intraparenkim (IP) untuk mentransduksi sel sasaran. Sementara itu, terapi gen <i>ex vivo</i> dimulai dengan ekstraksi sel induk dari tubuh. Virus dengan gen terapeutik akan mentransduksi sel induk di luar tubuh pasien. Setelah vektor virus berhasil mentransfer gen ke sel, sel dimasukan kembali ke dalam tubuh melalui IV, IT, atau IM dan agar gen dapat diekspresikan. \n     Terapi gen juga digunakan untuk mengobati beberapa jenis penyakit contohnya leukimia. Metode vektor secara <i>ex vivo</i> contohnya melibatkan penggunaan virus vektor untuk memasukkan gen tertentu ke dalam sel leukemia yang dapat memicu kematian sel kanker atau menghentikan pertumbuhannya (Gambar 27). Sedangkan metode <i>in vivo</i> digunakan untuk kelainan genetik yang spesifik misalnya Luxturna untuk mengobati penyakit kebutaan yang langka. '
+      'detail2': [
+        {
+          'type': 'text',
+          'detail':
+              '\tRekayasa genetika merupakan suatu sistem modifikasi genetik pada genom organisme (Puspaningsih <i>et al</i>. 2021). Rekayasa genetika digunakan ilmuwan untuk meningkatkan atau bahkan memodifikasi karakteristik ekspresi gen pada suatu organisme. Hal ini termasuk pula modifikasi gen yang memungkinkan adanya pencegahan dan pengobatan penyakit tertentu. Rekayasa genetika dalam bidang kesehatan salah satunya dapat dimanfaatkan untuk terapi penyakit melalui terapi gen.'
+        },
+        {
+          'type': 'text',
+          'detail':
+              '\tTerapi gen merupakan salah satu prosedur medis yang melibatkan pengubahan gen dalam sel tubuh guna mengobati atau menghentikan suatu penyakit (Li, C., <i>et al</i>. 2020). Terapi gen dilakukan dengan menambahkan gen normal ke bagian genom yang rusak, sehingga fungsi gen dapat kembali salah satunya ialah menggunakan vektor (pembawa) virus. Terapi gen dapat dilakukan secara <i>in vivo</i> dan <i>ex vivo</i>. Terapi gen <i>in vivo</i> dilakukan dengan menempatkan gen-gen untuk penyembuhan (gen terapeutik) ke dalam genom virus. Vektor virus kemudian disuntikan ke dalam tubuh melalui intraparenkim (IV), intratekal (IT), intramuskular (IM), atau intraparenkim (IP) untuk mentransduksi sel sasaran. Sementara itu, terapi gen <i>ex vivo</i> dimulai dengan ekstraksi sel induk dari tubuh. Virus dengan gen terapeutik akan mentransduksi sel induk di luar tubuh pasien. Setelah vektor virus berhasil mentransfer gen ke sel, sel dimasukan kembali ke dalam tubuh melalui IV, IT, atau IM dan agar gen dapat diekspresikan. '
+        },
+        {
+          'type': 'text',
+          'detail':
+              '\t Terapi gen juga digunakan untuk mengobati beberapa jenis penyakit contohnya leukimia. Metode vektor secara <i>ex vivo</i> contohnya melibatkan penggunaan virus vektor untuk memasukkan gen tertentu ke dalam sel leukemia yang dapat memicu kematian sel kanker atau menghentikan pertumbuhannya (Gambar 27). Sedangkan metode <i>in vivo</i> digunakan untuk kelainan genetik yang spesifik misalnya Luxturna untuk mengobati penyakit kebutaan yang langka. '
+        }
+      ]
     },
     {
       "type": "text",
@@ -764,7 +789,7 @@ final mp_materi2 = {
       'label': 'Baculovirus yang Menginfeksi Larva Serangga',
       'Sumber': 'Lee <i>et al</i>(2017)',
       'detail':
-          '\t      Penggunaan <i>Baculovirus</i> pada lahan telah berhasil mengendalikan hama serangga terutama dari hama serangga tanaman dari ordo Lepidoptera. <i>Baculovirus</i> merupakan alternatif dalam mengatasi permasalahan hama yang resisten terhadap insektisida sintetik. <i>Baculovirus</i> memiliki struktur yang kompleks sehingga membuat materi genetik virus lebih terlindungi dan menguntungkan aplikasi serta penyimpanannya (Gambar 28). <i>Baculovirus</i> akan menghambat aktivitas sel inang, memproduksi komponen-komponen virus dan menghancurkan sel inang yang perlahan akan mematikan larva serangga (Lee et al. 2017). \n     Beberapa virus hidup parasit pada serangga, virus tersebut dibiakan dan digunakan untuk menyemprot serangga atau tanaman misalnya <i>Baculovirus</i>. <i>Baculovirus</i> ditanamkan pada gen tanaman pertanian. Akibatnya, larva serangga yang memakan tumbuhan tersebut akan terinfeksi dengan <i>Baculovirus</i> dan lama-kelamaan dapat merusak jaringan tumbuhan. <i>Baculovirus</i> digunakan sebagai bioinsektisida semenjak tahun 1950. Penggunaan <i>Baculovirus</i> ini dikarenakan tidak mencemari lingkungan sebab tidak menghasilkan senyawa anorganik sebagai residu dari insektisida yang terbuang dan mencemari lingkungan sekitar. Kemampuannya dalam melemahkan inangnya dimanfaatkan dalam pengobatan biologis untuk melemahkan atau membunuh bakteri, jamur atau protozoa yang bersifat patogen.'
+          '\t      Penggunaan <i>Baculovirus</i> pada lahan telah berhasil mengendalikan hama serangga terutama dari hama serangga tanaman dari ordo Lepidoptera. <i>Baculovirus</i> merupakan alternatif dalam mengatasi permasalahan hama yang resisten terhadap insektisida sintetik. <i>Baculovirus</i> memiliki struktur yang kompleks sehingga membuat materi genetik virus lebih terlindungi dan menguntungkan aplikasi serta penyimpanannya (Gambar 28). <i>Baculovirus</i> akan menghambat aktivitas sel inang, memproduksi komponen-komponen virus dan menghancurkan sel inang yang perlahan akan mematikan larva serangga (Lee <i>et al</i>. 2017). \n    \t Beberapa virus hidup parasit pada serangga, virus tersebut dibiakan dan digunakan untuk menyemprot serangga atau tanaman misalnya <i>Baculovirus</i>. <i>Baculovirus</i> ditanamkan pada gen tanaman pertanian. Akibatnya, larva serangga yang memakan tumbuhan tersebut akan terinfeksi dengan <i>Baculovirus</i> dan lama-kelamaan dapat merusak jaringan tumbuhan. <i>Baculovirus</i> digunakan sebagai bioinsektisida semenjak tahun 1950. Penggunaan <i>Baculovirus</i> ini dikarenakan tidak mencemari lingkungan sebab tidak menghasilkan senyawa anorganik sebagai residu dari insektisida yang terbuang dan mencemari lingkungan sekitar. Kemampuannya dalam melemahkan inangnya dimanfaatkan dalam pengobatan biologis untuk melemahkan atau membunuh bakteri, jamur atau protozoa yang bersifat patogen.'
     },
     {
       "type": "text",
@@ -906,7 +931,7 @@ final rangkuman_materi2 = {
     {
       'type': 'bullet',
       'detail':
-          'Proses replikasi secara siklus litik terdiri atas beberapa tahapan yaitu adsorpsi, penetrasi, sintesis, perakitan, dan litik. Siklus litik ini menghasilkan banyak <i>Virion</i> dan menyebabkan kematian sel. Sedangkan proses replikasi secara siklus lisogenik terdiri atas tahapan adsorpsi, penetrasi, penggabungan, dan replikasi. Siklus lisogenik ini genom virus tidak menghancurkan sel inangnya namun virus menyisipkan asam nukleat sel inang yang membentuk profag.'
+          'Replikasi virus secara siklus litik terdiri atas beberapa tahapan yaitu adsorpsi, penetrasi, sintesis, perakitan dan litik. Siklus litik ini menghasilkan banyak virion dan menyebabkan kematian sel. Sedangkan proses replikasi secara siklus lisogenik terdiri atas tahapan adsorpsi, penetrasi, penggabungan, dan replikasi. Siklus lisogenik ini genom virus tidak menghancurkan sel inangnya namun virus menyisipkan asam nukleat sel inang yang membentuk profag.'
     },
     {
       'type': 'bullet',
@@ -1054,7 +1079,7 @@ final glosarium = [
   {
     "description":
         "virus dengan bentuk yang utuh secara struktural, sehingga virus siap menginfeksi sel inang.",
-    "label": "=Virion",
+    "label": "Virion",
     "number": 22
   }
 ];
@@ -1111,7 +1136,7 @@ final questions = [
   {
     "number": 3,
     "question":
-        "<p style=\"text-align: justify;\"><span style=\"font-size:12pt;\">Perhatikan ciri-ciri mikroorganisme di bawah ini!</span></p>\n<ol>\n    <li style=\"text-align: justify; line-height: 1.5;\"><span style=\"font-size:12pt;\">Memiliki materi genetik RNA atau DNA</span></li>\n    <li style=\"text-align: justify; line-height: 1.5;\"><span style=\"font-size:12pt;\">Berkembangbiak di dalam sel hidup</span></li>\n    <li style=\"text-align: justify; line-height: 1.5;\"><span style=\"font-size:12pt;\">Sel bersifat prokariotik</span></li>\n    <li style=\"text-align: justify; line-height: 1.5;\"><span style=\"font-size:12pt;\">Mempunyai klorofil</span></li>\n    <li style=\"text-align: justify; line-height: 1.5;\"><span style=\"font-size:12pt;\">Ultramikroskopis</span></li>\n</ol>\n<p><span style=\"font-size:12pt;\">Berdasarkan ciri-ciri mikroorganisme di atas, ciri-ciri virus yang benar dapat ditunjukan oleh nomor ….</span></p>",
+        "<p style=\"text-align: justify;\"><span style=\"font-size:12pt;\">Perhatikan ciri-ciri mikroorganisme di bawah ini!</span></p>\n<ol>\n    <li style=\"text-align: justify; line-height: 1.5;\"><span style=\"font-size:12pt;\">Memiliki materi genetik RNA atau DNA</span></li>\n    <li style=\"text-align: justify; line-height: 1.5;\"><span style=\"font-size:12pt;\">Berkembangbiak di dalam sel hidup</span></li>\n    <li style=\"text-align: justify; line-height: 1.5;\"><span style=\"font-size:12pt;\">Sel bersifat prokariotik</span></li>\n    <li style=\"text-align: justify; line-height: 1.5;\"><span style=\"font-size:12pt;\">Mempunyai klorofil</span></li>\n    <li style=\"text-align: justify; line-height: 1.5;\"><span style=\"font-size:12pt;\">Ultramikroskopis</span></li>\n</ol>\n<p style=\"text-align: justify;\"><span style=\"font-size:12pt;text-align: justify;\">Berdasarkan ciri-ciri mikroorganisme di atas, ciri-ciri virus yang benar dapat ditunjukan oleh nomor ….</span></p>",
     "options": [
       {"number": 1, "value": "1, 2, dan 3"},
       {"number": 2, "value": "1, 2, dan 5"},
@@ -1141,14 +1166,20 @@ final questions = [
     "question":
         "<p style=\"text-align: justify;\"><span style=\"font-size:12pt;\">Berikut ini merupakan pasangan virus dan jenis materi genetik yang tepat adalah ….</span></p>",
     "options": [
-      {"number": 1, "value": "<i>Influenza virus dan <i>Adenovirus</i></i>"},
-      {"number": 2, "value": "<i>Coronavirus dan Tobacco Mosaik Virus</i>"},
+      {"number": 1, "value": "<i>Influenza virus</i> dan <i>Adenovirus</i>"},
+      {
+        "number": 2,
+        "value": "<i>Coronavirus</i> dan <i> Tobacco Mosaik Virus</i>"
+      },
       {
         "number": 3,
-        "value": "<i>Tobacco Mosaik Virus dan <i>Adenovirus</i></i>"
+        "value": "<i>Tobacco Mosaik Virus</i> dan <i>Adenovirus</i>"
       },
-      {"number": 4, "value": "<i>Coronavirus dan Varicella zoster</i>"},
-      {"number": 5, "value": "<i>Influenza virus dan Varicella zoster</i>"}
+      {"number": 4, "value": "<i>Coronavirus</i> dan <i>Varicella zoster</i>"},
+      {
+        "number": 5,
+        "value": "<i>Influenza virus</i> dan </i>Varicella zoster</i>"
+      }
     ],
     "correctAnswer": 2,
     "point": ""
@@ -1190,13 +1221,13 @@ final questions = [
         "number": 1,
         "value": "<i>Tobacco Mosaic Virus</i> (TMV) dan <i>Adenovirus</i>"
       },
-      {"number": 2, "value": "<i><i>Herpesvirus</i> dan <i>Papovirus</i></i>"},
-      {"number": 3, "value": "<i><i>Adenovirus</i> dan <i>Reovirus</i></i>"},
+      {"number": 2, "value": "<i>Herpesvirus</i> dan <i>Papovirus</i>"},
+      {"number": 3, "value": "<i>Adenovirus</i> dan <i>Reovirus</i>"},
       {
         "number": 4,
-        "value": "<i><i>Human Immunodeficiency Virus</i> dan Coronavirus</i>"
+        "value": "<i>Human Immunodeficiency Virus</i> dan <i>Coronavirus</i>"
       },
-      {"number": 5, "value": "Virus ebola dan <i><i>influenza</i></i> virus"}
+      {"number": 5, "value": "Virus ebola dan <i>influenza</i> virus"}
     ],
     "correctAnswer": 4,
     "point": ""
@@ -1229,7 +1260,7 @@ final questions = [
       {
         "number": 5,
         "value":
-            "Virus akan langsung berinteraksi dengan sel inangnya setelah <i>Virion</i>== pecah dan mengeluarkan materi genetik"
+            "Virus akan langsung berinteraksi dengan sel inangnya setelah <i>Virion</i> pecah dan mengeluarkan materi genetik"
       }
     ],
     "correctAnswer": 3,
@@ -1287,7 +1318,7 @@ final questions = [
       {"number": 1, "value": "<i>Tobacco Mosaik virus</i>"},
       {"number": 2, "value": "<i>Rhabdovirus</i>"},
       {"number": 3, "value": "<i>Newcastle Disease Virus</i>"},
-      {"number": 4, "value": "<i>Tungro</i>"},
+      {"number": 4, "value": "Tungro"},
       {"number": 5, "value": "<i>Orthomyxovirus</i>"}
     ],
     "correctAnswer": 4,

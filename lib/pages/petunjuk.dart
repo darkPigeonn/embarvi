@@ -83,7 +83,7 @@ class _PetunjukPageState extends State<PetunjukPage> {
                     iconData: '5.png',
                     textbold: 'Menu Materi dan Ar (<i>Augmented Reality</i>)',
                     text:
-                        ' berisikan uraian materi yang dilengkapi dengan AR dan rangkuman materi untuk mempermudah pemahaman peserta didik. \n<b>Catatan</b>: Gambar 3D (AR) hanya terdapat pada sub materi struktur dan bentuk, cara hidup, serta replikasi virus. ',
+                        ' berisikan uraian materi yang dilengkapi dengan AR dan rangkuman materi untuk mempermudah pemahaman peserta didik. \n<b>Catatan</b>: Gambar 3D (AR) hanya terdapat pada sub materi struktur dan bentuk, cara hidup, serta replikasi virus. Silahkan klik gambar atau tabel untuk memperbesar gambar atau memperoleh informasi',
                   ),
                   const TabelPetunjuk(
                     label: 'LPKD', //perlu khusus
@@ -169,7 +169,7 @@ class TabelPetunjuk extends StatelessWidget {
             onPressed: () => null,
           ),
           Flexible(
-            child: RichTextCustom2(
+            child: RichTextCustomPetunjuk(
               content: text,
               label: textbold,
             ),

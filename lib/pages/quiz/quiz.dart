@@ -63,6 +63,27 @@ class _QuisPageState extends State<QuisPage> {
     // #docregion platform_features
   }
 
+  formatLabel(index) {
+    switch (index) {
+      case 0:
+        return 'A. ';
+        break;
+      case 1:
+        return 'B. ';
+        break;
+      case 2:
+        return 'C. ';
+        break;
+      case 3:
+        return 'D. ';
+        break;
+      case 4:
+        return 'E. ';
+        break;
+      default:
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     Map question = questions[questionIndex];
@@ -97,7 +118,8 @@ class _QuisPageState extends State<QuisPage> {
                           : null,
                       child: AnswerCard(
                         currentIndex: index,
-                        question: question['options'][index]['value'],
+                        question:
+                            "${formatLabel(index)} ${question['options'][index]['value']}",
                         isSelected: selectedAnswerIndex == index,
                         selectedAnswerIndex: selectedAnswerIndex,
                         correctAnswerIndex: question['correctAnswer'] - 1,

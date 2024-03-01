@@ -153,7 +153,6 @@ class RichTextCustom extends StatelessWidget {
     List<TextSpan> textSpans = [];
 
     if (text.contains('\t')) {
-      print('masuk sini');
       textSpans.add(
         TextSpan(
           text:
@@ -219,6 +218,54 @@ class RichTextCustomLabel extends StatelessWidget {
               color: Colors.black,
               fontSize: 9,
               fontWeight: FontWeight.bold)));
+
+      if (i < italicMatches.length) {
+        textSpans.add(TextSpan(
+          text: italicMatches.elementAt(i).group(1),
+          style: TextStyle(
+              fontStyle: FontStyle.italic, color: Colors.black, fontSize: 9),
+        ));
+      }
+
+      if (i < boldMatches.length) {
+        textSpans.add(TextSpan(
+          text: boldMatches.elementAt(i).group(1),
+          style: TextStyle(
+              fontWeight: FontWeight.bold, color: Colors.black, fontSize: 9),
+        ));
+      }
+    }
+
+    return RichText(
+      textAlign: TextAlign.center,
+      text: TextSpan(children: textSpans),
+    );
+  }
+}
+
+class RichTextCustomSumber extends StatelessWidget {
+  const RichTextCustomSumber({super.key, required this.content});
+  final String content;
+  @override
+  Widget build(BuildContext context) {
+    return buildRichTextWithItalic(content);
+  }
+
+  Widget buildRichTextWithItalic(String text) {
+    List<TextSpan> textSpans = [];
+    var italicMatches = RegExp(r'<i>(.*?)<\/i>').allMatches(text);
+    var boldMatches = RegExp(r'<b>(.*?)<\/b>').allMatches(text);
+
+    var parts = text.split(RegExp(r'<b>(.*?)<\/b>|<i>(.*?)<\/i>'));
+
+    for (int i = 0; i < parts.length; i++) {
+      textSpans.add(TextSpan(
+          text: parts[i],
+          style: TextStyle(
+            height: 1.6,
+            color: Colors.black,
+            fontSize: 9,
+          )));
 
       if (i < italicMatches.length) {
         textSpans.add(TextSpan(
@@ -315,6 +362,82 @@ class RichTextCustom2 extends StatelessWidget {
 
     return RichText(
       textAlign: TextAlign.center,
+      text: TextSpan(children: textSpans),
+    );
+  }
+}
+
+class RichTextCustomPetunjuk extends StatelessWidget {
+  const RichTextCustomPetunjuk(
+      {super.key, required this.content, required this.label});
+  final String content;
+  final String label;
+  @override
+  Widget build(BuildContext context) {
+    return buildRichTextWithItalic(content, label);
+  }
+
+  Widget buildRichTextWithItalic(String text, String label) {
+    List<TextSpan> textSpans = [];
+    RegExp regex = RegExp(r'<i>(.*?)<\/i>');
+    RegExp regexBold = RegExp(r'<b>(.*?)<\/b>');
+
+    List<RegExpMatch> matchesBold = regex.allMatches(label).toList();
+    List<String> splitTextBold = label.split(regex);
+
+    for (int i = 0; i < splitTextBold.length; i++) {
+      textSpans.add(TextSpan(
+          text: splitTextBold[i],
+          style: TextStyle(
+              fontWeight: FontWeight.bold, fontSize: 17, color: Colors.black)));
+
+      if (i < matchesBold.length) {
+        textSpans.add(TextSpan(
+          text: matchesBold[i].group(1),
+          style: TextStyle(
+              fontStyle: FontStyle.italic,
+              fontWeight: FontWeight.bold,
+              fontSize: 17,
+              color: Colors.black),
+        ));
+      }
+    }
+
+    var italicMatches = RegExp(r'<i>(.*?)<\/i>').allMatches(text);
+    var boldMatches = RegExp(r'<b>(.*?)<\/b>').allMatches(text);
+
+    var parts = text.split(RegExp(r'<b>(.*?)<\/b>|<i>(.*?)<\/i>'));
+
+    for (int i = 0; i < parts.length; i++) {
+      textSpans.add(TextSpan(
+          text: parts[i],
+          style: TextStyle(
+            height: 1.6,
+            color: Colors.black,
+            fontSize: 17,
+          )));
+
+      if (i < italicMatches.length) {
+        textSpans.add(TextSpan(
+          text: italicMatches.elementAt(i).group(1),
+          style: TextStyle(
+            fontStyle: FontStyle.italic,
+            fontSize: 17,
+          ),
+        ));
+      }
+
+      if (i < boldMatches.length) {
+        textSpans.add(TextSpan(
+          text: boldMatches.elementAt(i).group(1),
+          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
+        ));
+      }
+    }
+    if (label.contains('Menu Materi')) {}
+
+    return RichText(
+      textAlign: TextAlign.justify,
       text: TextSpan(children: textSpans),
     );
   }

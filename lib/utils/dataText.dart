@@ -788,8 +788,18 @@ final mp_materi2 = {
       'name': 'm2_img_28.png',
       'label': 'Baculovirus yang Menginfeksi Larva Serangga',
       'Sumber': 'Lee <i>et al</i>(2017)',
-      'detail':
-          '\t      Penggunaan <i>Baculovirus</i> pada lahan telah berhasil mengendalikan hama serangga terutama dari hama serangga tanaman dari ordo Lepidoptera. <i>Baculovirus</i> merupakan alternatif dalam mengatasi permasalahan hama yang resisten terhadap insektisida sintetik. <i>Baculovirus</i> memiliki struktur yang kompleks sehingga membuat materi genetik virus lebih terlindungi dan menguntungkan aplikasi serta penyimpanannya (Gambar 28). <i>Baculovirus</i> akan menghambat aktivitas sel inang, memproduksi komponen-komponen virus dan menghancurkan sel inang yang perlahan akan mematikan larva serangga (Lee <i>et al</i>. 2017). \n    \t Beberapa virus hidup parasit pada serangga, virus tersebut dibiakan dan digunakan untuk menyemprot serangga atau tanaman misalnya <i>Baculovirus</i>. <i>Baculovirus</i> ditanamkan pada gen tanaman pertanian. Akibatnya, larva serangga yang memakan tumbuhan tersebut akan terinfeksi dengan <i>Baculovirus</i> dan lama-kelamaan dapat merusak jaringan tumbuhan. <i>Baculovirus</i> digunakan sebagai bioinsektisida semenjak tahun 1950. Penggunaan <i>Baculovirus</i> ini dikarenakan tidak mencemari lingkungan sebab tidak menghasilkan senyawa anorganik sebagai residu dari insektisida yang terbuang dan mencemari lingkungan sekitar. Kemampuannya dalam melemahkan inangnya dimanfaatkan dalam pengobatan biologis untuk melemahkan atau membunuh bakteri, jamur atau protozoa yang bersifat patogen.'
+      'detail': [
+        {
+          'type': 'text',
+          'detail':
+              '\tPenggunaan <i>Baculovirus</i> pada lahan telah berhasil mengendalikan hama serangga terutama dari hama serangga tanaman dari ordo Lepidoptera. <i>Baculovirus</i> merupakan alternatif dalam mengatasi permasalahan hama yang resisten terhadap insektisida sintetik. <i>Baculovirus</i> memiliki struktur yang kompleks sehingga membuat materi genetik virus lebih terlindungi dan menguntungkan aplikasi serta penyimpanannya (Gambar 28). <i>Baculovirus</i> akan menghambat aktivitas sel inang, memproduksi komponen-komponen virus dan menghancurkan sel inang yang perlahan akan mematikan larva serangga (Lee <i>et al</i>. 2017). '
+        },
+        {
+          'type': 'text',
+          'detail':
+              '\t Beberapa virus hidup parasit pada serangga, virus tersebut dibiakan dan digunakan untuk menyemprot serangga atau tanaman misalnya <i>Baculovirus</i>. <i>Baculovirus</i> ditanamkan pada gen tanaman pertanian. Akibatnya, larva serangga yang memakan tumbuhan tersebut akan terinfeksi dengan <i>Baculovirus</i> dan lama-kelamaan dapat merusak jaringan tumbuhan. <i>Baculovirus</i> digunakan sebagai bioinsektisida semenjak tahun 1950. Penggunaan <i>Baculovirus</i> ini dikarenakan tidak mencemari lingkungan sebab tidak menghasilkan senyawa anorganik sebagai residu dari insektisida yang terbuang dan mencemari lingkungan sekitar. Kemampuannya dalam melemahkan inangnya dimanfaatkan dalam pengobatan biologis untuk melemahkan atau membunuh bakteri, jamur atau protozoa yang bersifat patogen.'
+        }
+      ]
     },
     {
       "type": "text",

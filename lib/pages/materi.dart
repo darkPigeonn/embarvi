@@ -48,7 +48,8 @@ class _MateriPageState extends State<MateriPage> {
                                     )));
                       },
                       icon: Icons.menu_book,
-                      label: 'Sejarah, Ciri, Struktur, dan Bentuk Virus'),
+                      label:
+                          'Kegiatan Pembelajaran 1 \n (Sejarah, Ciri, Struktur, dan Bentuk Virus)'),
                   Spacing3,
                   Button2(
                       onPressed: () {
@@ -60,7 +61,8 @@ class _MateriPageState extends State<MateriPage> {
                                     )));
                       },
                       icon: Icons.menu_book,
-                      label: 'Cara hidup, Replikasi, dan Peranan Virus')
+                      label:
+                          'Kegiatan Pembelajaran 2 \n (Cara hidup, Replikasi, dan Peranan Virus)')
                 ],
               ),
             ),

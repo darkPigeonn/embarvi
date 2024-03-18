@@ -18,6 +18,19 @@ class PetunjukPage extends StatefulWidget {
 
 class _PetunjukPageState extends State<PetunjukPage> {
   List content = petunjuk['content'] as List;
+  List content2 = [
+    "Berdoalah sebelum memulai kegiatan pembelajaran.",
+    "Bacalah menu petunjuk penggunaan dengan seksama.",
+    "Bukalah menu indikator untuk mengetahui tujuan pembelajaran yang harus dicapai.",
+    "Bukalah menu materi dan AR yang terdiri atas 2 sub materi. Materi 1 mengenai sejarah, ciri, struktur dan bentuk virus. Sedangkan materi 2 mengenai cara hidup, replikasi dan peranan virus.",
+    "Pada masing-masing menu materi 1 dan 2 terdapat informasi umum, uraian materi, rangkuman dan tugas mandiri. Klik setiap gambar, tabel dan video untuk memperbesar gambar atau memperoleh informasi.",
+    "Manfaatkan waktu sebaik-baiknya untuk memahami setiap materi, supaya peserta didik dapat menjawab semua tugas yang diberikan.",
+    "Lakukanlah misi tugas mandiri melalui soal-soal yang disediakan dengan mencari dan menemukan jawaban melalui materi yang terdapat pada <i>e-module</i> atau sumber lain yang relevan.",
+    "Diskusikan berbagai hal yang ingin diketahui/pelajari/ulasan terkait pembelajaran pada materi virus melalui forum diskusi yang disediakan.",
+    "Bacalah glosarium untuk mengetahui istilah-istilah biologi terkait materi virus.",
+    "Setelah selesai mengerjakan tugas mandiri, maka akhiri kegiatan pembelajaran dengan berdoa secara mandiri."
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -50,6 +63,9 @@ class _PetunjukPageState extends State<PetunjukPage> {
                                   content: content[index]['detail'])
                               : SubTitle(
                                   label: content[index]['detail'],
+                                  color: content[index]['type'] == 'subTitle2'
+                                      ? Colors.yellow
+                                      : Color.fromARGB(255, 88, 150, 201),
                                 );
                           // return Text(content[0].toString(),
                           //     textAlign: TextAlign.justify,
@@ -82,8 +98,9 @@ class _PetunjukPageState extends State<PetunjukPage> {
                     label: 'Materi dan Ar', //perlu khusus
                     iconData: '5.png',
                     textbold: 'Menu Materi dan Ar (<i>Augmented Reality</i>)',
+
                     text:
-                        ' berisikan uraian materi yang dilengkapi dengan AR dan rangkuman materi untuk mempermudah pemahaman peserta didik. \n<b>Catatan</b>: Gambar 3D (AR) hanya terdapat pada sub materi struktur dan bentuk, cara hidup, serta replikasi virus. Silahkan klik gambar atau tabel untuk memperbesar gambar atau memperoleh informasi',
+                        ' berisikan uraian materi yang dilengkapi dengan AR dan rangkuman materi serta tugas mandiri untuk mempermudah pemahaman peserta didik. \n<b>Catatan</b> : Gambar 3D (AR) hanya terdapat pada sub materi struktur dan bentuk, cara hidup, serta replikasi virus. Silahkan klik gambar atau tabel untuk memperbesar gambar atau memperoleh informasi',
                   ),
                   const TabelPetunjuk(
                     label: 'LPKD', //perlu khusus
@@ -126,7 +143,34 @@ class _PetunjukPageState extends State<PetunjukPage> {
                     text:
                         ' berisikan informasi mengenai aplikasi, pengembang dan dosen pembimbing.  ',
                   ),
-                  Spacing1,
+
+                  SubTitle(
+                    label: 'B. Petunjuk Belajar',
+                    color: Colors.yellow,
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(bottom: 20),
+                    child: ListView.builder(
+                        itemCount: content2.length,
+                        shrinkWrap: true,
+                        physics: NeverScrollableScrollPhysics(),
+                        itemBuilder: (context, index) {
+                          return Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              RichTextCustom(content: '${index + 1}.'),
+                              SizedBox(
+                                width: 10,
+                              ),
+                              Flexible(
+                                child: RichTextCustom(content: content2[index]),
+                              ),
+                            ],
+                          );
+                        }),
+                  ),
+
+                  Spacing1
                   // Container(
                   //   child: Text(pendahuluan['content'].toString()),
                   // )
@@ -182,10 +226,8 @@ class TabelPetunjuk extends StatelessWidget {
 
 class SubTitle extends StatelessWidget {
   final String label;
-  const SubTitle({
-    super.key,
-    required this.label,
-  });
+  final Color color;
+  const SubTitle({super.key, required this.label, required this.color});
 
   @override
   Widget build(BuildContext context) {
@@ -193,7 +235,7 @@ class SubTitle extends StatelessWidget {
       children: [
         Container(
           decoration: BoxDecoration(
-              color: Colors.yellow, borderRadius: BorderRadius.circular(20)),
+              color: color, borderRadius: BorderRadius.circular(20)),
           margin: const EdgeInsets.only(top: 10, bottom: 10),
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
           child: Text(

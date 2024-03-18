@@ -395,10 +395,7 @@ class RichTextCustomPetunjuk extends StatelessWidget {
         textSpans.add(TextSpan(
           text: matchesBold[i].group(1),
           style: TextStyle(
-              fontStyle: FontStyle.italic,
-              fontWeight: FontWeight.bold,
-              fontSize: 17,
-              color: Colors.black),
+              fontStyle: FontStyle.italic, fontSize: 17, color: Colors.black),
         ));
       }
     }

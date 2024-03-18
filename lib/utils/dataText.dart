@@ -4,7 +4,7 @@ final pendahuluan = {
     {
       'type': 'text',
       'detail':
-          '\t Virus merupakan organisme parasit berukuran mikroskopis yang dapat menyebabkan penyakit pada makhluk hidup, termasuk manusia, hewan, dan tumbuhan. Virus memerlukan inang untuk dapat hidup dan bereproduksi. Apa yang akan terjadi apabila virus menyerang tubuh? Bagaimana ciri-cirinya? Serta bagaimana cara pencegahan dan pengobatan infeksi virus?',
+          '\t Virus merupakan organisme parasit berukuran mikroskopis yang dapat menyebabkan penyakit pada makhluk hidup termasuk manusia, hewan, dan tumbuhan. Virus memerlukan inang untuk dapat hidup dan bereproduksi. Apa yang akan terjadi apabila virus menyerang tubuh? Bagaimana ciri-cirinya? Serta bagaimana cara pencegahan dan pengobatan infeksi virus?',
     },
     {
       "type": 'images',
@@ -15,7 +15,7 @@ final pendahuluan = {
     {
       'type': 'text',
       'detail':
-          '\t Kehidupan manusia mengalami perubahan drastis semenjak Desember 2019 saat penyakit Covid-19 ditemukan pertama kali di kota Wuhan China. Covid-19 disebabkan oleh salah satu famili dari virus corona yaitu  <i>Severe Acute Respiratory Syndrome Coronavirus</i> 2 (SARS-CoV-2). Covid-19 menyebar dengan sangat cepat ke seluruh dunia sehingga menyebabkan adanya pandemi yang menyerang seluruh dunia. Dalam hitungan setahun, virus ini telah mengurangi 2.118.719 populasi manusia. Sungguh sangat berbahaya bukan?'
+          '\t Kehidupan manusia mengalami perubahan drastis semenjak Desember 2019 saat penyakit Covid-19 ditemukan pertama kali di kota Wuhan China. Covid-19 disebabkan oleh salah satu spesies dari virus corona yaitu  <i>Severe Acute Respiratory Syndrome Coronavirus</i> 2 (SARS-CoV-2). Covid-19 menyebar dengan sangat cepat ke seluruh dunia sehingga menyebabkan adanya pandemi yang menyerang seluruh dunia. Dalam hitungan setahun, virus ini telah mengurangi 2.118.719 populasi manusia. Sungguh sangat berbahaya bukan?'
     },
     {
       'type': 'text',
@@ -26,8 +26,9 @@ final pendahuluan = {
 };
 
 final petunjuk = {
-  'title': 'Petunjuk Penggunaan',
+  'title': 'Petunjuk',
   'content': [
+    {"type": "subTitle2", "detail": "A. Petunjuk Penggunaan"},
     {
       "type": "text",
       "detail":
@@ -164,7 +165,7 @@ final iu_materi1 = {
     {
       "type": "text",
       "detail":
-          "\tMempelajari materi virus ini, peserta didik dapat memahami bahwa virus sebagai makhluk hidup yang ukurannya sangat kecil (mikroskopis). Virus tidak bisa dikategorikan sebagai makhluk hidup aseluler dikarenakan tidak memiliki organel seperti sel. Selain itu, virus tidak bisa dikatakan sebagai benda mati dikarenakan virus mampu untuk menginfeksi makhluk hidup lainnya. Selain itu, peserta didik akan memahami bahwa ternyata terdapat bermacam-macam bentuk virus dan strukturnya juga bermacam-macam. Dengan begitu maka masing-masing virus yang berbeda akan menimbulkan gejala infeksi yang berbeda-beda."
+          "\tMempelajari materi virus ini, peserta didik dapat memahami bahwa virus sebagai makhluk hidup yang ukurannya sangat kecil (mikroskopis). Virus tidak bisa dikategorikan sebagai makhluk hidup seluler dikarenakan tidak memiliki organel seperti sel. Selain itu, virus tidak bisa dikatakan sebagai benda mati dikarenakan virus mampu untuk menginfeksi makhluk hidup lainnya. Selain itu, peserta didik akan memahami bahwa ternyata terdapat bermacam-macam bentuk virus dan strukturnya juga bermacam-macam. Dengan begitu maka masing-masing virus yang berbeda akan menimbulkan gejala infeksi yang berbeda-beda. "
     },
     {"type": "subTitle", "detail": "D. Pertanyaan Pemantik"},
     {
@@ -213,7 +214,7 @@ final iu_materi2 = {
     {
       "type": "text",
       "detail":
-          "\tMempelajari materi virus ini, peserta didik dapat memahami bahwa virus sebagai makhluk hidup yang ukurannya sangat kecil (mikroskopis). Virus tidak bisa dikategorikan sebagai makhluk hidup aseluler dikarenakan tidak memiliki organel seperti sel. Selain itu, virus tidak bisa dikatakan sebagai benda mati dikarenakan virus mampu untuk menginfeksi makhluk hidup lainnya. Selain itu, peserta didik akan memahami bahwa ternyata terdapat bermacam-macam bentuk virus dan strukturnya juga bermacam-macam. Dengan begitu maka masing-masing virus yang berbeda akan menimbulkan gejala infeksi yang berbeda-beda.  "
+          "\t     Mempelajari materi virus ini, peserta didik dapat memahami bahwa virus sebagai makhluk hidup yang ukurannya sangat kecil (mikroskopis). Virus tidak bisa dikategorikan sebagai makhluk hidup seluler dikarenakan tidak memiliki organel seperti sel. Selain itu, virus tidak bisa dikatakan sebagai benda mati dikarenakan virus mampu untuk menginfeksi makhluk hidup lainnya. Selain itu, peserta didik akan memahami bahwa ternyata terdapat bermacam-macam bentuk virus dan strukturnya juga bermacam-macam. Dengan begitu maka masing-masing virus yang berbeda akan menimbulkan gejala infeksi yang berbeda-beda. "
     },
     {"type": "subTitle", "detail": "D. Pertanyaan Pemantik"},
     {
@@ -225,7 +226,7 @@ final iu_materi2 = {
     {
       "type": "text",
       "detail":
-          "\t     Pada kegiatan pembelajaran 1, Anda sudah mempelajari tentang sejarah, ciri, struktur dan bentuk dari virus. Virus memiliki ukuran yang sangat kecil, namun virus dapat menginfeksi jutaan orang di dunia. Pada Desember 2019 dunia dihebohkan dengan munculnya virus Covid-19 sehingga menyebabkan banyaknya manusia yang terinfeksi bahkan menyebabkan kematian. Oleh sebab itu, WHO (<i>World Health Organization</i>) menyatakan dampak virus tersebut sebagai pandemi dan mengakibatkan adanya pembatasan sosial berskala besar (PSBB).\n \tBerdasarkan grafik kasus Covid-19 Indonesia di atas, pada akhir 2023 kasus Covid-19 di Indonesia mulai mengalami kenaikan. Hal ini terlihat sepanjang November 2023 ada penambahan 7-40 kasus konfirmasi Covid-19 per hari. Kemudian pada awal Desember 2023, angka konformasi Covid-19 mengalami kenaikan sekitar 100-132 kasus per hari. Bagaimana virus dapat menular dari satu orang ke orang lain? Apakah virus memiliki peranan dalam kehidupan? "
+          "\t     Pada kegiatan pembelajaran 1, Anda sudah mempelajari tentang sejarah, ciri, struktur dan bentuk dari virus. Virus memiliki ukuran yang sangat kecil, namun virus dapat menginfeksi jutaan orang di dunia. Pada Desember 2019 dunia dihebohkan dengan munculnya virus Covid-19 sehingga menyebabkan banyaknya manusia yang terinfeksi bahkan menyebabkan kematian. Oleh sebab itu, WHO (<i>World Health Organization</i>) menyatakan dampak virus tersebut sebagai pandemi dan mengakibatkan adanya pembatasan sosial berskala besar (PSBB)."
     },
     {
       "type": "text",
@@ -242,7 +243,7 @@ final mp_materi1 = {
     {
       "type": "text",
       "detail":
-          "\tIstilah virus berasal dari bahasa Latin yaitu “<i>Virion</i>” yang berarti “Racun”. Virus merupakan patogen ultra mikroskopik yang menginfeksi sel organisme biologis. Virus hanya akan menunjukan sifat-sifat makhluk hidup apabila berada di dalam sel makhluk hidup. Keberadaan virus secara tidak langsung telah dideteksi oleh para ilmuwan jauh sebelum mereka dapat melihatnya (Hill. 2019). Ilmuwan yang melakukan penelitian untuk mengetahui mengenai virus antara lain:"
+          "\tIstilah virus berasal dari bahasa Latin yaitu “<i>Virion</i>” yang berarti “Racun”. Virus merupakan patogen ultra mikroskopik yang menginfeksi sel organisme biologis. Virus hanya akan menunjukan sifat-sifat makhluk hidup apabila berada di dalam sel makhluk hidup. Keberadaan virus secara tidak langsung telah dideteksi oleh para ilmuwan jauh sebelum mereka dapat melihatnya (Hill, 2019). Ilmuwan yang melakukan penelitian untuk mengetahui mengenai virus antara lain:"
     },
     {"type": "subTitle2", "detail": "1. Adolf Mayer (1883)"},
     {
@@ -253,7 +254,7 @@ final mp_materi1 = {
     {
       "type": "text",
       "detail":
-          "\tGetah tanaman telah diamati di bawah mikroskop menunjukan bahwa tidak terlihat adanya mikroorganisme (Gambar 2). Adolf kemudian berhipotesis bahwa penyakit mosaik disebabkan oleh adanya bakteri kecil yang tidak dapat dilihat melalui mikroskop biasa. Penyakit tersebut menyebabkan daun tembakau berubah warna menjadi belang-belang atau bercak (Campbell <i>et al</i>. 2021)."
+          "\tGetah tanaman telah diamati di bawah mikroskop menunjukan bahwa tidak terlihat adanya mikroorganisme (Gambar 2). Adolf kemudian berhipotesis bahwa penyakit mosaik disebabkan oleh adanya bakteri kecil yang tidak dapat dilihat melalui mikroskop biasa. Penyakit tersebut menyebabkan daun tembakau berubah warna menjadi belang-belang atau bercak (Campbell <i>et al</i>., 2021)."
     },
     {
       "type": 'imagesMulti',
@@ -268,7 +269,7 @@ final mp_materi1 = {
     {
       "type": "text",
       "detail":
-          "\tDimitri Ivanowsky yang berasal dari Rusia pada tahun 1892 melakukan penyaringan dengan filter bakteri (Gambar 3). Dimitri menyebutkan bahwa penyakit mosaik pada tembakau adalah bakteri. Hal ini dikarenakan bakteri memiliki ukuran yang kecil untuk melewati filter bakteri. Hasil penelitiannya menyebutkan bahwa penyakit mosaik pada tembakau disebabkan oleh bakteri patogen (Gambar 4) (Campbell <i>et al</i>. 2021)."
+          "\tDimitri Ivanowsky yang berasal dari Rusia pada tahun 1892 melakukan penyaringan dengan filter bakteri (Gambar 3). Dimitri menyebutkan bahwa penyakit mosaik pada tembakau adalah bakteri. Hal ini dikarenakan bakteri memiliki ukuran yang kecil untuk melewati filter bakteri. Hasil penelitiannya menyebutkan bahwa penyakit mosaik pada tembakau disebabkan oleh bakteri patogen (Gambar 4) (Campbell <i>et al</i>., 2021)."
     },
     {
       "type": 'imagesMulti',
@@ -283,7 +284,7 @@ final mp_materi1 = {
     {
       "type": "text",
       "detail":
-          "\tBeijerinck yang berasal dari Belanda pada tahun 1897 membuat penemuan penting terkait virus (Gambar 5). Beijerinck melakukan eksperimen yang membuktikan bahwa agen penginfeksi penyakit mosaik dapat bereplikasi. Penelitian Beijerinck menyimpulkan bahwa agen penyebab infeksi dalam getah yang disaring dapat berkembang biak, namun tidak dapat ditanamkan di media nutrisi (Gambar 6). Akan tetapi, eksperimen Beijerinck belum berhasil menemukan struktur dan jenis partikel tersebut (Campbell <i>et al</i>. 2021)."
+          "\tBeijerinck yang berasal dari Belanda pada tahun 1897 membuat penemuan penting terkait virus (Gambar 5). Beijerinck melakukan eksperimen yang membuktikan bahwa agen penginfeksi penyakit mosaik dapat bereplikasi. Penelitian Beijerinck menyimpulkan bahwa agen penyebab infeksi dalam getah yang disaring dapat berkembang biak, namun tidak dapat ditanamkan di media nutrisi (Gambar 6). Akan tetapi, eksperimen Beijerinck belum berhasil menemukan struktur dan jenis partikel tersebut (Campbell <i>et al</i>., 2021)."
     },
     {
       "type": 'imagesMulti',
@@ -312,7 +313,7 @@ final mp_materi1 = {
     {
       "type": "text",
       "detail":
-          "\tPada tahun 1946, penemuannya mengenai virus menyebabkan Wendell dianugerahi hadiah Nobel. Selanjutnya, setelah berkembangknya teknologi TMV serta masih banyak virus lainnya dapat dilihat melalui bantuan mikroskop elektron (Campbell <i>et al</i>. 2021)."
+          "\tPada tahun 1946, penemuannya mengenai virus menyebabkan Wendell dianugerahi hadiah Nobel. Selanjutnya, setelah berkembangknya teknologi TMV serta masih banyak virus lainnya dapat dilihat melalui bantuan mikroskop elektron (Campbell <i>et al</i>., 2021)."
     },
     {"type": "subTitle", "detail": "B. Ciri-Ciri Virus"},
     {
@@ -329,17 +330,17 @@ final mp_materi1 = {
     {
       "type": "text",
       "detail":
-          "\t       Ciri-ciri virus secara umum menurut Buckley <i>et al</i> (2015); Louten (2016); Generalov (2016) antara lain: "
+          "\t Ciri-ciri virus secara umum menurut Buckley <i>et al</i>. (2015); Louten (2016); Generalov (2016) antara lain: "
     },
     {
       'type': 'bullet',
       'detail':
-          'Virus hanya dapat hidup pada sel hidup atau bersifat parasit intraseluler obligat.'
+          'Virus hanya dapat hidup pada sel hidup (parasit intraseluler obligat).'
     },
     {
       'type': 'bullet',
       'detail':
-          'Virus memiliki ukuran yang kecil yaitu 10-300 milimikron (1 milimikron = 10-6 mm = 10-9 m), sehingga untuk melihatnya harus menggunakan mikroskop elektron.'
+          'Virus memiliki ukuran yang kecil yaitu 10-300 mµ (milimikron), sehingga untuk melihatnya harus menggunakan mikroskop elektron. '
     },
     {
       'type': 'bullet',
@@ -404,7 +405,7 @@ final mp_materi1 = {
     {
       "type": "text",
       "detail":
-          "\tVirus memiliki asam nukleat yang terdiri dari DNA atau RNA. DNA atau RNA merupakan komponen penyusun genom (kumpulan gen) virus. Gen-gen inilah yang akan mengatur semua aktivitas virus seperti metabolisme dan replikasi. DNA atau RNA virus digunakan untuk menghasilkan protein-protein penyusun tubuh virus dengan menggunakan ribosom sel inang. Virus berdasarkan asam nukleatnya dapat dibedakan menjadi virus DNA beruntai ganda, virus DNA beruntai tunggal, virus RNA beruntai ganda, serta virus RNA beruntai tunggal (Tabel 1). Virus disebut sebagai virus DNA atau RNA berdasarkan asam nukleat penyusunnya pada virus tersebut (Boy. 2022)."
+          "\tVirus memiliki asam nukleat yang terdiri dari DNA atau RNA. DNA atau RNA merupakan komponen penyusun genom (kumpulan gen) virus. Gen-gen inilah yang akan mengatur semua aktivitas virus seperti metabolisme dan replikasi. DNA atau RNA virus digunakan untuk menghasilkan protein-protein penyusun tubuh virus dengan menggunakan ribosom sel inang. Virus berdasarkan asam nukleatnya dapat dibedakan menjadi virus DNA beruntai ganda, virus DNA beruntai tunggal, virus RNA beruntai ganda, serta virus RNA beruntai tunggal (Tabel 1). Virus disebut sebagai virus DNA atau RNA berdasarkan asam nukleat penyusunnya pada virus tersebut (Boy, 2022)."
     },
     {
       "type": 'table',
@@ -415,18 +416,18 @@ final mp_materi1 = {
     {
       "type": "text",
       "detail":
-          '\tKapsid merupakan selubung pembungkus asam nukleat dan tersusun dari banyak kapsomer (subunit protein). Bentuk kapsid akan mempengaruhi dari bentuk virus.Menurut Reece <i>et al</i> (2021) mengemukakan bahwa berdasarkan tipe virus, kapsid dibedakan menjadi beberapa yaitu tipe polihedral, batang (heliks), bulat (bola), kompleks (huruf T), dan filamen (benang). Adapun contoh kapsid yaitu <i>Tobacco Mosaic Virus</i> (TMV) pada tanaman tembakau yang memiliki kapsid kaku dan berbentuk batang (heliks). '
+          '\tKapsid merupakan selubung pembungkus asam nukleat dan tersusun dari banyak kapsomer (subunit protein). Bentuk kapsid akan mempengaruhi dari bentuk virus.Menurut Reece <i>et al</i>., (2021) mengemukakan bahwa berdasarkan tipe virus, kapsid dibedakan menjadi beberapa yaitu tipe polihedral, batang (heliks), bulat (bola), kompleks (huruf T), dan filamen (benang) (Gambar 10).'
     },
     {
       "type": "text",
       "detail":
-          '\tContoh lainnya virus yang menyerang saluran pernapasan hewan atau <i>Adenovirus</i> yang membentuk kapsid polihedral disebut virus ikosahedral. Contoh berikutnya virus ikosahedral yaitu <i>Herpesvirus</i>, <i>Papovirus</i>, <i>Adenovirus</i>, dan <i>Reovirus</i>. Virus berbentuk bulat (bola) contohnya HIV  (<i>Human Immunodeficiency Virus</i>) sebagai penyebab penyakit AIDS dan virus <i>influenza</i>. Virus berbentuk seperti huruf T (kompleks) misalnya bakteriofag yang menginfeksi bakteri <i>Escherichia coli</i>  (Gambar 10). Virus yang berbentuk filamen (benang) contohnya virus ebola (Suprobowati. 2018). '
+          '\tContoh lainnya virus yang menyerang saluran pernapasan hewan atau <i>Adenovirus</i> yang membentuk kapsid polihedral disebut virus ikosahedral. Contoh berikutnya virus ikosahedral yaitu <i>Herpesvirus</i>, <i>Papovirus</i>, <i>Adenovirus</i>, dan <i>Reovirus</i>. Virus berbentuk bulat (bola) contohnya HIV  (<i>Human Immunodeficiency Virus</i>) sebagai penyebab penyakit AIDS dan virus <i>influenza</i>. Virus berbentuk seperti huruf T (kompleks) misalnya bakteriofag yang menginfeksi bakteri <i>Escherichia coli</i>  (Gambar 10). Virus yang berbentuk filamen (benang) contohnya virus ebola (Suprobowati, 2018). '
     },
     {
       'type': 'imagesAr',
       'name': 'm1_ar_10.png',
       'label': 'Bentuk - Bentuk Virus',
-      'Sumber': 'Reece <i>et al</i> (2021)',
+      'Sumber': 'Reece <i>et al</i>. (2021)',
       'isAr': '2',
     },
     {"type": "subTitle2", "detail": "3. Amplop"},
@@ -438,18 +439,13 @@ final mp_materi1 = {
     {
       "type": "text",
       "detail":
-          '\t Beberapa virus memiliki struktur yang membantu untuk menginfeksi sel inang yang disebut amplop virus (<i>Viral envelope</i>). Amplop virus yang berasal dari membran sel inang dan mengandung fosfolipid serta protein membran sel inang dan berikatan ke molekul reseptor spesifik pada permukaan sel inang (Suprobowati. 2018). Beberapa jenis memiliki struktur tambahan berupa sampul membran yang berfungsi untuk membantu virus menginfeksi inang.'
-    },
-    {
-      "type": "text",
-      "detail":
-          '\tMenurut Reece <i>et al</i> (2021) mengatakan bahwa virus yang memiliki sampul membran disebut virus beramplop (<i>Enveloped-virus</i>) sedangkan virus tidak memiliki sampul membran disebut virus terlanjang (<i>Naked-virus</i>) (Gambar 11). Adapun contoh dari virus beramplop yaitu virus <i>influenza</i>.'
+          '\tMenurut Reece <i>et al</i>. (2021) mengatakan bahwa virus yang memiliki sampul membran disebut virus beramplop (<i>Enveloped-virus</i>) sedangkan virus tidak memiliki sampul membran disebut virus terlanjang (<i>Naked-virus</i>) (Gambar 11). Adapun contoh dari virus beramplop yaitu virus <i>influenza</i>.'
     },
     {
       'type': 'imagesAr',
       'name': 'm1_ar_11.png',
-      'label': 'Virus Telangjang dan Virus Beramplop',
-      'Sumber': 'Reece <i>et al</i> (2021)',
+      'label': 'Virus Telanjang dan Virus Beramplop',
+      'Sumber': 'Reece <i>et al</i>. (2021)',
       'isAr': '3',
     },
     {'type': 'buttons', 'detail': 'Rangkuman'}
@@ -462,12 +458,12 @@ final mp_materi2 = {
     {
       "type": "text",
       "detail":
-          "\t    Virus tidak dapat melakukan fungsi-fungsi kehidupan seperti metabolisme dan replikasi di luar sel yang ditumpangi (sel inang) sehingga disebut parasit intraseluler obligat. Hal ini disebabkan virus tidak memiliki ribosom dan enzim yang dibutuhkan untuk mensintesis protein dan melakukan metabolisme secara mandiri. Virus memiliki kisaran tertentu dalam mengidentifikasi sel inang (<i>Host range</i>) sehingga jenis sel inang yang dapat diinfeksi setiap virus berbeda-beda (Prayitno. 2017)."
+          "\t    Virus tidak dapat melakukan fungsi-fungsi kehidupan seperti metabolisme dan replikasi di luar sel yang ditumpangi (sel inang) sehingga disebut parasit intraseluler obligat. Hal ini disebabkan virus tidak memiliki ribosom dan enzim yang dibutuhkan untuk mensintesis protein dan melakukan metabolisme secara mandiri. Virus memiliki kisaran tertentu dalam mengidentifikasi sel inang (<i>Host range</i>) sehingga jenis sel inang yang dapat diinfeksi setiap virus berbeda-beda (Prayitno, 2017)."
     },
     {
       "type": "text",
       "detail":
-          "\t      Virus mengidentifikasi sel inang menggunakan kecocokan “<i>Lock and Key</i> atau yang biasa dikenal dengan istilah lubang dan anak kunci” antara protein pada permukaan virus dengan reseptor sel inang (Campbell <i>et al</i>. 2021). Salah satu contoh bagaimana virus mengidentifikasi sel inang yaitu virus corona jenis baru (SARS-CoV 2) yang menyebabkan penyakit Covid-19 (Gambar 12). "
+          "\t      Virus mengidentifikasi sel inang menggunakan kecocokan “<i>Lock and Key</i> atau yang biasa dikenal dengan istilah lubang dan anak kunci” antara protein pada permukaan virus dengan reseptor sel inang (Campbell <i>et al</i>., 2021). Salah satu contoh bagaimana virus mengidentifikasi sel inang yaitu virus corona jenis baru (SARS-CoV 2) yang menyebabkan penyakit Covid-19 (Gambar 12). "
     },
     {
       'type': 'imagesAr',
@@ -486,13 +482,13 @@ final mp_materi2 = {
     {
       "type": "text",
       "detail":
-          "\t  Virus bereproduksi dengan melakukan replikasi (perbanyakan diri) menggunakan energi, bahan-bahan, dan organel-organel dalam sel inang (Talaro & Chess. 2018). Bagian virus yang paling berperan pada proses replikasi adalah asam nukleat. Virus hanya dapat melakukan replikasi apabila virus berada di dalam sel inang. Dimana sel tersebut membantu siklus replikasi virus secara lengkap yaitu sebagai sel inang permisif (virus harus masuk ke sel target untuk menyebabkan penyakit). Virus dapat menginfeksi apabila struktur tersebut cocok dengan protein reseptor pada membran sel inang. Replikasi pada virus terdiri dari dua siklus yaitu siklus litik dan siklus lisogenik. Virus melakukan siklus litik dan lisogenik tergantung pada virulensi atau ketahanan sel inang terhadap virus penginfeksi (Solomon <i>et al</i>. 2019).  Berikut ini penjelasan mengenai siklus litik dan siklus lisogenik yaitu:"
+          "\t  Virus bereproduksi dengan melakukan replikasi (perbanyakan diri) menggunakan energi, bahan-bahan, dan organel-organel dalam sel inang (Talaro & Chess, 2018). Bagian virus yang paling berperan pada proses replikasi adalah asam nukleat. Virus hanya dapat melakukan replikasi apabila virus berada di dalam sel inang. Sel tersebut membantu siklus replikasi virus secara lengkap yaitu sebagai sel inang permisif (virus harus masuk ke sel target untuk menyebabkan penyakit). Virus dapat menginfeksi apabila struktur tersebut cocok dengan protein reseptor pada membran sel inang. Replikasi pada virus terdiri dari dua siklus yaitu siklus litik dan siklus lisogenik. Virus melakukan siklus litik dan lisogenik tergantung pada virulensi atau ketahanan sel inang terhadap virus penginfeksi (Solomon <i>et al</i>., 2019).  Berikut ini penjelasan mengenai siklus litik dan siklus lisogenik yaitu:"
     },
     {"type": "subTitle2", "detail": "1. Siklus Litik"},
     {
       "type": "text",
       "detail":
-          "\t      Siklus litik merupakan siklus dimana puncak reproduksinya virus akan menyebabkan sel inang menjadi mati atau mengalami litik (pecah) sehingga melepaskan Fag-Fag yang dihasilkan dalam sel inang. Fag yang bereproduksi melalui siklus litik saja disebut dengan Fag virulen (<i>Virulent phage</i>), sedangkan siklus lisogenik merupakan siklus reproduksi tanpa menghancurkan sel inang (Solomon <i>et al</i>. 2019)."
+          "\t      Siklus litik merupakan siklus replikasi virus yang membentuk virion (virus-virus baru yang dapat menginfeksi) disertai dengan kematian sel inang. Siklus ini terjadi ketika pertahanan sel inang lebih lemah dibandingkan daya infeksi virus. Pada siklus litik, setiap tahapan berlangsung dengan cepat. Virus yang bereplikasi melalui siklus litik disebut virus virulen (Solomon <i>et al</i>., 2019)."
     },
     {
       'type': 'info',
@@ -503,49 +499,49 @@ final mp_materi2 = {
     {
       'type': 'youtube',
       'detail':
-          'Ayo kita belajar bersama menganai siklus litik dengan cara mengklik ikon YouTube di samping!',
+          'Ayo kita belajar bersama mengenai siklus litik dengan cara mengklik ikon YouTube di samping!',
       'link': 'https://youtu.be/pHIWJfz8748?si=brioXUNgybe1E8Z2'
     },
     {
       "type": "text",
       "detail":
-          "\tTahapan dalam siklus litik dapat dilihat pada gambar 13 dan tabel 2 adalah sebagai berikut:"
+          "\tTahapan dalam siklus litik terdiri atas adsorpsi, penetrasi, sintesis, perakitan dan lisis (gambar 13 dan tabel 2)."
     },
-    {"type": "textBold", "detail": "a.  Tahapan Penempelan (Adsorpsi)"},
-    {
-      "type": "textBoldContent",
-      "detail":
-          "\tVirus akan menempel menggunakan serabut ekor  dengan ikatan khusus antara kapsid protein virus dengan daerah reseptor (<i>receptor site/spot</i>) pada permukaan sel inang. Ikatan khusus inilah yang membuat virus hanya dapat menempel pada inang tertentu, apabila tidak cocok maka virus tidak dapat menempel. "
-    },
-    {"type": "textBold", "detail": "b.  Tahapan Penetrasi "},
-    {
-      "type": "textBoldContent",
-      "detail":
-          "\t     Pada tahapan ini, virus mulai memasukan DNA atau RNA yang terkandung di dalamnya, sedangkan selubung protein dari asam nukleat yang disebut kapsid akan tetap berada di luar sel. Setelah semua sel genetik berhasil masuk ke dalam sel inang, maka kapsid akan terlepas dari sel karena sudah tidak berguna bagi virus. "
-    },
-    {"type": "textBold", "detail": "c.  Tahapan Sintesis"},
-    {
-      "type": "textBoldContent",
-      "detail":
-          "\t     Setelah berhasil menginjeksi asam nukleat, bakteriofage akan menghasilkan enzim untuk menghentikan sintesis molekul bakteri (protein, DNA, RNA). Setelah sintesis protein dan asam nukleat dari sel inang berhenti, virus akan mengambil alih proses metabolisme sel inang. DNA dan RNA dari sel inang kemudian akan dimanfaatkan dalam penggandaan asam nukleat virus sebanyak mungkin. Selain itu, virus akan menggunakan protein yang terdapat pada sel inang untuk kemudian dimanfaatkan sebagai penggandaan kapsid. "
-    },
-    {"type": "textBold", "detail": "d.  Tahapan Perakitan "},
-    {
-      "type": "textBoldContent",
-      "detail":
-          "\t     Pada tahapan ini, virus akan membentuk tubuh mereka menjadi kepala, ekor, dan serat ekor. Kapsid yang telah terbentuk pada tahapan sintesis akan mulai diisi dengan asam nukleat yang telah tereplikasi sehingga menjadi virus yang utuh. "
-    },
-    {"type": "textBold", "detail": "e. Tahapan Litik (Lisis) "},
-    {
-      "type": "textBoldContent",
-      "detail":
-          "\t      Virus-virus baru yang sempurna telah terbentuk, maka induk virus akan mengeluarkan enzim lisozim sebagai penghancur sel inang dan memungkinkan cairan masuk. Sel mengembang dan akhirnya pecah dengan melepaskan 100 sampai 200 virus baru. Virus tersebut akan mencari sel lain untuk kemudian melanjutkan siklus hidup mereka. "
-    },
+    // {"type": "textBold", "detail": "a.  Tahapan Penempelan (Adsorpsi)"},
+    // {
+    //   "type": "textBoldContent",
+    //   "detail":
+    //       "\tVirus akan menempel menggunakan serabut ekor  dengan ikatan khusus antara kapsid protein virus dengan daerah reseptor (<i>receptor site/spot</i>) pada permukaan sel inang. Ikatan khusus inilah yang membuat virus hanya dapat menempel pada inang tertentu, apabila tidak cocok maka virus tidak dapat menempel. "
+    // },
+    // {"type": "textBold", "detail": "b.  Tahapan Penetrasi "},
+    // {
+    //   "type": "textBoldContent",
+    //   "detail":
+    //       "\t     Pada tahapan ini, virus mulai memasukan DNA atau RNA yang terkandung di dalamnya, sedangkan selubung protein dari asam nukleat yang disebut kapsid akan tetap berada di luar sel. Setelah semua sel genetik berhasil masuk ke dalam sel inang, maka kapsid akan terlepas dari sel karena sudah tidak berguna bagi virus. "
+    // },
+    // {"type": "textBold", "detail": "c.  Tahapan Sintesis"},
+    // {
+    //   "type": "textBoldContent",
+    //   "detail":
+    //       "\t     Setelah berhasil menginjeksi asam nukleat, bakteriofage akan menghasilkan enzim untuk menghentikan sintesis molekul bakteri (protein, DNA, RNA). Setelah sintesis protein dan asam nukleat dari sel inang berhenti, virus akan mengambil alih proses metabolisme sel inang. DNA dan RNA dari sel inang kemudian akan dimanfaatkan dalam penggandaan asam nukleat virus sebanyak mungkin. Selain itu, virus akan menggunakan protein yang terdapat pada sel inang untuk kemudian dimanfaatkan sebagai penggandaan kapsid. "
+    // },
+    // {"type": "textBold", "detail": "d.  Tahapan Perakitan "},
+    // {
+    //   "type": "textBoldContent",
+    //   "detail":
+    //       "\t     Pada tahapan ini, virus akan membentuk tubuh mereka menjadi kepala, ekor, dan serat ekor. Kapsid yang telah terbentuk pada tahapan sintesis akan mulai diisi dengan asam nukleat yang telah tereplikasi sehingga menjadi virus yang utuh. "
+    // },
+    // {"type": "textBold", "detail": "e. Tahapan Litik (Lisis) "},
+    // {
+    //   "type": "textBoldContent",
+    //   "detail":
+    //       "\t      Virus-virus baru yang sempurna telah terbentuk, maka induk virus akan mengeluarkan enzim lisozim sebagai penghancur sel inang dan memungkinkan cairan masuk. Sel mengembang dan akhirnya pecah dengan melepaskan 100 sampai 200 virus baru. Virus tersebut akan mencari sel lain untuk kemudian melanjutkan siklus hidup mereka. "
+    // },
     {
       "type": 'imagesMulti',
       'name1': 'm2_ar_13.png',
       'label1': 'Siklus Litik',
-      'Sumber1': 'Reece <i>et al</i> (2021)',
+      'Sumber1': 'Reece <i>et al</i>. (2021)',
       'isAr': '5',
       'name2': 'm2_table_2.png',
       'label2': 'Siklus Litik',
@@ -555,48 +551,49 @@ final mp_materi2 = {
     {
       "type": "text",
       "detail":
-          "\tSolomon <i>et al</i> (2019) menyatakan bahwa siklus lisogenik merupakan siklus yang memungkinkan terjadinya replikasi genom virus tanpa merusak sel inang. Siklus ini terjadi pada saat sel inang memiliki pertahanan yang lebih kuat dibandingkan dengan infeksi virus. Pada siklus lisogenik tidak terbentuk <i>Virion</i> baru, namun virus menyisipkan asam nukleatnya pada asam nukleat sel inang yang membentuk profag."
+          "\tSiklus lisogenik merupakan siklus yang memungkinkan terjadinya replikasi genom virus tanpa merusak sel inang. Siklus ini terjadi pada saat sel inang memiliki pertahanan yang lebih kuat dibandingkan dengan infeksi virus. Pada siklus lisogenik tidak terbentuk virion baru, namun virus menyisipkan asam nukleatnya pada asam nukleat sel inang yang membentuk profag (Solomon <i>et al</i>., (2019)."
     },
     {
       'type': 'info',
       'label': 'Bio Info',
       'detail':
-          'Siklus lisogenik merupakan strategi infeksi virus supaya dapat tetap bertahan di saat pertahanan sel inang cukup kuat (infeksi persisten). Pada siklus ini, sel inang tetap dapat mengandung asam nukleat virus. Virus yang menginfeksi sel hewan dan manusia, fase siklus lisogenik mirip dengan fase laten. Pada fase laten genom virus tidak aktif atau tidak produktif dalam waktu lama. Contohnya adalah virus <i>herpes simplex</i> (luka dingin dan herpes genital) dan virus <i>herpes zoster</i> (cacar air dan herpes zoster). '
+          'Siklus lisogenik merupakan strategi infeksi virus supaya dapat tetap bertahan di saat pertahanan sel inang cukup kuat (infeksi persisten). Pada siklus ini, sel inang tetap dapat mengandung asam nukleat. Virus yang menginfeksi sel hewan dan manusia, fase siklus lisogenik mirip dengan fase laten. Pada fase laten genom virus tidak aktif atau tidak produktif dalam waktu lama. Contohnya adalah virus <i>herpes simplex</i> (luka dingin dan herpes genital) dan virus <i>herpes zoster</i> (cacar air dan herpes zoster). '
     },
     {
       "type": "text",
       "detail":
-          "\t      Pada saat sel bakteri yang mengandung profag membelah diri, profag juga ikut digandakan sehingga tidak langsung terjadi perbanyakan materi genetik virus. Virus yang dapat bereplikasi melalui siklus litik dan lisogenik contohnya virus fag α  . Menurut Prayitno (2017), menjelaskan bahwa tahapan  dalam siklus lisogenik pada gambar 14 dan tabel 3 adalah sebagai berikut:"
+          "\t            Pada saat sel bakteri yang mengandung profag membelah diri, profag juga ikut digandakan sehingga tidak langsung terjadi perbanyakan materi genetik virus. Virus yang dapat bereplikasi melalui siklus litik dan lisogenik contohnya virus fag α. Menurut Prayitno (2017), tahapan  dalam siklus lisogenik terdiri atas adsorpsi, penetrasi, penggabungan dan replikasi (gambar 14 dan tabel 3)."
     },
-    {"type": "textBold", "detail": "a.  Tahapan Penempelan (Adsorpsi)"},
-    {
-      "type": "textBoldContent",
-      "detail":
-          "\t     Pada tahapan ini, sama hal nya dengan yang terjadi pada siklus litik. Virus akan menempel pada sel inang bakteri dan melubanginya dengan enzim lisozim."
-    },
-    {"type": "textBold", "detail": "b. Tahapan Penetrasi "},
-    {
-      "type": "textBoldContent",
-      "detail":
-          "\t      Tahapan penetrasi juga sama seperti yang terjadi pada siklus litik. Virus akan mulai memasukan asam nukleat ke dalam sel inang dan melepaskan kapsid yang sudah tidak digunakan."
-    },
-    {"type": "textBold", "detail": "c. Tahapan Penggabungan"},
-    {
-      "type": "textBoldContent",
-      "detail":
-          "\t       Pada tahapan ini, virus akan memutuskan ikatan asam nukleat yang dimiliki oleh sel inang dan masuk ke dalamnya untuk menghubungkan rantai. Pada tahapan ini, virus tidak mengambil asam nukleat sel inang akan tetapi membaur untuk membentuk satu kesatuan yang disebut profag. Dalam bentuk profag, sebagian besar gen berada dalam fase tidak aktif (laten) tetapi sedikitnya ada satu gen yang selalu aktif. Gen aktif berfungsi untuk mengkode protein reseptor yang bertugas untuk menjaga supaya sebagian gen profag tidak aktif."
-    },
-    {"type": "textBold", "detail": "d. Tahapan Replikasi "},
-    {
-      "type": "textBoldContent",
-      "detail":
-          "\t     Saat profag akan bereplikasi, DNA fag juga turut bereplikasi. Kemudian ketika bakteri membelah diri, bakteri menghasilkan dua sel anakan yang masing-masing  mengandung profag. DNA fag (dalam profag) akan terus bertambah banyak apabila sel bakteri terus-menerus membelah. Selanjutnya profag dapat keluar dari kromosom sel inang dan sel akan mengalami siklus litik."
-    },
+    // {"type": "textBold", "detail": "a.  Tahapan Penempelan (Adsorpsi)"},
+    // {
+    //   "type": "textBoldContent",
+    //   "detail":
+    //       "\t     Pada tahapan ini, sama hal nya dengan yang terjadi pada siklus litik. Virus akan menempel pada sel inang bakteri dan melubanginya dengan enzim lisozim."
+    // },
+    // {"type": "textBold", "detail": "b. Tahapan Penetrasi "},
+    // {
+    //   "type": "textBoldContent",
+    //   "detail":
+    //       "\t      Tahapan penetrasi juga sama seperti yang terjadi pada siklus litik. Virus akan mulai memasukan asam nukleat ke dalam sel inang dan melepaskan kapsid yang sudah tidak digunakan."
+    // },
+    // {"type": "textBold", "detail": "c. Tahapan Penggabungan"},
+    // {
+    //   "type": "textBoldContent",
+    //   "detail":
+    //       "\t       Pada tahapan ini, virus akan memutuskan ikatan asam nukleat yang dimiliki oleh sel inang dan masuk ke dalamnya untuk menghubungkan rantai. Pada tahapan ini, virus tidak mengambil asam nukleat sel inang akan tetapi membaur untuk membentuk satu kesatuan yang disebut profag. Dalam bentuk profag, sebagian besar gen berada dalam fase tidak aktif (laten) tetapi sedikitnya ada satu gen yang selalu aktif. Gen aktif berfungsi untuk mengkode protein reseptor yang bertugas untuk menjaga supaya sebagian gen profag tidak aktif."
+    // },
+    // {"type": "textBold", "detail": "d. Tahapan Replikasi "},
+    // {
+    //   "type": "textBoldContent",
+    //   "detail":
+    //       "\t     Saat profag akan bereplikasi, DNA fag juga turut bereplikasi. Kemudian ketika bakteri membelah diri, bakteri menghasilkan dua sel anakan yang masing-masing  mengandung profag. DNA fag (dalam profag) akan terus bertambah banyak apabila sel bakteri terus-menerus membelah. Selanjutnya profag dapat keluar dari kromosom sel inang dan sel akan mengalami siklus litik."
+    // },
+
     {
       "type": 'imagesMulti',
       'name1': 'm2_ar_14.png',
       'label1': 'Siklus Lisogenik',
-      'Sumber1': 'Reece <i>et al</i> (2021)',
+      'Sumber1': 'Prayitno (2017)',
       'isAr': '6',
       'name2': 'm2_table_3.png',
       'label2': 'Siklus Lisogenik',
@@ -618,22 +615,22 @@ final mp_materi2 = {
     {
       "type": "text",
       "detail":
-          "\t     Sejumlah virus menyebabkan sel yang terinfeksi menghasilkan toksin (racun) yang menimbulkan gejala penyakit (Kesumah. 2020). Berikut ini ada beberapa contoh dampak dari penyakit yang disebabkan oleh virus pada tumbuhan antara lain:"
+          "\t     Sejumlah virus menyebabkan sel yang terinfeksi menghasilkan toksin (racun) yang menimbulkan gejala penyakit (Kesumah, 2020). Berikut ini ada beberapa contoh dampak dari penyakit yang disebabkan oleh virus pada tumbuhan antara lain:"
     },
     {
       "type": 'imagesMulti',
       'name1': 'm2_img_15.png',
-      'label1': 'Penyakit Mosaik pada Tembakau',
+      'label1': 'Penyakit PYLCV pada Cabai',
       'Sumber1': 'www.ruangguru.com',
-      'title1': 'Mosaik',
+      'title1': 'Penyakit PYLCV',
       'detail1':
-          '\tMosaik merupakan jenis penyakit yang disebabkan oleh <i>Tobacco mosaic virus</i>  (TMV). Virus ini menyebabkan bercak kuning pada daun tumbuhan tembakau, kacang kedelai, tomat, labu, kentang, mentimun, buncis, gandum, dan tebu (Suhara. 2020). Virus TMV ini ditularkan secara mekanis atau melalui benih. Virus ini dapat bertahan dan bersifat infektif selama beberapa tahun. Umumnya gejala daun tanaman tembakau yang terinfeksi virus ini yaitu daun menjadi berwarna belang hijau muda sampai hijau tua dan mengkerut (Gambar 15). Ukuran daun relatif lebih kecil apabila dibandingkan dengan warna ukuran daun normal. Sedangkan apabila menyerang daun tanaman yang masih muda maka akan menyebabkan pertumbuhannya terhambat dan akhirnya kerdil.',
+          '\tPYLCV <i>(Pepper yellow leaf curl virus)</i> atau biasa dikenal dengan virus kuning cabai merupakan penyakit yang disebabkan oleh virus Gemini. Virus ini ditularkan oleh serangga vektor yaitu kutu kebul <i>(Bemisia tabaci)</i>. Penyakit ini banyak terdapat pada tanaman cabai rawit, cabai besar, paprika, dan tomat. Gejala yang disebabkan oleh virus ini pada tanaman cabai yaitu daun menjadi berwarna kuning, kerdil, dan menggulung ke atas (Gambar 15). Gejala menguningnya daun terutama bagian atas (muda) merupakan akibat dari terhambatnya aliran nutrisi dari <i>source</i> ke <i>sink</i> karena virus yang ada di dalam tanaman menguasai floem <i>(floem limited virus)</i>. \n \t Tanaman yang terinfeksi pada awal pertumbuhan tidak akan menghasilkan buah dan tanaman tidak dapat tumbuh dengan normal. Apabila tanaman yang terinfeksi memasuki fase generatif maka buah yang dihasilkan akan kerdil dan bertekstur keras. Virus ini menyebabkan penurunan hasil produksi hingga 75% pada musim kemarau, hal ini menyebabkan masih dilakukannya impor cabai dari Malaysia dan Australia (Tuhumury, 2018). ',
       'name2': 'm2_img_16.png',
       'label2': 'Penyakit Tungro Pada Padi',
       'Sumber2': 'Kampustani.com',
       'title2': 'Tungro',
       'detail2':
-          '\tTungro merupakan jenis penyakit yang disebabkan oleh dua jenis virus yang berbeda yaitu virus batang <i>Rice Tungro Bacilliform Virus</i> (RTBV) dan virus bentuk bulat <i>Rice Tungro Spherical Virus</i> (RTSV) (Gambar 16). Tungro merupakan penyakit yang menyerang tanaman padi, biasanya terjadi pada fase pertumbuhan vegetatif sehingga menyebabkan tanaman menjadi kerdil, pelepah dan helai daun akan memendek serta daun yang terserang berwarna kuning sampai ke orange sehingga menyebabkan berkurangnya jumlah anakan (Sutrawati. 2019). '
+          '\tTungro merupakan jenis penyakit yang disebabkan oleh dua jenis virus yang berbeda yaitu virus batang <i>Rice Tungro Bacilliform Virus</i> (RTBV) dan virus bentuk bulat <i>Rice Tungro Spherical Virus</i> (RTSV) (Gambar 16). Tungro merupakan penyakit yang menyerang tanaman padi, biasanya terjadi pada fase pertumbuhan vegetatif sehingga menyebabkan tanaman menjadi kerdil, pelepah dan helai daun akan memendek serta daun yang terserang berwarna kuning sampai ke orange sehingga menyebabkan berkurangnya jumlah anakan. Penyakit tungro sangat merugikan petani karena dapat menurunkan produksi antara 10% hingga 90% tergantung pada umur tanaman saat terinfeksi, titik infeksi pada tanaman padi serta varietas padi (Sutrawati, 2019). \n\t Upaya yang dilakukan Pemerintah RI melalui Kementerian Pertanian yaitu dengan memberikan bantuan kepada petani berupa penyediaan lahan, pupuk, benih unggul dan berkualitas, pengolahan (paska panen), distribusi, penetapan dan pengendalian harga, kebijakan importasi, penyiapan prasarana (nabati maupun hewani), irigasi, regulasi, serta penguasaan iptek (untuk mengatasi gangguan dari cuaca dan hama) guna mendukung swasembada pangan.'
     },
     {
       "type": "text",
@@ -644,16 +641,16 @@ final mp_materi2 = {
       "type": 'imagesMulti',
       'name1': 'm2_img_17.png',
       'label1': 'Penyakit Mulut dan Kuku pada Sapi',
-      'Sumber1': 'Graham <i>et al</i> (2021)',
+      'Sumber1': 'Graham <i>et al</i>. (2021)',
       'title1': 'Penyakit Mulut dan Kuku',
       'detail1':
-          '\t      Penyakit mulut dan kuku (PMK) merupakan jenis penyakit disebabkan oleh <i>Aphthovirus</i> yang menyerang ternak seperti sapi, babi dan kerbau. Penyakit ini disebabkan oleh virus yang mudah menyerang hewan ternak berkuku belah (Belsham <i>et al</i>. 2021). Penyebaran penyakit ini disebabkan oleh beberapa hal seperti virus yang terbawa oleh angin, persinggungan badan dengan hewan ternak yang sudah terinfeksi, bercampurnya hewan ternak dalam proses pengangkutan, serta pakan ternak yang mengandung virus. Penyakit ini menyebabkan hewan ternak mengalami sariawan atau luka yang mengganggu kuku dan mulut ternak. Hal ini menyebabkan hewan menjadi tidak nafsu makan selama hampir dua minggu dan menyebabkan kekurusan serta akhirnya menyebabkan kematian (Gambar 17). ',
+          '\tPenyakit mulut dan kuku (PMK) merupakan jenis penyakit disebabkan oleh <i>Aphthovirus</i> yang menyerang ternak seperti sapi, babi dan kerbau. Penyakit ini disebabkan oleh virus yang mudah menyerang hewan ternak berkuku belah. Penyebaran penyakit ini disebabkan oleh beberapa hal seperti virus yang terbawa oleh angin, persinggungan badan dengan hewan ternak yang sudah terinfeksi, bercampurnya hewan ternak dalam proses pengangkutan, serta pakan ternak yang mengandung virus. Penyakit ini menyebabkan hewan ternak mengalami sariawan atau luka yang mengganggu kuku dan mulut ternak. Hal ini menyebabkan hewan menjadi tidak nafsu makan selama hampir dua minggu dan menyebabkan kekurusan serta akhirnya menyebabkan kematian (Gambar 17).  \n \tMenurut data Kementerian Pertanian melaporkan bahwa pada tanggal 17 Mei 2021 tercatat total sebanyak 15 Provinsi, 52 Kabupaten (Kota) dan ternak sapi yang terdeteksi sakit PMK mencapai 13.965 ekor. PMK menyebabkan penurunan produktivitas sapi meliputi penurunan angka produksi susu mencapai 25% per tahun, terhambatnya tingkat pertumbuhan sapi potong menuju dewasa dengan persentase 10-20%, kehilangan tenaga kerja, penurunan fertilitas dan perlambatan kebuntingan serta kematian pada anakan (Belsham <i>et al</i>., 2021). ',
       'name2': 'm2_img_18.png',
       'label2': 'Penyakit Rabies pada Anjing',
       'Sumber2': 'halodoc',
       'title2': 'Rabies',
       'detail2':
-          '\t      Rabies merupakan jenis penyakit menyerang hewan seperti anjing, kucing, sapi, dan monyet (Gambar 18). Penyakit ini disebabkan oleh virus <i>Rhabdovirus</i>. Penyakit ini dapat menular dan menyerang pada jaringan saraf pusat melalui gigitan dan air liur hewan yang terinfeksi. Hewan yang terkena penyakit ini akan menunjukan perilaku agresif atau kelumpuhan. Virus ditularkan kepada manusia melalui gigitan hewan yang terinfeksi. Penyakit ini sangat ditakuti dan mengganggu karena apabila menggigit manusia dapat menyebabkan timbulnya gejala kesemutan di sekitar luka gigitan, perasaan gelisah, otot menjadi tegang, gangguan fungsi otak seperti kehilangan kesadaran serta dapat menyebabkan kematian. Pencegahan penyakit rabies yang dapat dilakukan pada hewan ialah dengan dilakukannya vaksinasi (Kesumah. 2020).'
+          '\tRabies merupakan jenis penyakit menyerang hewan seperti anjing, kucing, sapi, dan monyet (Gambar 18). Penyakit ini disebabkan oleh virus <i>Rhabdovirus</i>. Penyakit ini dapat menular dan menyerang pada jaringan saraf pusat melalui gigitan dan air liur hewan yang terinfeksi. Hewan yang terkena penyakit ini akan menunjukan perilaku agresif atau kelumpuhan. Virus ditularkan kepada manusia melalui gigitan hewan yang terinfeksi. Penyakit ini sangat ditakuti dan mengganggu karena apabila menggigit manusia dapat menyebabkan timbulnya gejala kesemutan di sekitar luka gigitan, perasaan gelisah, otot menjadi tegang, gangguan fungsi otak seperti kehilangan kesadaran serta dapat menyebabkan kematian.  \n \tBerdasarkan data Kementerian Kesehatan RI tahun 2020, ditemukan 11 kasus kematian akibat rabies yang 95% diantaranya dikarenakan gigitan anjing. WHO menyebutkan bahwa rabies dapat menyebabkan kematian 60.000 orang per tahunnya. Pencegahan penyakit rabies yang dapat dilakukan pada hewan ialah dengan dilakukannya vaksinasi (Kesumah, 2020). '
     },
     {
       "type": "text",
@@ -667,13 +664,13 @@ final mp_materi2 = {
       'Sumber1': 'Alodokter.com',
       'title1': 'Influenza',
       'detail1':
-          '\t   Influenza merupakan jenis penyakit yang disebabkan oleh virus golongan <i>Orthomyxovirus</i> yang berbentuk seperti bola (Puspaningsih <i>et al</i>. 2021). Virus influenza ditularkan melalui udara dan masuk ke tubuh manusia melalui saluran pernapasan. Gejala influenza ialah demam, sakit kepala, pegal linu pada otot dan kehilangan nafsu makan (Gambar 19). Penanggulangan virus ini dapat dilakukan dengan pemakaian mutan vaksin hidup yang dilemahkan untuk mendorong supaya respon kekebalan tubuh meningkat. Pencegahan terhadap influenza ialah dengan menjaga daya tahan tubuh, melakukan vaksinasi influenza serta menghindar kontak dengan penderita. ',
+          '\tInfluenza (flu) dan <i>Common cold</i> merupakan penyakit yang paling sering disebabkan oleh virus. Influenza merupakan jenis penyakit yang disebabkan oleh virus golongan <i>Orthomyxovirus</i> yang berbentuk seperti bola (Puspaningsih et al., 2021). Virus influenza umumnya terjadi pada negara yang beriklim dingin dan ditularkan melalui udara dan masuk ke tubuh manusia melalui saluran pernapasan. Gejala influenza ialah demam, sakit kepala, pegal linu pada otot dan kehilangan nafsu makan (Gambar 19). Penanggulangan virus ini dapat dilakukan dengan pemakaian mutan vaksin hidup yang dilemahkan untuk mendorong supaya respon kekebalan tubuh meningkat. Pencegahan terhadap influenza ialah dengan menjaga daya tahan tubuh, melakukan vaksinasi influenza serta menghindar kontak dengan penderita. \n \tSedangkan <i>Common cold</i> yang merupakan suatu sindrom (kumpulan gejala) saluran pernapasan akut yang masyarakat awam dikenal dengan istilah batuk pilek. <i>Common cold</i> dapat disebabkan oleh banyak virus seperti <i>rhinovirus</i> dan <i>parainfluenza</i>. <i>Common cold</i> sering kali disalah artikan sebagai flu (influenza) karena kedua sindrom ini memiliki gejala yang serupa yaitu pilek, batuk, dan nyeri tenggorokan. Meskipun mirip, gejala <i>Common cold</i> umumnya lebih ringan dibandingkan dengan influenza. Gejala yang paling menonjol pada penderita <i>Common cold</i> adalah pilek atau hidung tersumbat dan sering kali bersin. Menurut Riset Kesehatan Dasar (Riskesdas) 2018, jumlah warga Indonesia yang mengalami ISPA sebanyak 9,3 persen dengan total kejadian 1.017.290 kasus. Provinsi dengan kejadian tertinggi adalah Jawa Barat, Jawa Timur, dan Jawa Tengah. <i>Common cold</i> sering ditemui pada kehidupan sehari-hari dan tidak terbatas pada usia dan jenis kelamin tertentu (Puig, 2024).',
       'name2': 'm2_img_20.png',
       'label2': 'Penyakit Herpes Simplex',
       'Sumber2': 'Alodokter.com',
       'title2': 'Herpes Simplex',
       'detail2':
-          '\t   Herpes simplex merupakan jenis penyakit disebabkan oleh virus anggota suku <i>Herpesviridae</i> yang menyerang kulit dan selaput lendir (Karasneh, G. A., & Shukla, D. 2011). Penyakit ini biasanya mengenai mata, bibir, mulut, kulit, dan alat kelamin. Infeksi penyakit ini pertama biasanya pada satu tempat dan cenderung hilang timbul. Virus dapat masuk ke dalam tubuh melalui luka kecil. Selain itu, dapat ditularkan melalui hubungan seksual, kecuali pada bagian mata. Gejala utama dari penyakit ini yaitu timbulnya gelembung-gelembung kecil. Gelembung tersebut mudah pecah dan apabila pecah dapat menular pada bagian tubuh lainnya (Gambar 20). '
+          '\tHerpes simplex merupakan jenis penyakit disebabkan oleh virus anggota suku <i>Herpesviridae</i> yang menyerang kulit dan selaput lendir. Penyakit ini biasanya mengenai mata, bibir, mulut, kulit, dan alat kelamin. Infeksi penyakit ini pertama biasanya pada satu tempat dan cenderung hilang timbul. Virus dapat masuk ke dalam tubuh melalui luka kecil. Selain itu, dapat ditularkan melalui hubungan seksual, kecuali pada bagian mata. \n\t Gejala utama dari penyakit ini yaitu timbulnya gelembung-gelembung kecil. Gelembung tersebut mudah pecah dan apabila pecah dapat menular pada bagian tubuh lainnya (Gambar 20). Penyebaran herpes simplex tersebar di seluruh dunia yakni sekitar 23 juta kasus per tahun. Tahun 2011, diperkirakan ada 417 juta orang dengan rentang usia antara 15-49 tahun terinfeksi <i>herpes simplex virus</i> tipe 2 di seluruh dunia atau sebanyak 11.3% dari total penduduk dunia, sekitar 267 juta dari mereka adalah wanita (Karasneh <i>et al</i>., 2011). '
     },
     {
       "type": 'imagesMulti',
@@ -682,7 +679,7 @@ final mp_materi2 = {
       'Sumber1': 'Alodokter.com',
       'title1': 'Ebola',
       'detail1':
-          '\t     Demam berdarah ebola adalah jenis penyakit yang disebabkan oleh <i>Ebola Virus Disease</i> (EVD) (Gambar 21). Gejala awal yang ditimbulkan ebola mirip penyakit influenza yaitu demam, menggigil, sakit kepala, nyeri otot dan nafsu makan berkurang. Gejala ini muncul setelah tubuh terinfeksi dan virus mulai mereplikasikan dirinya. EVD akan menyerang sel darah merah, sehingga menyebabkan kematian dan menyumbatnya saluran kapiler darah yang mengakibatkan kulit memar dan melepuh. Ebola ditularkan melalui kontak langsung dengan cairan tubuh penderita misalnya melalui darah, feses (tinja), urin, ludah, dan keringat (Jacob <i>et al</i>. 2020). ',
+          '\tDemam berdarah ebola adalah jenis penyakit yang disebabkan oleh <i>Ebola Virus Disease</i> (EVD) (Gambar 21). Penyakit ini pertama kali ditemukan di Afrika pada tahun 1976. Gejala awal yang ditimbulkan ebola mirip penyakit influenza yaitu demam, menggigil, sakit kepala, nyeri otot dan nafsu makan berkurang. Gejala ini muncul setelah tubuh terinfeksi dan virus mulai mereplikasikan dirinya. EVD akan menyerang sel darah merah, sehingga menyebabkan kematian dan menyumbatnya saluran kapiler darah yang mengakibatkan kulit memar dan melepuh.\n \tEbola ditularkan melalui kontak langsung dengan cairan tubuh penderita misalnya melalui darah, feses (tinja), urin, ludah, dan keringat. WHO pernah menyatakan bahwa EVD sebagai Kedaruratan Kesehatan Masyarakat yang Meresahkan Dunia (KKMMD) akibat timbulnya wabah ini di Republik Demokratik Kongo. Sejak tahun 2014 hingga saat ini, telah dilaporkan sebanyak 32.486 kasus PVE dengan 13.812 kematian yang tersebar pada berbagai negara di dunia baik di wilayah Afrika, Amerika, maupun Eropa (Jacob <i>et al</i>., 2020). ',
       'name2': 'm2_img_22.png',
       'label2': 'Penderita AIDS',
       'Sumber2': 'Alodokter.com',
@@ -691,12 +688,17 @@ final mp_materi2 = {
         {
           "type": 'text',
           'detail':
-              '\tAIDS<i>(Acquired Immunodeficiency Syndrome)</i> merupakan penurunan sistem kekebalan tubuh yang disebabkan oleh HIV <i>(Human Immunodeficiency Virus)</i>. HIV merupakan virus golongan Retrovirus yang memiliki 2 molekul RNA. HIV tidak menular melalui udara, kontak biasa, atau melalui gigitan serangga, batuk, bersin, berjabat tangan, atau menggunakan peralatan makan atau mandi yang sama. HIV menular melalui hubungan seksual, transfusi darah, air susu ibu (ASI) serta penggunaan jarum suntik yang terkontaminasi HIV (Siagian. 2023).'
+              '\tAIDS <i>(Acquired Immunodeficiency Syndrome)</i> merupakan penurunan sistem kekebalan tubuh yang disebabkan oleh HIV <i>(Human Immunodeficiency Virus)</i>. HIV merupakan virus golongan Retrovirus yang memiliki 2 molekul RNA. HIV tidak menular melalui udara, kontak biasa, atau melalui gigitan serangga, batuk, bersin, berjabat tangan, atau menggunakan peralatan makan atau mandi yang sama. HIV menular melalui hubungan seksual, transfusi darah, air susu ibu (ASI) serta penggunaan jarum suntik yang terkontaminasi HIV (Siagian, 2023).'
         },
         {
           "type": 'text',
           'detail':
-              '\tMasa inkubasi HIV dapat berlangsung dalam hitungan bulan bahkan tahun (Nishiura. 2019). Tubuh yang terinfeksi HIV tidak secara langsung menunjukan gejala sakit yang parah. Akan tetapi, HIV yang berada di dalam tubuh akan bereproduksi dan menyerang sistem kekebalan tubuh. Tubuh penderita akan semakin rentan terhadap berbagai penyakit yang diakibatkan oleh sistem kekebalan tubuh yang melemah (Gambar 22). Penyakit yang umumnya diderita ialah pneumonia, diare, kanker, penurunan berat badan, dan gagal jantung hingga akhirnya menyebabkan kematian.'
+              '\tMasa inkubasi HIV dapat berlangsung dalam hitungan bulan bahkan tahun (Nishiura, 2019). Tubuh yang terinfeksi HIV tidak secara langsung menunjukan gejala sakit yang parah. Akan tetapi, HIV yang berada di dalam tubuh akan bereproduksi dan menyerang sistem kekebalan tubuh. Tubuh penderita akan semakin rentan terhadap berbagai penyakit yang diakibatkan oleh sistem kekebalan tubuh yang melemah (Gambar 22). Penyakit yang umumnya diderita ialah pneumonia, diare, kanker, penurunan berat badan, dan gagal jantung hingga akhirnya menyebabkan kematian. '
+        },
+        {
+          "type": 'text',
+          'detail':
+              '\tBerdasarkan data Kemenkes, kasus HIV dan AIDS di Indonesia per Maret 2023 diperkirakan ada 377.650 orang terinfeksi HIV sedangkan penderita AIDS dilaporkan sebanyak 145.037 orang dengan angka kematian sebesar 0,22 persen lebih rendah dari tahun 2022 yaitu 0,87 persen. Orang yang terinfeksi HIV di Indonesia mayoritas adalah laki-laki mencapai 62 persen sedangkan perempuan 38 persen. Hal yang sama juga terjadi pada kasus baru AIDS, jumlah laki-laki mencapai 61 persen dan perempuan 32 persen (Siagian, 2023).'
         }
       ]
     },
@@ -707,7 +709,7 @@ final mp_materi2 = {
       'Sumber1': 'Alodokter.com',
       'title1': 'Coronavirus',
       'detail1':
-          '\t    Coronavirus atau yang sering dikenal dengan Covid-19 merupakan penyakit yang disebabkan oleh virus SARS-CoV-2 <i>(Severe Acute Respiratory Syndrome Coronavirus 2)</i> (Gambar 23). Penyakit ini telah menyebabkan pandemi di seluruh bagian dunia dan menyebabkan banyaknya korban meninggal. Adapun gejala dari virus ini membuat penderita sakit pada saluran pernapasan bagian atas dengan tingkat ringan hingga sedang, mirip dengan flu biasa. Gejala Covid-19 lainnya seperti pilek, batuk, sakit tenggorokan, sakit kepala dan demam. Bagi penderita yang memiliki sistem kekebalan tubuh yang lemah, virus ini dapat menyebabkan penyakit pada saluran pernapasan dan yang lebih seriusnya pneumonia atau bronkitis bahkan dapat menyebabkan kematian (Levani, 2021).',
+          '\tCoronavirus atau yang sering dikenal dengan Covid-19 merupakan penyakit yang disebabkan oleh virus SARS-CoV-2 <i>(Severe Acute Respiratory Syndrome Coronavirus 2)</i> (Gambar 23). Penyakit ini telah menyebabkan pandemi di seluruh bagian dunia dan menyebabkan banyaknya korban meninggal. Adapun gejala dari virus ini membuat penderita sakit pada saluran pernapasan bagian atas dengan tingkat ringan hingga sedang, mirip dengan flu biasa. Gejala Covid-19 lainnya seperti pilek, batuk, sakit tenggorokan, sakit kepala dan demam. Bagi penderita yang memiliki sistem kekebalan tubuh yang lemah, virus ini dapat menyebabkan penyakit pada saluran pernapasan dan yang lebih seriusnya pneumonia atau bronkitis bahkan dapat menyebabkan kematian (Levani, 2021). \n\tIndonesia menduduki peringkat ke-13 dengan kasus aktif merupakan orang yang terdiagnosis Covid-19, baik yang sedang mendapatkan pengobatan dan perawatan di Rumah sakit maupun yang sedang menjalani isolasi mandiri. Hingga pertengahan awal November 2021, dalam waktu 1 tahun 11 bulan sudah tercatat 249.343.498 kasus Covid-19 di seluruh dunia dan menimbulkan kematian sebesar 5.045.077 jiwa (2%). Di Indonesia, tercatat 4.246.802 kasus hingga 5 November 2021 dengan angka kematian 143.500 (3,4%) jiwa. Tingginya kasus tersebut menyebabkan Rumah Sakit Rujukan Covid-19 di sejumlah daerah di Indonesia mulai mengalami kelebihan pasien karena keterbatasan sarana dan prasarana yang ada (Levani, 2021).',
       'name2': '-',
       'label2': '-',
       'Sumber2': '-',
@@ -725,7 +727,7 @@ final mp_materi2 = {
     {
       "type": "text",
       "detail":
-          "\t    Berbagai pemanfaatan virus pada berbagai aspek kehidupan manusia tidak terlepas dari percobaan dan penelitian yang dilakukan oleh ilmuwan. dari waktu ke waktu. Pemanfaatan virus sehingga dapat memberikan dampak positif perlu mempertimbangkan beberapa aspek kehidupan virus meliputi: 1) ciri fisik dan kimiawi struktur tubuh, 2) perilaku dan cara menginfeksi inang, 3) masa inkubasi dan siklus reproduksi. Berikut ini beberapa dampak positif virus pada bidang kesehatan antara lain: "
+          "\t    Berbagai pemanfaatan virus pada berbagai aspek kehidupan manusia tidak terlepas dari percobaan dan penelitian yang dilakukan oleh ilmuwan dari waktu ke waktu. Pemanfaatan virus sehingga dapat memberikan dampak positif perlu mempertimbangkan beberapa aspek kehidupan virus meliputi: 1) ciri fisik dan kimiawi struktur tubuh, 2) perilaku dan cara menginfeksi inang, 3) masa inkubasi dan siklus reproduksi. Berikut ini beberapa dampak positif virus pada bidang kesehatan antara lain: "
     },
     {
       'type': 'info',
@@ -787,7 +789,7 @@ final mp_materi2 = {
       "type": 'images',
       'name': 'm2_img_28.png',
       'label': 'Baculovirus yang Menginfeksi Larva Serangga',
-      'Sumber': 'Lee <i>et al</i>(2017)',
+      'Sumber': 'Lee <i>et al</i>. (2017)',
       'detail': [
         {
           'type': 'text',
@@ -820,7 +822,7 @@ final mp_materi2 = {
     {
       "type": "text",
       "detail":
-          "\t  Virus seringkali merusak dan membunuh sel-sel yang diinfeksi sehingga akan muncul gejala penyakit seperti batuk, ataupun gejala lainnya. Munculnya gejala penyakit merupakan bentuk perlawanan sistem kekebalan tubuh terhadap virus. Akan tetapi, terkadang sistem kekebalan tubuh dapat melemah dan tidak mampu melawan infeksi virus secara optimal. Oleh sebab itu, diperlukan pencegahan dan pengobatan untuk mengurangi infeksi virus (Pratiwi <i>et al</i>. 2014; Puspaningsih <i>et al</i>. 2021). Pencegahan yang dapat dilakukan untuk terhindar dari virus ada beberapa antara lain:"
+          "\t  Virus seringkali merusak dan membunuh sel-sel yang diinfeksi sehingga akan muncul gejala penyakit seperti batuk, ataupun gejala lainnya. Munculnya gejala penyakit merupakan bentuk perlawanan sistem kekebalan tubuh terhadap virus. Akan tetapi, terkadang sistem kekebalan tubuh dapat melemah dan tidak mampu melawan infeksi virus secara optimal. Oleh sebab itu, diperlukan pencegahan dan pengobatan untuk mengurangi infeksi virus (Pratiwi <i>et al</i>. 2014; Puspaningsih <i>et al</i>., 2021). Pencegahan yang dapat dilakukan untuk terhindar dari virus ada beberapa antara lain:"
     },
     {"type": "subTitle2", "detail": "1. Pencegahan"},
     {"type": "textBold", "detail": "a. Vaksin "},
@@ -936,22 +938,22 @@ final rangkuman_materi2 = {
     {
       'type': 'bullet',
       'detail':
-          'Virus hanya dapat hidup di dalam sel inang hidup hal ini dikarenakan virus bersifat parasit intraseluler obligat dimana virus tidak memiliki ribosom dan enzim yang dibutuhkan untuk mensintesis metabolisme secara mandiri.'
+          'Virus hanya dapat hidup di dalam sel inang hidup hal ini dikarenakan virus bersifat parasit intraseluler obligat dimana virus tidak memiliki ribosom dan enzim yang dibutuhkan untuk mensintesis metabolisme secara mandiri.Virus hanya dapat hidup di dalam sel inang hidup (parasit intraseluler obligat)'
     },
     {
       'type': 'bullet',
       'detail':
-          'Replikasi virus secara siklus litik terdiri atas beberapa tahapan yaitu adsorpsi, penetrasi, sintesis, perakitan dan litik. Siklus litik ini menghasilkan banyak virion dan menyebabkan kematian sel. Sedangkan proses replikasi secara siklus lisogenik terdiri atas tahapan adsorpsi, penetrasi, penggabungan, dan replikasi. Siklus lisogenik ini genom virus tidak menghancurkan sel inangnya namun virus menyisipkan asam nukleat sel inang yang membentuk profag.'
+          'Replikasi virus secara siklus litik terdiri atas beberapa tahapan yaitu adsorpsi, penetrasi, sintesis, perakitan dan litik. Siklus litik ini menghasilkan banyak virion dan menyebabkan kematian sel. Siklus lisogenik terdiri atas tahapan adsorpsi, penetrasi, penggabungan, dan replikasi. Pada siklus lisogenik ini genom virus tidak menghancurkan sel inangnya namun virus menyisipkan asam nukleat sel inang yang membentuk profag.'
     },
     {
       'type': 'bullet',
       'detail':
-          'Peranan virus dalam kehidupan yaitu memberikan dampak negatif (merugikan) seperti menyebabkan penyakit pada makhluk hidup contohnya pada tumbuhan, hewan, dan manusia. Sedangkan dampak positif (menguntungkan) dapat dijadikan sebagai bahan memproduksi vaksin, membuat antitoksin, melemahkan bakteri, rekayasa genetika, pertanian, dan untuk industri makanan.'
+          'Virus dapat membahayakan kehidupan contohnya menimbulkan penyakit pada manusia, hewan dan tumbuhan. Tetapi virus juga dapat dimanfaatkan sebagai bahan memproduksi vaksin, membuat antitoksin, melemahkan bakteri, rekayasa genetika, pertanian, dan untuk industri makanan.'
     },
     {
       'type': 'bullet',
       'detail':
-          'Pencegahan virus yang dapat dilakukan untuk terhindar dari virus antara lain melakukan vaksinasi dan menerapkan pola hidup sehat. Sedangkan untuk pengobatan terhadap infeksi virus dapat dilakukan melalui pemberian obat antivirus.'
+          'Untuk mengurangi dampak negatif virus kita dapat melakukan vaksinasi dan menerapkan pola hidup sehat. Obat antivirus juga diketahui dapat digunakan untuk mengurangi infeksi virus. '
     }
   ]
 };

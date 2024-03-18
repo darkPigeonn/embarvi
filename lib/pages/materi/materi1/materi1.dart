@@ -6,6 +6,7 @@ import 'package:embarvi/helpers/textFungtions.dart';
 import 'package:embarvi/pages/materi.dart';
 import 'package:embarvi/pages/materi/materi1/informasi.dart';
 import 'package:embarvi/pages/materi/materi1/materiPembelajaran.dart';
+import 'package:embarvi/pages/tugasMandiri.dart';
 import 'package:embarvi/utils/colorLib.dart';
 import 'package:embarvi/utils/dataText.dart';
 import 'package:flutter/material.dart';
@@ -76,7 +77,18 @@ class _MenuMateriState extends State<MenuMateri> {
                                     code: widget.content['code'])));
                       },
                       icon: Icons.menu_book,
-                      label: 'Uraian Materi')
+                      label: 'Uraian Materi'),
+                  Spacing3,
+                  Button3Materi(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => TugasMandiri(
+                                    code: widget.content['code'])));
+                      },
+                      icon: Icons.menu_book,
+                      label: 'Tugas Mandiri')
                 ],
               ),
             ),

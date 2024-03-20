@@ -15,7 +15,7 @@ final pendahuluan = {
     {
       'type': 'text',
       'detail':
-          '\t Kehidupan manusia mengalami perubahan drastis semenjak Desember 2019 saat penyakit Covid-19 ditemukan pertama kali di kota Wuhan China. Covid-19 disebabkan oleh salah satu spesies dari virus corona yaitu  <i>Severe Acute Respiratory Syndrome Coronavirus</i> 2 (SARS-CoV-2). Covid-19 menyebar dengan sangat cepat ke seluruh dunia sehingga menyebabkan adanya pandemi yang menyerang seluruh dunia. Dalam hitungan setahun, virus ini telah mengurangi 2.118.719 populasi manusia. Sungguh sangat berbahaya bukan?'
+          '\t Kehidupan manusia mengalami perubahan drastis semenjak Desember 2019 saat penyakit Covid-19 ditemukan pertama kali di kota Wuhan China. Covid-19 disebabkan oleh salah satu spesies dari virus corona yaitu  <i>Severe Acute Respiratory Syndrome Coronavirus</i> 2 (SARS-CoV-2). Covid-19 menyebar dengan sangat cepat ke seluruh dunia sehingga menyebabkan adanya pandemi. Dalam hitungan setahun, virus ini telah mengurangi 2.118.719 populasi manusia. Sungguh sangat berbahaya bukan?'
     },
     {
       'type': 'text',
@@ -145,7 +145,7 @@ final iu_materi1 = {
     {"type": "subTitle", "detail": "B. Tujuan Pembelajaran"},
     {
       "type": "text",
-      "detail": "Setelah melakukan kegiatan pembelajaran ini maka:"
+      "detail": "\tSetelah melakukan kegiatan pembelajaran ini maka:"
     },
     {
       'type': 'bullet',
@@ -193,7 +193,7 @@ final iu_materi2 = {
     {"type": "subTitle", "detail": "B. Tujuan Pembelajaran"},
     {
       "type": "text",
-      "detail": "Setelah melakukan kegiatan pembelajaran ini maka:"
+      "detail": "\tSetelah melakukan kegiatan pembelajaran ini maka:"
     },
     {
       'type': 'bullet',
@@ -319,7 +319,7 @@ final mp_materi1 = {
     {
       "type": "text",
       "detail":
-          "\t      Virus memiliki ukuran yang sangat kecil sehingga hanya dapat dilihat menggunakan bantuan mikroskop elektron. Virus tidak menunjukan ciri-cirinya sebagai sebuah sel dan dapat dikristalkan sehingga dapat disebut sebagai benda mati. Akan tetapi, virus dapat melakukan reproduksi melalui perbayakan diri (replikasi) dalam tubuh inang sehingga dapat disebut sebagai benda hidup (Setyamingrum. 2018). "
+          "\t      Virus memiliki ukuran yang sangat kecil sehingga hanya dapat dilihat menggunakan bantuan mikroskop elektron. Virus tidak menunjukan ciri-cirinya sebagai sebuah sel dan dapat dikristalkan sehingga dapat disebut sebagai benda mati. Akan tetapi, virus dapat melakukan reproduksi melalui perbayakan diri (replikasi) dalam tubuh inang sehingga dapat disebut sebagai benda hidup (Setyamingrum, 2018). "
     },
     {
       'type': 'info',
@@ -419,11 +419,6 @@ final mp_materi1 = {
           '\tKapsid merupakan selubung pembungkus asam nukleat dan tersusun dari banyak kapsomer (subunit protein). Bentuk kapsid akan mempengaruhi dari bentuk virus.Menurut Reece <i>et al</i>., (2021) mengemukakan bahwa berdasarkan tipe virus, kapsid dibedakan menjadi beberapa yaitu tipe polihedral, batang (heliks), bulat (bola), kompleks (huruf T), dan filamen (benang) (Gambar 10).'
     },
     {
-      "type": "text",
-      "detail":
-          '\tContoh lainnya virus yang menyerang saluran pernapasan hewan atau <i>Adenovirus</i> yang membentuk kapsid polihedral disebut virus ikosahedral. Contoh berikutnya virus ikosahedral yaitu <i>Herpesvirus</i>, <i>Papovirus</i>, <i>Adenovirus</i>, dan <i>Reovirus</i>. Virus berbentuk bulat (bola) contohnya HIV  (<i>Human Immunodeficiency Virus</i>) sebagai penyebab penyakit AIDS dan virus <i>influenza</i>. Virus berbentuk seperti huruf T (kompleks) misalnya bakteriofag yang menginfeksi bakteri <i>Escherichia coli</i>  (Gambar 10). Virus yang berbentuk filamen (benang) contohnya virus ebola (Suprobowati, 2018). '
-    },
-    {
       'type': 'imagesAr',
       'name': 'm1_ar_10.png',
       'label': 'Bentuk - Bentuk Virus',
@@ -434,7 +429,7 @@ final mp_materi1 = {
     {
       "type": "text",
       "detail":
-          '\t Beberapa virus memiliki struktur yang membantu untuk menginfeksi sel inang yang disebut amplop virus (<i>Viral envelope</i>). Amplop virus yang berasal dari membran sel inang dan mengandung fosfolipid serta protein membran sel inang dan berikatan ke molekul reseptor spesifik pada permukaan sel inang (Suprobowati. 2018). Beberapa jenis memiliki struktur tambahan berupa sampul membran yang berfungsi untuk membantu virus menginfeksi inang.'
+          '\t Beberapa virus memiliki struktur yang membantu untuk menginfeksi sel inang yang disebut amplop virus (<i>Viral envelope</i>). Amplop virus yang berasal dari membran sel inang dan mengandung fosfolipid serta protein membran sel inang dan berikatan ke molekul reseptor spesifik pada permukaan sel inang (Suprobowati, 2018). Beberapa jenis memiliki struktur tambahan berupa sampul membran yang berfungsi untuk membantu virus menginfeksi inang.'
     },
     {
       "type": "text",
@@ -482,7 +477,12 @@ final mp_materi2 = {
     {
       "type": "text",
       "detail":
-          "\t  Virus bereproduksi dengan melakukan replikasi (perbanyakan diri) menggunakan energi, bahan-bahan, dan organel-organel dalam sel inang (Talaro & Chess, 2018). Bagian virus yang paling berperan pada proses replikasi adalah asam nukleat. Virus hanya dapat melakukan replikasi apabila virus berada di dalam sel inang. Sel tersebut membantu siklus replikasi virus secara lengkap yaitu sebagai sel inang permisif (virus harus masuk ke sel target untuk menyebabkan penyakit). Virus dapat menginfeksi apabila struktur tersebut cocok dengan protein reseptor pada membran sel inang. Replikasi pada virus terdiri dari dua siklus yaitu siklus litik dan siklus lisogenik. Virus melakukan siklus litik dan lisogenik tergantung pada virulensi atau ketahanan sel inang terhadap virus penginfeksi (Solomon <i>et al</i>., 2019).  Berikut ini penjelasan mengenai siklus litik dan siklus lisogenik yaitu:"
+          "\t  Virus bereproduksi dengan melakukan replikasi (perbanyakan diri) menggunakan energi, bahan-bahan, dan organel-organel dalam sel inang (Talaro, 2018). Bagian virus yang paling berperan pada proses replikasi adalah asam nukleat. Virus hanya dapat melakukan replikasi apabila virus berada di dalam sel inang. Sel tersebut membantu siklus replikasi virus secara lengkap yaitu sebagai sel inang permisif (virus harus masuk ke sel target untuk menyebabkan penyakit). "
+    },
+    {
+      "type": "text",
+      "detail":
+          "\t Virus melakukan siklus litik dan lisogenik tergantung pada virulensi atau ketahanan sel inang terhadap virus penginfeksi (Solomon <i>et al</i>., 2019).  Berikut ini penjelasan mengenai siklus litik dan siklus lisogenik yaitu:"
     },
     {"type": "subTitle2", "detail": "1. Siklus Litik"},
     {
@@ -623,14 +623,34 @@ final mp_materi2 = {
       'label1': 'Penyakit PYLCV pada Cabai',
       'Sumber1': 'www.ruangguru.com',
       'title1': 'Penyakit PYLCV',
-      'detail1':
-          '\tPYLCV <i>(Pepper yellow leaf curl virus)</i> atau biasa dikenal dengan virus kuning cabai merupakan penyakit yang disebabkan oleh virus Gemini. Virus ini ditularkan oleh serangga vektor yaitu kutu kebul <i>(Bemisia tabaci)</i>. Penyakit ini banyak terdapat pada tanaman cabai rawit, cabai besar, paprika, dan tomat. Gejala yang disebabkan oleh virus ini pada tanaman cabai yaitu daun menjadi berwarna kuning, kerdil, dan menggulung ke atas (Gambar 15). Gejala menguningnya daun terutama bagian atas (muda) merupakan akibat dari terhambatnya aliran nutrisi dari <i>source</i> ke <i>sink</i> karena virus yang ada di dalam tanaman menguasai floem <i>(floem limited virus)</i>. \n \t Tanaman yang terinfeksi pada awal pertumbuhan tidak akan menghasilkan buah dan tanaman tidak dapat tumbuh dengan normal. Apabila tanaman yang terinfeksi memasuki fase generatif maka buah yang dihasilkan akan kerdil dan bertekstur keras. Virus ini menyebabkan penurunan hasil produksi hingga 75% pada musim kemarau, hal ini menyebabkan masih dilakukannya impor cabai dari Malaysia dan Australia (Tuhumury, 2018). ',
+      'detail1': [
+        {
+          "type": "text",
+          "detail":
+              '\tPYLCV <i>(Pepper yellow leaf curl virus)</i> atau biasa dikenal dengan virus kuning cabai merupakan penyakit yang disebabkan oleh virus Gemini. Virus ini ditularkan oleh serangga vektor yaitu kutu kebul <i>(Bemisia tabaci)</i>. Penyakit ini banyak terdapat pada tanaman cabai rawit, cabai besar, paprika, dan tomat. Gejala yang disebabkan oleh virus ini pada tanaman cabai yaitu daun menjadi berwarna kuning, kerdil, dan menggulung ke atas (Gambar 15). Gejala menguningnya daun terutama bagian atas (muda) merupakan akibat dari terhambatnya aliran nutrisi dari <i>source</i> ke <i>sink</i> karena virus yang ada di dalam tanaman menguasai floem <i>(floem limited virus)</i>.',
+        },
+        {
+          "type": "text",
+          "detail":
+              '\tTanaman yang terinfeksi pada awal pertumbuhan tidak akan menghasilkan buah dan tanaman tidak dapat tumbuh dengan normal. Apabila tanaman yang terinfeksi memasuki fase generatif maka buah yang dihasilkan akan kerdil dan bertekstur keras. Virus ini menyebabkan penurunan hasil produksi hingga 75% pada musim kemarau, hal ini menyebabkan masih dilakukannya impor cabai dari Malaysia dan Australia (Tuhumury, 2018). '
+        },
+      ],
       'name2': 'm2_img_16.png',
       'label2': 'Penyakit Tungro Pada Padi',
       'Sumber2': 'Kampustani.com',
       'title2': 'Tungro',
-      'detail2':
-          '\tTungro merupakan jenis penyakit yang disebabkan oleh dua jenis virus yang berbeda yaitu virus batang <i>Rice Tungro Bacilliform Virus</i> (RTBV) dan virus bentuk bulat <i>Rice Tungro Spherical Virus</i> (RTSV) (Gambar 16). Tungro merupakan penyakit yang menyerang tanaman padi, biasanya terjadi pada fase pertumbuhan vegetatif sehingga menyebabkan tanaman menjadi kerdil, pelepah dan helai daun akan memendek serta daun yang terserang berwarna kuning sampai ke orange sehingga menyebabkan berkurangnya jumlah anakan. Penyakit tungro sangat merugikan petani karena dapat menurunkan produksi antara 10% hingga 90% tergantung pada umur tanaman saat terinfeksi, titik infeksi pada tanaman padi serta varietas padi (Sutrawati, 2019). \n\t Upaya yang dilakukan Pemerintah RI melalui Kementerian Pertanian yaitu dengan memberikan bantuan kepada petani berupa penyediaan lahan, pupuk, benih unggul dan berkualitas, pengolahan (paska panen), distribusi, penetapan dan pengendalian harga, kebijakan importasi, penyiapan prasarana (nabati maupun hewani), irigasi, regulasi, serta penguasaan iptek (untuk mengatasi gangguan dari cuaca dan hama) guna mendukung swasembada pangan.'
+      'detail2': [
+        {
+          "type": "text",
+          "detail":
+              "'\tTungro merupakan jenis penyakit yang disebabkan oleh dua jenis virus yang berbeda yaitu virus batang <i>Rice Tungro Bacilliform Virus</i> (RTBV) dan virus bentuk bulat <i>Rice Tungro Spherical Virus</i> (RTSV) (Gambar 16). Tungro merupakan penyakit yang menyerang tanaman padi, biasanya terjadi pada fase pertumbuhan vegetatif sehingga menyebabkan tanaman menjadi kerdil, pelepah dan helai daun akan memendek serta daun yang terserang berwarna kuning sampai ke orange sehingga menyebabkan berkurangnya jumlah anakan. Penyakit tungro sangat merugikan petani karena dapat menurunkan produksi antara 10% hingga 90% tergantung pada umur tanaman saat terinfeksi, titik infeksi pada tanaman padi serta varietas padi (Sutrawati, 2019). "
+        },
+        {
+          "type": "text",
+          "detail":
+              "\t Upaya yang dilakukan Pemerintah RI melalui Kementerian Pertanian yaitu dengan memberikan bantuan kepada petani berupa penyediaan lahan, pupuk, benih unggul dan berkualitas, pengolahan (paska panen), distribusi, penetapan dan pengendalian harga, kebijakan importasi, penyiapan prasarana (nabati maupun hewani), irigasi, regulasi, serta penguasaan iptek (untuk mengatasi gangguan dari cuaca dan hama) guna mendukung swasembada pangan."
+        }
+      ]
     },
     {
       "type": "text",
@@ -643,14 +663,34 @@ final mp_materi2 = {
       'label1': 'Penyakit Mulut dan Kuku pada Sapi',
       'Sumber1': 'Graham <i>et al</i>. (2021)',
       'title1': 'Penyakit Mulut dan Kuku',
-      'detail1':
-          '\tPenyakit mulut dan kuku (PMK) merupakan jenis penyakit disebabkan oleh <i>Aphthovirus</i> yang menyerang ternak seperti sapi, babi dan kerbau. Penyakit ini disebabkan oleh virus yang mudah menyerang hewan ternak berkuku belah. Penyebaran penyakit ini disebabkan oleh beberapa hal seperti virus yang terbawa oleh angin, persinggungan badan dengan hewan ternak yang sudah terinfeksi, bercampurnya hewan ternak dalam proses pengangkutan, serta pakan ternak yang mengandung virus. Penyakit ini menyebabkan hewan ternak mengalami sariawan atau luka yang mengganggu kuku dan mulut ternak. Hal ini menyebabkan hewan menjadi tidak nafsu makan selama hampir dua minggu dan menyebabkan kekurusan serta akhirnya menyebabkan kematian (Gambar 17).  \n \tMenurut data Kementerian Pertanian melaporkan bahwa pada tanggal 17 Mei 2021 tercatat total sebanyak 15 Provinsi, 52 Kabupaten (Kota) dan ternak sapi yang terdeteksi sakit PMK mencapai 13.965 ekor. PMK menyebabkan penurunan produktivitas sapi meliputi penurunan angka produksi susu mencapai 25% per tahun, terhambatnya tingkat pertumbuhan sapi potong menuju dewasa dengan persentase 10-20%, kehilangan tenaga kerja, penurunan fertilitas dan perlambatan kebuntingan serta kematian pada anakan (Belsham <i>et al</i>., 2021). ',
+      'detail1': [
+        {
+          "type": "text",
+          "detail":
+              '\tPenyakit mulut dan kuku (PMK) merupakan jenis penyakit disebabkan oleh <i>Aphthovirus</i> yang menyerang ternak seperti sapi, babi dan kerbau. Penyakit ini disebabkan oleh virus yang mudah menyerang hewan ternak berkuku belah. Penyebaran penyakit ini disebabkan oleh beberapa hal seperti virus yang terbawa oleh angin, persinggungan badan dengan hewan ternak yang sudah terinfeksi, bercampurnya hewan ternak dalam proses pengangkutan, serta pakan ternak yang mengandung virus. Penyakit ini menyebabkan hewan ternak mengalami sariawan atau luka yang mengganggu kuku dan mulut ternak. Hal ini menyebabkan hewan menjadi tidak nafsu makan selama hampir dua minggu dan menyebabkan kekurusan serta akhirnya menyebabkan kematian (Gambar 17)'
+        },
+        {
+          "type": "text",
+          "detail":
+              '\tMenurut data Kementerian Pertanian melaporkan bahwa pada tanggal 17 Mei 2021 tercatat total sebanyak 15 Provinsi, 52 Kabupaten (Kota) dan ternak sapi yang terdeteksi sakit PMK mencapai 13.965 ekor. PMK menyebabkan penurunan produktivitas sapi meliputi penurunan angka produksi susu mencapai 25% per tahun, terhambatnya tingkat pertumbuhan sapi potong menuju dewasa dengan persentase 10-20%, kehilangan tenaga kerja, penurunan fertilitas dan perlambatan kebuntingan serta kematian pada anakan (Belsham <i>et al</i>., 2021). ',
+        }
+      ],
       'name2': 'm2_img_18.png',
       'label2': 'Penyakit Rabies pada Anjing',
       'Sumber2': 'halodoc',
       'title2': 'Rabies',
-      'detail2':
-          '\tRabies merupakan jenis penyakit menyerang hewan seperti anjing, kucing, sapi, dan monyet (Gambar 18). Penyakit ini disebabkan oleh virus <i>Rhabdovirus</i>. Penyakit ini dapat menular dan menyerang pada jaringan saraf pusat melalui gigitan dan air liur hewan yang terinfeksi. Hewan yang terkena penyakit ini akan menunjukan perilaku agresif atau kelumpuhan. Virus ditularkan kepada manusia melalui gigitan hewan yang terinfeksi. Penyakit ini sangat ditakuti dan mengganggu karena apabila menggigit manusia dapat menyebabkan timbulnya gejala kesemutan di sekitar luka gigitan, perasaan gelisah, otot menjadi tegang, gangguan fungsi otak seperti kehilangan kesadaran serta dapat menyebabkan kematian.  \n \tBerdasarkan data Kementerian Kesehatan RI tahun 2020, ditemukan 11 kasus kematian akibat rabies yang 95% diantaranya dikarenakan gigitan anjing. WHO menyebutkan bahwa rabies dapat menyebabkan kematian 60.000 orang per tahunnya. Pencegahan penyakit rabies yang dapat dilakukan pada hewan ialah dengan dilakukannya vaksinasi (Kesumah, 2020). '
+      'detail2': [
+        {
+          'type': 'text',
+          'detail':
+              '\tRabies merupakan jenis penyakit menyerang hewan seperti anjing, kucing, sapi, dan monyet (Gambar 18). Penyakit ini disebabkan oleh virus <i>Rhabdovirus</i>. Penyakit ini dapat menular dan menyerang pada jaringan saraf pusat melalui gigitan dan air liur hewan yang terinfeksi. Hewan yang terkena penyakit ini akan menunjukan perilaku agresif atau kelumpuhan. Virus ditularkan kepada manusia melalui gigitan hewan yang terinfeksi. Penyakit ini sangat ditakuti dan mengganggu karena apabila menggigit manusia dapat menyebabkan timbulnya gejala kesemutan di sekitar luka gigitan, perasaan gelisah, otot menjadi tegang, gangguan fungsi otak seperti kehilangan kesadaran serta dapat menyebabkan kematian.  '
+        },
+        {
+          'type': 'text',
+          'detail':
+              '\tBerdasarkan data Kementerian Kesehatan RI tahun 2020, ditemukan 11 kasus kematian akibat rabies yang 95% diantaranya dikarenakan gigitan anjing. WHO menyebutkan bahwa rabies dapat menyebabkan kematian 60.000 orang per tahunnya. Pencegahan penyakit rabies yang dapat dilakukan pada hewan ialah dengan dilakukannya vaksinasi (Kesumah, 2020). '
+        }
+      ]
     },
     {
       "type": "text",
@@ -663,14 +703,34 @@ final mp_materi2 = {
       'label1': 'Penyakit Influenza pada Manusia',
       'Sumber1': 'Alodokter.com',
       'title1': 'Influenza',
-      'detail1':
-          '\tInfluenza (flu) dan <i>Common cold</i> merupakan penyakit yang paling sering disebabkan oleh virus. Influenza merupakan jenis penyakit yang disebabkan oleh virus golongan <i>Orthomyxovirus</i> yang berbentuk seperti bola (Puspaningsih et al., 2021). Virus influenza umumnya terjadi pada negara yang beriklim dingin dan ditularkan melalui udara dan masuk ke tubuh manusia melalui saluran pernapasan. Gejala influenza ialah demam, sakit kepala, pegal linu pada otot dan kehilangan nafsu makan (Gambar 19). Penanggulangan virus ini dapat dilakukan dengan pemakaian mutan vaksin hidup yang dilemahkan untuk mendorong supaya respon kekebalan tubuh meningkat. Pencegahan terhadap influenza ialah dengan menjaga daya tahan tubuh, melakukan vaksinasi influenza serta menghindar kontak dengan penderita. \n \tSedangkan <i>Common cold</i> yang merupakan suatu sindrom (kumpulan gejala) saluran pernapasan akut yang masyarakat awam dikenal dengan istilah batuk pilek. <i>Common cold</i> dapat disebabkan oleh banyak virus seperti <i>rhinovirus</i> dan <i>parainfluenza</i>. <i>Common cold</i> sering kali disalah artikan sebagai flu (influenza) karena kedua sindrom ini memiliki gejala yang serupa yaitu pilek, batuk, dan nyeri tenggorokan. Meskipun mirip, gejala <i>Common cold</i> umumnya lebih ringan dibandingkan dengan influenza. Gejala yang paling menonjol pada penderita <i>Common cold</i> adalah pilek atau hidung tersumbat dan sering kali bersin. Menurut Riset Kesehatan Dasar (Riskesdas) 2018, jumlah warga Indonesia yang mengalami ISPA sebanyak 9,3 persen dengan total kejadian 1.017.290 kasus. Provinsi dengan kejadian tertinggi adalah Jawa Barat, Jawa Timur, dan Jawa Tengah. <i>Common cold</i> sering ditemui pada kehidupan sehari-hari dan tidak terbatas pada usia dan jenis kelamin tertentu (Puig, 2024).',
+      'detail1': [
+        {
+          'type': 'text',
+          'detail':
+              '\tInfluenza (flu) dan <i>Common cold</i> merupakan penyakit yang paling sering disebabkan oleh virus. Influenza merupakan jenis penyakit yang disebabkan oleh virus golongan <i>Orthomyxovirus</i> yang berbentuk seperti bola (Puspaningsih <i>et al</i>., 2021). Virus influenza umumnya terjadi pada negara yang beriklim dingin dan ditularkan melalui udara dan masuk ke tubuh manusia melalui saluran pernapasan. Gejala influenza ialah demam, sakit kepala, pegal linu pada otot dan kehilangan nafsu makan (Gambar 19). Penanggulangan virus ini dapat dilakukan dengan pemakaian mutan vaksin hidup yang dilemahkan untuk mendorong supaya respon kekebalan tubuh meningkat. Pencegahan terhadap influenza ialah dengan menjaga daya tahan tubuh, melakukan vaksinasi influenza serta menghindar kontak dengan penderita.',
+        },
+        {
+          'type': 'text',
+          'detail':
+              '\tSedangkan <i>Common cold</i> yang merupakan suatu sindrom (kumpulan gejala) saluran pernapasan akut yang masyarakat awam dikenal dengan istilah batuk pilek. <i>Common cold</i> dapat disebabkan oleh banyak virus seperti <i>rhinovirus</i> dan <i>parainfluenza</i>. <i>Common cold</i> sering kali disalah artikan sebagai flu (influenza) karena kedua sindrom ini memiliki gejala yang serupa yaitu pilek, batuk, dan nyeri tenggorokan. Meskipun mirip, gejala <i>Common cold</i> umumnya lebih ringan dibandingkan dengan influenza. Gejala yang paling menonjol pada penderita <i>Common cold</i> adalah pilek atau hidung tersumbat dan sering kali bersin. Menurut Riset Kesehatan Dasar (Riskesdas) 2018, jumlah warga Indonesia yang mengalami ISPA sebanyak 9,3 persen dengan total kejadian 1.017.290 kasus. Provinsi dengan kejadian tertinggi adalah Jawa Barat, Jawa Timur, dan Jawa Tengah. <i>Common cold</i> sering ditemui pada kehidupan sehari-hari dan tidak terbatas pada usia dan jenis kelamin tertentu (Puig, 2024).'
+        }
+      ],
       'name2': 'm2_img_20.png',
       'label2': 'Penyakit Herpes Simplex',
       'Sumber2': 'Alodokter.com',
       'title2': 'Herpes Simplex',
-      'detail2':
-          '\tHerpes simplex merupakan jenis penyakit disebabkan oleh virus anggota suku <i>Herpesviridae</i> yang menyerang kulit dan selaput lendir. Penyakit ini biasanya mengenai mata, bibir, mulut, kulit, dan alat kelamin. Infeksi penyakit ini pertama biasanya pada satu tempat dan cenderung hilang timbul. Virus dapat masuk ke dalam tubuh melalui luka kecil. Selain itu, dapat ditularkan melalui hubungan seksual, kecuali pada bagian mata. \n\t Gejala utama dari penyakit ini yaitu timbulnya gelembung-gelembung kecil. Gelembung tersebut mudah pecah dan apabila pecah dapat menular pada bagian tubuh lainnya (Gambar 20). Penyebaran herpes simplex tersebar di seluruh dunia yakni sekitar 23 juta kasus per tahun. Tahun 2011, diperkirakan ada 417 juta orang dengan rentang usia antara 15-49 tahun terinfeksi <i>herpes simplex virus</i> tipe 2 di seluruh dunia atau sebanyak 11.3% dari total penduduk dunia, sekitar 267 juta dari mereka adalah wanita (Karasneh <i>et al</i>., 2011). '
+      'detail2': [
+        {
+          'type': 'text',
+          'detail':
+              '\tHerpes simplex merupakan jenis penyakit disebabkan oleh virus anggota suku <i>Herpesviridae</i> yang menyerang kulit dan selaput lendir. Penyakit ini biasanya mengenai mata, bibir, mulut, kulit, dan alat kelamin. Infeksi penyakit ini pertama biasanya pada satu tempat dan cenderung hilang timbul. Virus dapat masuk ke dalam tubuh melalui luka kecil. Selain itu, dapat ditularkan melalui hubungan seksual, kecuali pada bagian mata. '
+        },
+        {
+          'type': 'text',
+          'detail':
+              '\t\t Gejala utama dari penyakit ini yaitu timbulnya gelembung-gelembung kecil. Gelembung tersebut mudah pecah dan apabila pecah dapat menular pada bagian tubuh lainnya (Gambar 20). Penyebaran herpes simplex tersebar di seluruh dunia yakni sekitar 23 juta kasus per tahun. Tahun 2011, diperkirakan ada 417 juta orang dengan rentang usia antara 15-49 tahun terinfeksi <i>herpes simplex virus</i> tipe 2 di seluruh dunia atau sebanyak 11.3% dari total penduduk dunia, sekitar 267 juta dari mereka adalah wanita (Karasneh <i>et al</i>., 2011). '
+        }
+      ]
     },
     {
       "type": 'imagesMulti',
@@ -678,8 +738,18 @@ final mp_materi2 = {
       'label1': 'Virus Ebola',
       'Sumber1': 'Alodokter.com',
       'title1': 'Ebola',
-      'detail1':
-          '\tDemam berdarah ebola adalah jenis penyakit yang disebabkan oleh <i>Ebola Virus Disease</i> (EVD) (Gambar 21). Penyakit ini pertama kali ditemukan di Afrika pada tahun 1976. Gejala awal yang ditimbulkan ebola mirip penyakit influenza yaitu demam, menggigil, sakit kepala, nyeri otot dan nafsu makan berkurang. Gejala ini muncul setelah tubuh terinfeksi dan virus mulai mereplikasikan dirinya. EVD akan menyerang sel darah merah, sehingga menyebabkan kematian dan menyumbatnya saluran kapiler darah yang mengakibatkan kulit memar dan melepuh.\n \tEbola ditularkan melalui kontak langsung dengan cairan tubuh penderita misalnya melalui darah, feses (tinja), urin, ludah, dan keringat. WHO pernah menyatakan bahwa EVD sebagai Kedaruratan Kesehatan Masyarakat yang Meresahkan Dunia (KKMMD) akibat timbulnya wabah ini di Republik Demokratik Kongo. Sejak tahun 2014 hingga saat ini, telah dilaporkan sebanyak 32.486 kasus PVE dengan 13.812 kematian yang tersebar pada berbagai negara di dunia baik di wilayah Afrika, Amerika, maupun Eropa (Jacob <i>et al</i>., 2020). ',
+      'detail1': [
+        {
+          'type': 'text',
+          'detail':
+              '\tDemam berdarah ebola adalah jenis penyakit yang disebabkan oleh <i>Ebola Virus Disease</i> (EVD) (Gambar 21). Penyakit ini pertama kali ditemukan di Afrika pada tahun 1976. Gejala awal yang ditimbulkan ebola mirip penyakit influenza yaitu demam, menggigil, sakit kepala, nyeri otot dan nafsu makan berkurang. Gejala ini muncul setelah tubuh terinfeksi dan virus mulai mereplikasikan dirinya. EVD akan menyerang sel darah merah, sehingga menyebabkan kematian dan menyumbatnya saluran kapiler darah yang mengakibatkan kulit memar dan melepuh.'
+        },
+        {
+          'type': 'text',
+          'detail':
+              '\t\tEbola ditularkan melalui kontak langsung dengan cairan tubuh penderita misalnya melalui darah, feses (tinja), urin, ludah, dan keringat. WHO menyatakan bahwa EVD sebagai Kedaruratan Kesehatan Masyarakat yang Meresahkan Dunia (KKMMD) akibat timbulnya wabah ini di Republik Demokratik Kongo. Sejak tahun 2014 hingga saat ini, telah dilaporkan sebanyak 32.486 kasus EVD dengan 13.812 kematian yang tersebar pada berbagai negara di dunia baik di wilayah Afrika, Amerika, maupun Eropa (Jacob <i>et al</i>., 2020).'
+        }
+      ],
       'name2': 'm2_img_22.png',
       'label2': 'Penderita AIDS',
       'Sumber2': 'Alodokter.com',
@@ -708,14 +778,24 @@ final mp_materi2 = {
       'label1': 'Penderita Covid-19',
       'Sumber1': 'Alodokter.com',
       'title1': 'Coronavirus',
-      'detail1':
-          '\tCoronavirus atau yang sering dikenal dengan Covid-19 merupakan penyakit yang disebabkan oleh virus SARS-CoV-2 <i>(Severe Acute Respiratory Syndrome Coronavirus 2)</i> (Gambar 23). Penyakit ini telah menyebabkan pandemi di seluruh bagian dunia dan menyebabkan banyaknya korban meninggal. Adapun gejala dari virus ini membuat penderita sakit pada saluran pernapasan bagian atas dengan tingkat ringan hingga sedang, mirip dengan flu biasa. Gejala Covid-19 lainnya seperti pilek, batuk, sakit tenggorokan, sakit kepala dan demam. Bagi penderita yang memiliki sistem kekebalan tubuh yang lemah, virus ini dapat menyebabkan penyakit pada saluran pernapasan dan yang lebih seriusnya pneumonia atau bronkitis bahkan dapat menyebabkan kematian (Levani, 2021). \n\tIndonesia menduduki peringkat ke-13 dengan kasus aktif merupakan orang yang terdiagnosis Covid-19, baik yang sedang mendapatkan pengobatan dan perawatan di Rumah sakit maupun yang sedang menjalani isolasi mandiri. Hingga pertengahan awal November 2021, dalam waktu 1 tahun 11 bulan sudah tercatat 249.343.498 kasus Covid-19 di seluruh dunia dan menimbulkan kematian sebesar 5.045.077 jiwa (2%). Di Indonesia, tercatat 4.246.802 kasus hingga 5 November 2021 dengan angka kematian 143.500 (3,4%) jiwa. Tingginya kasus tersebut menyebabkan Rumah Sakit Rujukan Covid-19 di sejumlah daerah di Indonesia mulai mengalami kelebihan pasien karena keterbatasan sarana dan prasarana yang ada (Levani, 2021).',
+      'detail1': [
+        {
+          'type': 'text',
+          'detail':
+              '\tCoronavirus atau yang sering dikenal dengan Covid-19 merupakan penyakit yang disebabkan oleh virus SARS-CoV-2 <i>(Severe Acute Respiratory Syndrome Coronavirus 2)</i> (Gambar 23). Penyakit ini telah menyebabkan pandemi di seluruh bagian dunia dan menyebabkan banyaknya korban meninggal. Adapun gejala dari virus ini membuat penderita sakit pada saluran pernapasan bagian atas dengan tingkat ringan hingga sedang, mirip dengan flu biasa. Gejala Covid-19 lainnya seperti pilek, batuk, sakit tenggorokan, sakit kepala dan demam. Bagi penderita yang memiliki sistem kekebalan tubuh yang lemah, virus ini dapat menyebabkan penyakit pada saluran pernapasan dan yang lebih seriusnya pneumonia atau bronkitis bahkan dapat menyebabkan kematian (Levani, 2021). '
+        },
+        {
+          'type': 'text',
+          'detail':
+              '\tIndonesia menduduki peringkat ke-13 dengan kasus aktif merupakan orang yang terdiagnosis Covid-19, baik yang sedang mendapatkan pengobatan dan perawatan di Rumah sakit maupun yang sedang menjalani isolasi mandiri. Hingga pertengahan awal November 2021, dalam waktu 1 tahun 11 bulan sudah tercatat 249.343.498 kasus Covid-19 di seluruh dunia dan menimbulkan kematian sebesar 5.045.077 jiwa (2%). Di Indonesia, tercatat 4.246.802 kasus hingga 5 November 2021 dengan angka kematian 143.500 (3,4%) jiwa. Tingginya kasus tersebut menyebabkan Rumah Sakit Rujukan Covid-19 di sejumlah daerah di Indonesia mulai mengalami kelebihan pasien karena keterbatasan sarana dan prasarana yang ada (Levani, 2021).',
+        }
+      ],
       'name2': '-',
       'label2': '-',
       'Sumber2': '-',
       'title2': '-',
       'detail2':
-          '\t      Menurut Kis, Z., et al (2019) mengatakan bahwa vaksin merupakan bibit penyakit yang telah dilemahkan dan apabila menyerang manusia tidak akan berbahaya lagi. Vaksin digunakan manusia untuk memperoleh kekebalan tubuh (antibodi). Apabila ada penyakit yang menyerang manusia, maka tubuh yang telah memiliki kekebalan akan menjaga tubuh berasal dari antibodi bagi penyakit tersebut. Contohnya vaksin cacar, polio, covid-19 dan campak (Gambar 24). Metode yang paling efektif digunakan adalah vaksinasi yang berfungsi merangsang kekebalan alami tubuh terhadap proses infeksi. Sedangkan penggunaan antibiotik diantisipasi untuk mengatasi gejala infeksi virus.'
+          '\t      Menurut Kis, (2019) mengatakan bahwa vaksin merupakan bibit penyakit yang telah dilemahkan dan apabila menyerang manusia tidak akan berbahaya lagi. Vaksin digunakan manusia untuk memperoleh kekebalan tubuh (antibodi). Apabila ada penyakit yang menyerang manusia, maka tubuh yang telah memiliki kekebalan akan menjaga tubuh berasal dari antibodi bagi penyakit tersebut. Contohnya vaksin cacar, polio, covid-19 dan campak (Gambar 24). Metode yang paling efektif digunakan adalah vaksinasi yang berfungsi merangsang kekebalan alami tubuh terhadap proses infeksi. Sedangkan penggunaan antibiotik diantisipasi untuk mengatasi gejala infeksi virus.'
     },
     {
       'type': 'info',
@@ -742,13 +822,13 @@ final mp_materi2 = {
       'Sumber1': 'CNBC Indonesia',
       'title1': 'Memproduksi Vaksin',
       'detail1':
-          '\t     Menurut Kis, Z., <i>et al</i> (2019) mengatakan bahwa vaksin merupakan bibit penyakit yang telah dilemahkan dan apabila menyerang manusia tidak akan berbahaya lagi. Vaksin digunakan manusia untuk memperoleh kekebalan tubuh (antibodi). Apabila ada penyakit yang menyerang manusia, maka tubuh yang telah memiliki kekebalan akan menjaga tubuh berasal dari antibodi bagi penyakit tersebut. Contohnya vaksin cacar, polio, covid-19 dan campak (Gambar 24). Metode yang paling efektif digunakan adalah vaksinasi yang berfungsi merangsang kekebalan alami tubuh terhadap proses infeksi. Sedangkan penggunaan antibiotik diantisipasi untuk mengatasi gejala infeksi virus.',
+          '\t     Menurut Kis (2019) mengatakan bahwa vaksin merupakan bibit penyakit yang telah dilemahkan dan apabila menyerang manusia tidak akan berbahaya lagi. Vaksin digunakan manusia untuk memperoleh kekebalan tubuh (antibodi). Apabila ada penyakit yang menyerang manusia, maka tubuh yang telah memiliki kekebalan akan menjaga tubuh berasal dari antibodi bagi penyakit tersebut. Contohnya vaksin cacar, polio, covid-19 dan campak (Gambar 24). Metode yang paling efektif digunakan adalah vaksinasi yang berfungsi merangsang kekebalan alami tubuh terhadap proses infeksi. Sedangkan penggunaan antibiotik diantisipasi untuk mengatasi gejala infeksi virus.',
       'name2': 'm2_img_25.png',
       'label2': 'Virus sebagai Bahan Pembuatan Antitoksin Tetanus',
       'Sumber2': 'CNBC Indonesia',
       'title2': 'Membuat Antitoksin',
       'detail2':
-          '\t       Para ahli memanfaatkan dengan menggabungkan sifat-sifat DNA yang menguntungkan antara virus dan gen lain sehingga sifat yang menguntungkan tersebut akan dimiliki oleh bakteri yang diinfeksi. Contohnya, DNA virus digabungkan dengan DNA manusia yang memiliki sifat anti toksin (pelawan racun/penyakit) (Akmal. 2022). Selanjutnya, virus akan diinfeksi dengan sel bakteri sehingga sel bakteri akan memiliki sifat gen manusia yang memiliki sifat anti toksin. Contohnya yaitu toksoid tetanus, toksoid ini dapat disuntikkan pada manusia untuk mencegah penyakit tetanus (Gambar 25).'
+          '\t       Para ahli memanfaatkan dengan menggabungkan sifat-sifat DNA yang menguntungkan antara virus dan gen lain sehingga sifat yang menguntungkan tersebut akan dimiliki oleh bakteri yang diinfeksi. Contohnya, DNA virus digabungkan dengan DNA manusia yang memiliki sifat anti toksin (pelawan racun/penyakit) (Akmal, 2022). Selanjutnya, virus akan diinfeksi dengan sel bakteri sehingga sel bakteri akan memiliki sifat gen manusia yang memiliki sifat anti toksin. Contohnya yaitu toksoid tetanus, toksoid ini dapat disuntikkan pada manusia untuk mencegah penyakit tetanus (Gambar 25).'
     },
     {
       "type": 'imagesMulti',
@@ -757,7 +837,7 @@ final mp_materi2 = {
       'Sumber1': 'Halodoc',
       'title1': 'Melemahkan Bakteri',
       'detail1':
-          '\t      Apabila virus yang menginfeksi bakteri bersifat patogen, maka DNA virus yang masuk akan merusak DNA bakteri sehingga bakteri menjadi tidak berbahaya karena sifat patogennya telah rusak (Gambar 26). Contohnya bakteri difteri yang berbahaya akan berubah sifatnya jika di dalamnya tersambung oleh virus profage (Kesumah. 2020).',
+          '\t      Apabila virus yang menginfeksi bakteri bersifat patogen, maka DNA virus yang masuk akan merusak DNA bakteri sehingga bakteri menjadi tidak berbahaya karena sifat patogennya telah rusak (Gambar 26). Contohnya bakteri difteri yang berbahaya akan berubah sifatnya jika di dalamnya tersambung oleh virus profage (Kesumah, 2020).',
       'name2': 'm2_img_27.png',
       'label2': 'Terapi Gen Menggunakan Virus Vektor untuk Penderita Leukimia',
       'Sumber2': 'www.famasetika.com',
@@ -766,12 +846,12 @@ final mp_materi2 = {
         {
           'type': 'text',
           'detail':
-              '\tRekayasa genetika merupakan suatu sistem modifikasi genetik pada genom organisme (Puspaningsih <i>et al</i>. 2021). Rekayasa genetika digunakan ilmuwan untuk meningkatkan atau bahkan memodifikasi karakteristik ekspresi gen pada suatu organisme. Hal ini termasuk pula modifikasi gen yang memungkinkan adanya pencegahan dan pengobatan penyakit tertentu. Rekayasa genetika dalam bidang kesehatan salah satunya dapat dimanfaatkan untuk terapi penyakit melalui terapi gen.'
+              '\tRekayasa genetika merupakan suatu sistem modifikasi genetik pada genom organisme (Puspaningsih <i>et al</i>., 2021). Rekayasa genetika digunakan ilmuwan untuk meningkatkan atau bahkan memodifikasi karakteristik ekspresi gen pada suatu organisme. Hal ini termasuk pula modifikasi gen yang memungkinkan adanya pencegahan dan pengobatan penyakit tertentu. Rekayasa genetika dalam bidang kesehatan salah satunya dapat dimanfaatkan untuk terapi penyakit melalui terapi gen.'
         },
         {
           'type': 'text',
           'detail':
-              '\tTerapi gen merupakan salah satu prosedur medis yang melibatkan pengubahan gen dalam sel tubuh guna mengobati atau menghentikan suatu penyakit (Li, C., <i>et al</i>. 2020). Terapi gen dilakukan dengan menambahkan gen normal ke bagian genom yang rusak, sehingga fungsi gen dapat kembali salah satunya ialah menggunakan vektor (pembawa) virus. Terapi gen dapat dilakukan secara <i>in vivo</i> dan <i>ex vivo</i>. Terapi gen <i>in vivo</i> dilakukan dengan menempatkan gen-gen untuk penyembuhan (gen terapeutik) ke dalam genom virus. Vektor virus kemudian disuntikan ke dalam tubuh melalui intraparenkim (IV), intratekal (IT), intramuskular (IM), atau intraparenkim (IP) untuk mentransduksi sel sasaran. Sementara itu, terapi gen <i>ex vivo</i> dimulai dengan ekstraksi sel induk dari tubuh. Virus dengan gen terapeutik akan mentransduksi sel induk di luar tubuh pasien. Setelah vektor virus berhasil mentransfer gen ke sel, sel dimasukan kembali ke dalam tubuh melalui IV, IT, atau IM dan agar gen dapat diekspresikan. '
+              '\tTerapi gen merupakan salah satu prosedur medis yang melibatkan pengubahan gen dalam sel tubuh guna mengobati atau menghentikan suatu penyakit (Li <i>et al</i>., 2020). Terapi gen dilakukan dengan menambahkan gen normal ke bagian genom yang rusak, sehingga fungsi gen dapat kembali salah satunya ialah menggunakan vektor (pembawa) virus. Terapi gen dapat dilakukan secara <i>in vivo</i> dan <i>ex vivo</i>. Terapi gen <i>in vivo</i> dilakukan dengan menempatkan gen-gen untuk penyembuhan (gen terapeutik) ke dalam genom virus. Vektor virus kemudian disuntikan ke dalam tubuh melalui intraparenkim (IV), intratekal (IT), intramuskular (IM), atau intraparenkim (IP) untuk mentransduksi sel sasaran. Sementara itu, terapi gen <i>ex vivo</i> dimulai dengan ekstraksi sel induk dari tubuh. Virus dengan gen terapeutik akan mentransduksi sel induk di luar tubuh pasien. Setelah vektor virus berhasil mentransfer gen ke sel, sel dimasukan kembali ke dalam tubuh melalui IV, IT, atau IM dan agar gen dapat diekspresikan. '
         },
         {
           'type': 'text',
@@ -789,12 +869,12 @@ final mp_materi2 = {
       "type": 'images',
       'name': 'm2_img_28.png',
       'label': 'Baculovirus yang Menginfeksi Larva Serangga',
-      'Sumber': 'Lee <i>et al</i>. (2017)',
+      'Sumber': 'Lee <i>et al</i>. (2018)',
       'detail': [
         {
           'type': 'text',
           'detail':
-              '\tPenggunaan <i>Baculovirus</i> pada lahan telah berhasil mengendalikan hama serangga terutama dari hama serangga tanaman dari ordo Lepidoptera. <i>Baculovirus</i> merupakan alternatif dalam mengatasi permasalahan hama yang resisten terhadap insektisida sintetik. <i>Baculovirus</i> memiliki struktur yang kompleks sehingga membuat materi genetik virus lebih terlindungi dan menguntungkan aplikasi serta penyimpanannya (Gambar 28). <i>Baculovirus</i> akan menghambat aktivitas sel inang, memproduksi komponen-komponen virus dan menghancurkan sel inang yang perlahan akan mematikan larva serangga (Lee <i>et al</i>. 2017). '
+              '\tPenggunaan <i>Baculovirus</i> pada lahan telah berhasil mengendalikan hama serangga terutama dari hama serangga tanaman dari ordo Lepidoptera. <i>Baculovirus</i> merupakan alternatif dalam mengatasi permasalahan hama yang resisten terhadap insektisida sintetik. <i>Baculovirus</i> memiliki struktur yang kompleks sehingga membuat materi genetik virus lebih terlindungi dan menguntungkan aplikasi serta penyimpanannya (Gambar 28). <i>Baculovirus</i> akan menghambat aktivitas sel inang, memproduksi komponen-komponen virus dan menghancurkan sel inang yang perlahan akan mematikan larva serangga (Lee <i>et al</i>., 2017). '
         },
         {
           'type': 'text',
@@ -822,7 +902,7 @@ final mp_materi2 = {
     {
       "type": "text",
       "detail":
-          "\t  Virus seringkali merusak dan membunuh sel-sel yang diinfeksi sehingga akan muncul gejala penyakit seperti batuk, ataupun gejala lainnya. Munculnya gejala penyakit merupakan bentuk perlawanan sistem kekebalan tubuh terhadap virus. Akan tetapi, terkadang sistem kekebalan tubuh dapat melemah dan tidak mampu melawan infeksi virus secara optimal. Oleh sebab itu, diperlukan pencegahan dan pengobatan untuk mengurangi infeksi virus (Pratiwi <i>et al</i>. 2014; Puspaningsih <i>et al</i>., 2021). Pencegahan yang dapat dilakukan untuk terhindar dari virus ada beberapa antara lain:"
+          "\t  Virus seringkali merusak dan membunuh sel-sel yang diinfeksi sehingga akan muncul gejala penyakit seperti batuk, ataupun gejala lainnya. Munculnya gejala penyakit merupakan bentuk perlawanan sistem kekebalan tubuh terhadap virus. Akan tetapi, terkadang sistem kekebalan tubuh dapat melemah dan tidak mampu melawan infeksi virus secara optimal. Oleh sebab itu, diperlukan pencegahan dan pengobatan untuk mengurangi infeksi virus (Pratiwi <i>et al</i>., 2014; Puspaningsih <i>et al</i>., 2021). Pencegahan yang dapat dilakukan untuk terhindar dari virus ada beberapa antara lain:"
     },
     {"type": "subTitle2", "detail": "1. Pencegahan"},
     {"type": "textBold", "detail": "a. Vaksin "},
@@ -938,7 +1018,7 @@ final rangkuman_materi2 = {
     {
       'type': 'bullet',
       'detail':
-          'Virus hanya dapat hidup di dalam sel inang hidup hal ini dikarenakan virus bersifat parasit intraseluler obligat dimana virus tidak memiliki ribosom dan enzim yang dibutuhkan untuk mensintesis metabolisme secara mandiri.Virus hanya dapat hidup di dalam sel inang hidup (parasit intraseluler obligat)'
+          'Virus hanya dapat hidup di dalam sel inang hidup (parasit intraseluler obligat)'
     },
     {
       'type': 'bullet',
@@ -953,7 +1033,7 @@ final rangkuman_materi2 = {
     {
       'type': 'bullet',
       'detail':
-          'Untuk mengurangi dampak negatif virus kita dapat melakukan vaksinasi dan menerapkan pola hidup sehat. Obat antivirus juga diketahui dapat digunakan untuk mengurangi infeksi virus. '
+          'Untuk mengurangi dampak negatif virus kita dapat melakukan vaksinasi dan menerapkan pola hidup sehat. Obat antivirus juga diketahui dapat digunakan untuk mengurangi infeksi virus.'
     }
   ]
 };

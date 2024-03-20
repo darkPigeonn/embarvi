@@ -40,7 +40,8 @@ class _LkpdPageState extends State<LkpdPage> {
                   Spacing3,
                   Button1(
                       onPressed: () async {
-                        final link = '''https://bit.ly/lpkd1Embarvi''';
+                        final link =
+                            '''https://berjalanbersama.com/embarvi/LKPD%20EKSPERIMEN%20PERTEMUAN%201.pdf''';
                         final uri = Uri.parse(link);
                         if (await canLaunchUrl(uri)) {
                           print('disini');
@@ -53,7 +54,8 @@ class _LkpdPageState extends State<LkpdPage> {
                   Spacing2,
                   Button2(
                       onPressed: () async {
-                        final link = '''https://bit.ly/lpkd2Embarvi''';
+                        final link =
+                            '''https://berjalanbersama.com/embarvi/LKPD%20EKSPERIMEN%20PERTEMUAN%202.pdf''';
                         final uri = Uri.parse(link);
                         if (await canLaunchUrl(uri)) {
                           ;

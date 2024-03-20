@@ -158,7 +158,10 @@ class _PetunjukPageState extends State<PetunjukPage> {
                           return Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              RichTextCustom(content: '${index + 1}.'),
+                              SizedBox(
+                                  width: 25,
+                                  child:
+                                      RichTextCustom(content: '${index + 1}.')),
                               SizedBox(
                                 width: 10,
                               ),

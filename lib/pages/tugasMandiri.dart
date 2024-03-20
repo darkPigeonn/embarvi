@@ -72,7 +72,7 @@ class _TugasMandiriState extends State<TugasMandiri> {
                       return BulletNumber(
                         text:
                             widget.code == 1 ? content[index] : content2[index],
-                        number: '${index + 1}. ',
+                        number: '${index + 1} ',
                       );
                     }),
               ),

@@ -524,7 +524,7 @@ class _TableImageState extends State<TableImage> {
                   //   content: formatName(widget.content['name']),
                   // ),
                   Flexible(
-                    child: RichTextCustomLabel(
+                    child: RichTextCustomLabelSumber(
                       content:
                           '${formatName(widget.content['name'])} ${widget.content['label']}',
                     ),
@@ -1063,7 +1063,10 @@ class itemImages2 extends StatelessWidget {
                         //   ' : $sumber',
                         //   style: TextStyle(fontSize: 9),
                         // ),
-                        RichTextCustomLabel(content: sumber)
+
+                        imageLabel.contains('Table')
+                            ? RichTextCustomLabelSumber(content: sumber)
+                            : RichTextCustomLabel(content: sumber)
                       ],
                     )
                   ],
